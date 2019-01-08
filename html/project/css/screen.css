@@ -332,4 +332,38 @@ table {
   text-align: left;
 }
 
+.contacts {
+  width: 90%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+.contacts h3 {
+  font-weight: bolder;
+  color: #232349;
+  font-size: 1.8em;
+  margin: 30px 0px;
+  text-transform: uppercase;
+}
+.contacts p {
+  color: #444444;
+  line-height: 25px;
+}
+.contacts address {
+  background: #e9f2f2;
+  margin-bottom: 20px;
+  padding: 25px;
+  color: #232349;
+  font-size: 1.1em;
+  font-weight: bolder;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+.contacts address h5 {
+  color: #42dcd4;
+  font-weight: bolder;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
 /*# sourceMappingURL=screen.css.map */
