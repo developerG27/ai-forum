@@ -1,36 +1,28 @@
+document.addEventListener("DOMContentLoaded", function () {
+   let activatorNav = document.querySelector('#activator-nav');
+   let burgherNav = document.querySelector('#burgher-nav');
 
-let activatorNav = document.querySelector('#activator-nav');
-let burgherNav = document.querySelector('#burgher-nav');
+   let body = document.body;
 
-let navStart = document.querySelector('.nav-star');
-let navEnd = document.querySelector('.nav-end');
-let unlock = document.querySelector('.lock');
-
-let body = document.body;
-
-activatorNav.addEventListener('click',function(){
-    
-
-    if(burgherNav.classList.contains('nav-start') ){
-        burgherNav.classList.add('nav-end');
-        if(burgherNav.classList.contains('nav-start')){
+   activatorNav.addEventListener('click', function () {
+      
+      if (burgherNav.classList.contains('nav-start')) {
+         burgherNav.classList.add('nav-end');
+         if (burgherNav.classList.contains('nav-start')) {
             burgherNav.classList.remove('nav-start')
-            
-        }
-    }  else if (burgherNav.classList.contains('nav-end')){
-        burgherNav.classList.add('nav-start');
 
-        if(burgherNav.classList.contains('nav-end')){
+         }
+      } else if (burgherNav.classList.contains('nav-end')) {
+         burgherNav.classList.add('nav-start');
+
+         if (burgherNav.classList.contains('nav-end')) {
             burgherNav.classList.remove('nav-end');
-        }
-    } 
-    else {
-        burgherNav.classList.add('nav-start');
-    }
+         }
+      } else {
+         burgherNav.classList.add('nav-start');
+      }
 
-    body.classList.toggle('lock');
-
-
-   
+      body.classList.toggle('lock');
+   })
 
 })
