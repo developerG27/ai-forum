@@ -141,7 +141,7 @@ table {
 
 .jumbotron {
   width: 100%;
-  height: 350px;
+  height: 480px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -152,6 +152,7 @@ table {
   font-family: "Open Sans", sans-serif;
   color: #fff;
   font-family: "Poppins", sans-serif;
+  position: relative;
 }
 .jumbotron .wrap {
   width: 90%;
@@ -171,11 +172,15 @@ table {
   text-transform: uppercase;
 }
 .jumbotron .sponsor {
-  padding: 20px;
-  border: 1px solid #f1f1f1;
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  text-align: center;
 }
 .jumbotron .sponsor span {
   text-transform: uppercase;
+  background: #42dcd4;
+  padding: 40px 40px;
 }
 .jumbotron .sponsor span::after {
   margin-left: 5px;
