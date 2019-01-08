@@ -52,7 +52,7 @@
     @include flexbox(row, flex-end, center);
 
     .nav-aside{
-        width:90%; 
+        width:88%; 
         padding: 25px;
         background: $dark-primary;
         color: $color-light;
@@ -62,11 +62,7 @@
         z-index: 1;
         transform: translateX(100%);
 
-        
-        
-
-        //momentaneo
-
+      
         .item{
             line-height: 40px;
 
@@ -95,16 +91,12 @@
     }
 }
 
-@keyframes nav-transition{
-    0%   {top: 0px;}
-    25%  {top: 200px;}
-    50%  {top: 100px;}
-    75%  {top: 200px;}
-    100% {top: 0px;}
-}
-.transition{
-
+.nav-start{
     transform: translateX(0%) !important;
+    transition-duration: 1s;
+}
+.nav-end{
+    transform: translate(100%) !important;
     transition-duration: 1s;
 }
 
@@ -118,11 +110,10 @@
     @include flexbox(row, flex-start, center);
     background-image: url(../img/particels.png);
     background-size: cover;
-    font-family: $font-primary;
     color: $color-white;
     font-family: $font-secondary;
     position: relative;
-    overflow-x:hidden !important;
+
     
     .wrap{
         width: 90%;
@@ -149,7 +140,7 @@
     .sponsor{
         width: 100%;
         position: absolute;
-        bottom: -5px;
+        bottom: -10px;
         text-align: center;
         span{
             text-transform: uppercase;

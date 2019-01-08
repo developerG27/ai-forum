@@ -58,7 +58,6 @@ table {
 }
 
 body {
-  position: relative;
   overflow-x: hidden !important;
 }
 
@@ -116,7 +115,7 @@ body {
   align-items: center;
 }
 .burgher-nav .nav-aside {
-  width: 90%;
+  width: 88%;
   padding: 25px;
   background: #232349;
   color: #d3d3db;
@@ -147,25 +146,13 @@ body {
   color: #42dcd4;
 }
 
-@keyframes nav-transition {
-  0% {
-    top: 0px;
-  }
-  25% {
-    top: 200px;
-  }
-  50% {
-    top: 100px;
-  }
-  75% {
-    top: 200px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-.transition {
+.nav-start {
   transform: translateX(0%) !important;
+  transition-duration: 1s;
+}
+
+.nav-end {
+  transform: translate(100%) !important;
   transition-duration: 1s;
 }
 
@@ -179,11 +166,9 @@ body {
   align-items: center;
   background-image: url(../img/particels.png);
   background-size: cover;
-  font-family: "Open Sans", sans-serif;
   color: #fff;
   font-family: "Poppins", sans-serif;
   position: relative;
-  overflow-x: hidden !important;
 }
 .jumbotron .wrap {
   width: 90%;
@@ -205,7 +190,7 @@ body {
 .jumbotron .sponsor {
   width: 100%;
   position: absolute;
-  bottom: -5px;
+  bottom: -10px;
   text-align: center;
 }
 .jumbotron .sponsor span {
