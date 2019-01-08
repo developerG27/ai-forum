@@ -38,6 +38,11 @@ document.addEventListener("DOMContentLoaded", function () {
    inputName.addEventListener('click',function(){
       pName.classList.add('up');
    })
+
+   inputEmail.addEventListener('click',function(){
+      pEmail.classList.add('up');
+   })
+
    inputName.addEventListener('mouseout',function(){
       pName.classList.remove('up');
       if(inputName.value.length > 0 ){
@@ -47,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
    inputEmail.addEventListener('mouseout',function(){
       pEmail.classList.remove('up');
+      
       if(inputEmail.value.length > 0 ){
          pEmail.classList.add('up');
       }

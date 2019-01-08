@@ -382,6 +382,7 @@ body, html {
 .newsletter .wrap .form .append .up {
   top: 4px !important;
   font-size: 0.7em;
+  transition-duration: 0.5s;
 }
 .newsletter .wrap .form .input-checkbox {
   appearance: none;
