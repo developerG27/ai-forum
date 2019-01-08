@@ -8,10 +8,18 @@ activatorNav.addEventListener('click',function(){
 
     if(burgherNav.classList.contains('nav-start') ){
         burgherNav.classList.add('nav-end');
-        console.log("non ho")
-    }  else {
+        if(burgherNav.classList.contains('nav-start')){
+            burgherNav.classList.remove('nav-start')
+        }
+    }  else if (burgherNav.classList.contains('nav-end')){
         burgherNav.classList.add('nav-start');
-        console.log("ho")
+
+        if(burgherNav.classList.contains('nav-end')){
+            burgherNav.classList.remove('nav-end');
+        }
+    }
+    else {
+        burgherNav.classList.add('nav-start');
     }
 
 
