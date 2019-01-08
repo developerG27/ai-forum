@@ -64,12 +64,38 @@
         z-index: 1;
         transform: translateX(100%);
 
-        ul{
-            margin-left: 30px;
-        }
         
+        .tab {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
 
-      
+            input {
+                position: absolute;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            label {
+                position: relative;
+                display: block;
+                cursor: pointer;
+                line-height: 40px;
+            }
+        .tab-content {
+            max-height: 0;
+            overflow: hidden;
+            margin-left: 20px;
+            line-height: 40px;
+            -webkit-transition: max-height .35s;
+            -o-transition: max-height .35s;
+            transition: max-height .35s;
+        }
+    }
+    .tab input:checked ~ .tab-content {
+        max-height: 100vh;
+      }
+
         .item{
             line-height: 40px;
 

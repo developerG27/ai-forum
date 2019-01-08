@@ -128,8 +128,33 @@ body, html {
   z-index: 1;
   transform: translateX(100%);
 }
-.burgher-nav .nav-aside ul {
-  margin-left: 30px;
+.burgher-nav .nav-aside .tab {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.burgher-nav .nav-aside .tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.burgher-nav .nav-aside .tab label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  line-height: 40px;
+}
+.burgher-nav .nav-aside .tab .tab-content {
+  max-height: 0;
+  overflow: hidden;
+  margin-left: 20px;
+  line-height: 40px;
+  -webkit-transition: max-height 0.35s;
+  -o-transition: max-height 0.35s;
+  transition: max-height 0.35s;
+}
+.burgher-nav .nav-aside .tab input:checked ~ .tab-content {
+  max-height: 100vh;
 }
 .burgher-nav .nav-aside .item {
   line-height: 40px;
