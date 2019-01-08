@@ -126,6 +126,9 @@ body, html {
   z-index: 1;
   transform: translateX(100%);
 }
+.burgher-nav .nav-aside ul {
+  margin-left: 30px;
+}
 .burgher-nav .nav-aside .item {
   line-height: 40px;
 }
