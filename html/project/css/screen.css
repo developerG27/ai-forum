@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  max-width: 100% !important;
+  padding: 0px 10px;
+  border: 0.1px solid #f1f1f1;
+}
+.header .logo {
+  width: 100px;
+}
+.header .burgher-menu {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .burgher-menu .bar {
+  height: 5px;
+  background-color: #42dcd4;
+  transition: 0.4s;
+  border-radius: 3px;
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transition-duration: 1s;
+  -webkit-transform: rotate(0deg) translate(0px, 0px);
+}
+.header .burgher-menu .bar:nth-child(1) {
+  width: 70%;
+}
+.header .burgher-menu .bar:nth-child(2) {
+  width: 100%;
+}
+.header .burgher-menu .bar:nth-child(3) {
+  width: 50%;
+}
+
+.burgher-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.burgher-nav ul {
+  width: 90%;
+  padding: 25px;
+  background: #232349;
+  color: #d3d3db;
+  font-family: "Open Sans", sans-serif;
+}
+.burgher-nav ul .item {
+  line-height: 40px;
+}
+.burgher-nav ul .item:nth-child(1)::after, .burgher-nav ul .item:nth-child(3)::after {
+  margin-left: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+.burgher-nav ul .item:last-child {
+  color: #42dcd4;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.burgher-nav ul .secondary-item {
+  line-height: 40px;
+}
+.burgher-nav ul .secondary-item:nth-child(2) {
+  color: #42dcd4;
+}
+
+/*# sourceMappingURL=screen.css.map */
