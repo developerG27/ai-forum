@@ -369,6 +369,20 @@ body, html {
 .newsletter .wrap .form .input-email {
   border-top: 1px solid #42dcd4;
 }
+.newsletter .wrap .form .append {
+  position: relative;
+}
+.newsletter .wrap .form .append p {
+  position: absolute;
+  line-height: 20px;
+  top: 25px;
+  left: 20px;
+  color: #42dcd4;
+}
+.newsletter .wrap .form .append .up {
+  top: 4px !important;
+  font-size: 0.7em;
+}
 .newsletter .wrap .form .input-checkbox {
   appearance: none;
   -moz-appearance: none;

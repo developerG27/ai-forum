@@ -350,6 +350,25 @@
                 border-top: 1px solid $primary;
             }
 
+            .append{
+                position: relative;
+                
+                p{
+                    position: absolute;
+                    line-height: 20px;
+                    top: 25px;
+                    left: 20px;
+                    color: $primary;
+                }
+
+                .up{
+                    top: 4px !important;
+                    font-size: .7em;
+                }
+
+
+            }
+
             .input-checkbox {
                 appearance: none;
                 -moz-appearance: none;
