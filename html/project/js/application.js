@@ -6,15 +6,13 @@ let navEnd = document.querySelector('.nav-end');
 
 activatorNav.addEventListener('click',function(){
 
-    burgherNav.classList.add('nav-start');
-
-    function showMenu(){
-        for(var i = 0; i < 2; i++){
-            if(burgherNav.classList.contains('nav-start')){
-                console.log("dentro");
-            }
-        }
+    if(burgherNav.classList.contains('nav-start') ){
+        burgherNav.classList.add('nav-end');
+        console.log("non ho")
+    }  else {
+        burgherNav.classList.add('nav-start');
+        console.log("ho")
     }
-    showMenu();
+
 
 })
