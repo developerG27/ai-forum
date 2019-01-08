@@ -5,7 +5,7 @@ let burgherNav = document.querySelector('#burgher-nav');
 let navStart = document.querySelector('.nav-star');
 let navEnd = document.querySelector('.nav-end');
 
-let body = document.querySelector(".unlock");
+let body = document.getElementsByTagName("BODY");
 
 activatorNav.addEventListener('click',function(){
     
@@ -18,14 +18,16 @@ activatorNav.addEventListener('click',function(){
         }
     }  else if (burgherNav.classList.contains('nav-end')){
         burgherNav.classList.add('nav-start');
-        
 
         if(burgherNav.classList.contains('nav-end')){
             burgherNav.classList.remove('nav-end');
         }
-    }
+    } 
     else {
         burgherNav.classList.add('nav-start');
     }
+    
+
+   
 
 })
