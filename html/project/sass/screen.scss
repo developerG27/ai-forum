@@ -171,6 +171,33 @@
     img{
         max-width: 100%;
         object-fit: cover;
-        margin: 40px 0px 0px 0px;
+        margin: 40px 0px -2px 0px;
+    }
+}
+
+
+//Second section
+.second-section{
+    background-image: url(../img/second-section.png);
+    object-fit: cover;
+    width: 100%;
+    padding: 70px 0px;
+    font-family: $font-primary;
+    color: $color-white;
+
+    .wrap{
+        width: 90%;
+        margin: 0px auto;
+
+        h3{
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: 2em;
+            font-weight: bolder;
+        }
+
+        p{
+            line-height: 1.5em;
+        }
     }
 }
