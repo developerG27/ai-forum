@@ -366,4 +366,13 @@ table {
   line-height: 30px;
 }
 
+.footer {
+  background: #42dcd4;
+  padding: 50px 0px;
+}
+.footer .wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=screen.css.map */
