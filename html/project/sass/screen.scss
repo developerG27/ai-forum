@@ -144,3 +144,33 @@
         }
     }
 }
+
+
+
+//First section
+.first-section{
+    width: 90%;
+    margin: 80px auto 0px auto;
+    font-family: $font-primary;
+    
+    h3{
+        font-weight: bold;
+        color: $dark-primary;
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    p{
+        color: $color-dark;
+        line-height: 1.5em;
+        margin-bottom: 40px;        
+    }
+    
+
+
+    img{
+        max-width: 100%;
+        object-fit: cover;
+        margin: 40px 0px 0px 0px;
+    }
+}
