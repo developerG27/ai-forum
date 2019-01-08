@@ -61,6 +61,7 @@
         top: 80px;
         z-index: 1;
         transform: translateX(100%);
+        
 
       
         .item{
@@ -298,10 +299,7 @@
             .input-email{
                 border-top: 1px solid $primary;
             }
-            .input-checkbox{
 
-            }
-            
             .privacy{
                 display: flex;
                 justify-content: space-between;
