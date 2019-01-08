@@ -58,6 +58,7 @@ table {
 }
 
 body, html {
+  position: relative;
   max-width: 100vw !important;
   overflow-x: hidden !important;
 }
