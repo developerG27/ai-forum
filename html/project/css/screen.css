@@ -237,6 +237,7 @@ table {
   width: 90%;
   margin: 0px auto;
   font-family: "Open Sans", sans-serif;
+  padding: 70px 0px;
 }
 .third-section h3 {
   font-weight: bolder;
@@ -262,6 +263,54 @@ table {
 .third-section p {
   color: #444444;
   line-height: 30px;
+}
+
+.newsletter {
+  background: #e9f2f2;
+  padding: 40px 0px;
+  font-family: "Open Sans", sans-serif;
+}
+.newsletter .wrap {
+  margin: 0 auto;
+  width: 90%;
+}
+.newsletter .wrap h3 {
+  font-weight: bolder;
+  color: #232349;
+  font-size: 1.8em;
+  margin: 30px 0px;
+  text-transform: uppercase;
+}
+.newsletter .wrap p {
+  color: #444444;
+  line-height: 25px;
+}
+.newsletter .wrap .form {
+  margin: 20px 0px;
+}
+.newsletter .wrap .form .input {
+  width: 100%;
+  border: 2px solid #42dcd4;
+  padding: 20px;
+  font-size: 1.4em;
+}
+.newsletter .wrap .form .input::placeholder {
+  color: #42dcd4;
+  opacity: 1;
+  /* Firefox */
+}
+.newsletter .wrap .form .input-name {
+  border-bottom: 1px solid #42dcd4;
+}
+.newsletter .wrap .form .input-email {
+  border-top: 1px solid #42dcd4;
+}
+.newsletter .wrap .form .privacy {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=screen.css.map */

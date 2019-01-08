@@ -208,6 +208,7 @@
     width: 90%;
     margin: 0px auto;
     font-family: $font-primary;
+    padding: 70px 0px;
 
     h3{
         font-weight: bolder;
@@ -235,5 +236,59 @@
     p{
         color: $color-dark;
         line-height: 30px;
+    }
+}
+
+
+//newsletter
+.newsletter{
+    background:$background-primary;
+    padding: 40px 0px;
+    font-family: $font-primary;
+
+    .wrap{
+        margin: 0 auto;
+        width: 90%;
+        
+        h3{
+            font-weight: bolder;
+            color: $dark-primary;
+            font-size: 1.8em;
+            margin:30px 0px;
+            text-transform: uppercase;
+        }
+
+        p{
+            color: $color-dark;
+            line-height: 25px;
+        }
+
+        .form{
+            margin: 20px 0px;
+            
+            .input{
+                width: 100%;
+                border: 2px solid $primary;
+                padding: 20px;
+                font-size: 1.4em;
+
+                &::placeholder {
+                    color: $primary;
+                    opacity: 1; /* Firefox */
+                  }
+            }
+            
+            .input-name{
+                border-bottom: 1px solid $primary;
+            }
+            
+            .input-email{
+                border-top: 1px solid $primary;
+            }
+            
+            .privacy{
+                @include flexbox(row, space-between , center); //$direction, $justify,$align
+            }
+        }
     }
 }
