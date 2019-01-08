@@ -63,6 +63,10 @@ body, html {
   overflow-x: hidden !important;
 }
 
+.lock {
+  position: fixed;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -121,6 +125,7 @@ body, html {
   width: 88%;
   padding: 25px;
   background: #232349;
+  min-height: 500px;
   color: #d3d3db;
   font-family: "Open Sans", sans-serif;
   position: absolute;
@@ -138,11 +143,21 @@ body, html {
   opacity: 0;
   z-index: -1;
 }
+.burgher-nav .nav-aside .tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
 .burgher-nav .nav-aside .tab label {
   position: relative;
   display: block;
   cursor: pointer;
   line-height: 40px;
+}
+.burgher-nav .nav-aside .tab label::after {
+  margin-left: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  transform: rotate(90deg);
 }
 .burgher-nav .nav-aside .tab .tab-content {
   max-height: 0;
@@ -153,8 +168,8 @@ body, html {
   -o-transition: max-height 0.35s;
   transition: max-height 0.35s;
 }
-.burgher-nav .nav-aside .tab input:checked ~ .tab-content {
-  max-height: 100vh;
+.burgher-nav .nav-aside .tab .secondary-item :nth-child(2) {
+  color: #42dcd4;
 }
 .burgher-nav .nav-aside .item {
   line-height: 40px;
@@ -179,12 +194,12 @@ body, html {
 
 .nav-start {
   transform: translateX(0%) !important;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 .nav-end {
   transform: translate(100%) !important;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 .jumbotron {

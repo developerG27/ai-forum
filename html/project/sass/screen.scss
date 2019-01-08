@@ -57,6 +57,7 @@
         width:88%; 
         padding: 25px;
         background: $dark-primary;
+        min-height: 500px;
         color: $color-light;
         font-family: $font-primary;
         position: absolute;
@@ -74,6 +75,10 @@
                 position: absolute;
                 opacity: 0;
                 z-index: -1;
+
+                &:checked ~ .tab-content {
+                    max-height: 100vh;
+                }
             }
 
             label {
@@ -81,6 +86,14 @@
                 display: block;
                 cursor: pointer;
                 line-height: 40px;
+
+                &::after{
+                    margin-left: 5px;
+                    font-family: "Font Awesome 5 Free"; 
+                    font-weight: 900; 
+                    content: "\f107";
+                    transform: rotate(90deg);
+                }
             }
         .tab-content {
             max-height: 0;
@@ -91,10 +104,13 @@
             -o-transition: max-height .35s;
             transition: max-height .35s;
         }
+
+        .secondary-item{
+            :nth-child(2){
+                color: $primary;
+            }
+        }
     }
-    .tab input:checked ~ .tab-content {
-        max-height: 100vh;
-      }
 
         .item{
             line-height: 40px;
@@ -126,11 +142,11 @@
 
 .nav-start{
     transform: translateX(0%) !important;
-    transition-duration: 1s;
+    transition-duration: .5s;
 }
 .nav-end{
     transform: translate(100%) !important;
-    transition-duration: 1s;
+    transition-duration: .5s;
 }
 
 

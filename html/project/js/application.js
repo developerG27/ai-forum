@@ -4,8 +4,9 @@ let burgherNav = document.querySelector('#burgher-nav');
 
 let navStart = document.querySelector('.nav-star');
 let navEnd = document.querySelector('.nav-end');
+let unlock = document.querySelector('.lock');
 
-let body = document.getElementsByTagName("BODY");
+let body = document.body;
 
 activatorNav.addEventListener('click',function(){
     
@@ -26,7 +27,9 @@ activatorNav.addEventListener('click',function(){
     else {
         burgherNav.classList.add('nav-start');
     }
-    
+
+    body.classList.toggle('lock');
+
 
    
 
