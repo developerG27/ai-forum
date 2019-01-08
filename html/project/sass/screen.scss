@@ -285,9 +285,18 @@
             .input-email{
                 border-top: 1px solid $primary;
             }
+            .input-checkbox{
+
+                -webkit-box-shadow: 0px 0px 0px 1px $dark-primary;
+                -moz-box-shadow: 0px 0px 0px 1px $dark-primary;
+                box-shadow: 0px 0px 0px 1px $dark-primary;
+            }
             
             .privacy{
-                @include flexbox(row, space-between , center); //$direction, $justify,$align
+                display: flex;
+                justify-content: space-between;
+            }
+            .privacy-text{
             }
         }
     }

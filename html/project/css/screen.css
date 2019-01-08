@@ -305,12 +305,14 @@ table {
 .newsletter .wrap .form .input-email {
   border-top: 1px solid #42dcd4;
 }
+.newsletter .wrap .form .input-checkbox {
+  -webkit-box-shadow: 0px 0px 0px 1px #232349;
+  -moz-box-shadow: 0px 0px 0px 1px #232349;
+  box-shadow: 0px 0px 0px 1px #232349;
+}
 .newsletter .wrap .form .privacy {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 
 /*# sourceMappingURL=screen.css.map */
