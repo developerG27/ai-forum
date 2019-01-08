@@ -53,6 +53,12 @@
         background: $dark-primary;
         color: $font-light;
         font-family: $font-primary;
+        opacity: 0;
+
+        ul{
+            opacity: 0;
+        }
+
         
 
         .item{
@@ -83,4 +89,12 @@
     }
 }
 
+.transition{
+    opacity: 1 !important;
+    transition-duration: .8s !important;
 
+    ul{
+        opacity: 1 !important;
+    transition-duration: .8s !important;
+    }
+}

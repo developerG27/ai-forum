@@ -113,6 +113,10 @@ table {
   background: #232349;
   color: #d3d3db;
   font-family: "Open Sans", sans-serif;
+  opacity: 0;
+}
+.burgher-nav ul ul {
+  opacity: 0;
 }
 .burgher-nav ul .item {
   line-height: 40px;
@@ -133,6 +137,15 @@ table {
 }
 .burgher-nav ul .secondary-item:nth-child(2) {
   color: #42dcd4;
+}
+
+.transition {
+  opacity: 1 !important;
+  transition-duration: 0.8s !important;
+}
+.transition ul {
+  opacity: 1 !important;
+  transition-duration: 0.8s !important;
 }
 
 /*# sourceMappingURL=screen.css.map */
