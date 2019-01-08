@@ -197,7 +197,7 @@ table {
 .first-section h3 {
   font-weight: bold;
   color: #232349;
-  font-size: 2em;
+  font-size: 1.8;
   margin-bottom: 30px;
 }
 .first-section p {
@@ -231,6 +231,37 @@ table {
 }
 .second-section .wrap p {
   line-height: 1.5em;
+}
+
+.third-section {
+  width: 90%;
+  margin: 0px auto;
+  font-family: "Open Sans", sans-serif;
+}
+.third-section h3 {
+  font-weight: bolder;
+  color: #232349;
+  font-size: 1.8em;
+  margin: 30px 0px;
+  text-transform: uppercase;
+}
+.third-section .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #42dcd4;
+  font-size: 1.8em;
+  font-weight: bolder;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 40px 0px 20px 0px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.third-section p {
+  color: #444444;
+  line-height: 30px;
 }
 
 /*# sourceMappingURL=screen.css.map */

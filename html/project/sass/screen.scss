@@ -156,7 +156,7 @@
     h3{
         font-weight: bold;
         color: $dark-primary;
-        font-size: 2em;
+        font-size: 1.8;
         margin-bottom: 30px;
     }
 
@@ -199,5 +199,41 @@
         p{
             line-height: 1.5em;
         }
+    }
+}
+
+
+//third-section
+.third-section{
+    width: 90%;
+    margin: 0px auto;
+    font-family: $font-primary;
+
+    h3{
+        font-weight: bolder;
+        color: $dark-primary;
+        font-size: 1.8em;
+        margin:30px 0px;
+        text-transform: uppercase;
+    }
+
+    .number{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-white;
+        background: $primary;
+        font-size: 1.8em;
+        font-weight: bolder;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin: 40px 0px 20px 0px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    p{
+        color: $color-dark;
+        line-height: 30px;
     }
 }
