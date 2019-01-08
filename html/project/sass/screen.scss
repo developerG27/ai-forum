@@ -51,15 +51,21 @@
     width: 100%;
     @include flexbox(row, flex-end, center);
 
-    ul{
+    .nav-aside{
         width:90%; 
         padding: 25px;
         background: $dark-primary;
         color: $color-light;
         font-family: $font-primary;
+        position: absolute;
+        top: 80px;
+        z-index: 1;
+        transform: translateX(100%);
+
+        
+        
 
         //momentaneo
-        display: none;
 
         .item{
             line-height: 40px;
@@ -89,6 +95,20 @@
     }
 }
 
+@keyframes nav-transition{
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    50%  {top: 100px;}
+    75%  {top: 200px;}
+    100% {top: 0px;}
+}
+.transition{
+
+    transform: translateX(0%) !important;
+    transition-duration: 1s;
+}
+
+
 
 
 //Jumbotron
@@ -102,6 +122,7 @@
     color: $color-white;
     font-family: $font-secondary;
     position: relative;
+    overflow-x:hidden !important;
     
     .wrap{
         width: 90%;
@@ -133,7 +154,8 @@
         span{
             text-transform: uppercase;
             background: $primary;
-            padding: 40px 40px;
+            padding: 30px 20px;
+            font-size: 1.5em;
 
             &::after{
                 margin-left: 5px;
@@ -369,9 +391,23 @@
 .footer{
     background: $primary;
     padding: 50px 0px;
+    font-family: $font-primary;
 
     .wrap{
         width: 90%;
         margin: 0 auto;
+        color: $dark-primary;
+
+        .text{
+            margin: 30px 0px;
+            
+            font-weight: bolder;
+            line-height: 25px;
+            font-size: 1.1em;
+
+            span{
+                text-decoration: underline;
+            }
+        }
     }
 }
