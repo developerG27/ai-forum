@@ -711,7 +711,7 @@
         width: 100%;
         background: $light-primary;
         font-family: $font-secondary;
-        margin-bottom: 300px;
+        margin-bottom: 400px;
         padding: 50px 0px;
         
 
@@ -746,8 +746,6 @@
                         border-radius: 3px 0px 0px 3px;
                     }
                 }
-
-
             }
 
             .box{
@@ -793,5 +791,77 @@
             }
         }
     }
+
+    
+    //Partner
+    .partner{
+        width: 90%;
+        margin: auto;
+        font-family: $font-secondary;
+        padding: 0px 0px 60px 0px;
+
+        .partner-title{
+            @include flexbox(row, flex-start, center);
+            height: 100px;
+
+            .arrow{
+                height: auto;
+                @include flexbox (row, flex-start, center );
+                
+                .line{
+                    transform: scale(.7);
+                    margin-right: -8px;
+                    .first, .second{
+                        width: 20px;
+                        height: 4px;
+                        background: $primary; 
+                    }
+    
+                    .first{
+                        transform: rotate(47deg);
+                        border-radius: 3px 0px 0px 3px; 
+                    }
+                    
+                    .second{
+                        transform: rotate(-45deg);
+                        margin-top: 7.5px;
+                        border-radius: 3px 0px 0px 3px;
+                    }
+                }
+            }
+
+            h3{
+                margin-left: 20px;
+                font-weight: bolder;
+                color: $dark-primary;
+                font-size: 1.6em;
+
+                text-transform: uppercase;
+            }
+        }
+        .box-logo{
+            img{
+                width: 180px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    
+    //Newsletter
+    .newsletter{
+        .box-input{
+            @include flexbox(row,flex-start,baseline);  
+
+            .append{
+                width: 50%;
+            }
+            
+            .input{
+                border: 2px solid $primary !important;
+            }
+        }
+    }
+    
 
 }
