@@ -720,7 +720,7 @@ body, html {
     margin-top: -90px;
   }
   .second-section .wrap .vertical-arrow .line {
-    margin-right: 20px;
+    margin-right: 15px;
     animation-name: vertical-arrow-animated;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
