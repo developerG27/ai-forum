@@ -272,6 +272,9 @@ body, html {
   line-height: 1.5em;
   margin-bottom: 40px;
 }
+.first-section .scopri {
+  display: none;
+}
 .first-section img {
   max-width: 100%;
   object-fit: cover;
@@ -598,6 +601,30 @@ body, html {
   .jumbotron .sponsor {
     text-align: left;
     left: 5%;
+  }
+
+  .first-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .first-section .box {
+    width: 50%;
+  }
+  .first-section img {
+    margin: 0px;
+    max-width: 400px;
+    object-fit: contain;
+  }
+  .first-section .scopri {
+    display: inline-block !important;
+    border: 3px solid #42dcd4;
+    border-radius: 5px;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #42dcd4;
+    font-weight: bolder;
   }
 }
 

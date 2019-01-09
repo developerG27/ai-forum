@@ -233,6 +233,9 @@
         line-height: 1.5em;
         margin-bottom: 40px;        
     }
+    .scopri{
+        display: none;
+    }
     
 
 
@@ -640,6 +643,35 @@
             left: 5%;
         }
         
+    }
+
+
+    //First section
+    .first-section{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        .box{
+            width: 50%
+        }
+
+        img{
+            margin: 0px;
+            max-width: 400px;
+            object-fit: contain;
+        }
+
+        .scopri{
+            display: inline-block !important;
+            border: 3px solid $primary;
+            border-radius: 5px;
+            padding: 20px;
+            text-transform: uppercase;
+            color: $primary;
+            font-weight: bolder;
+        }
     }
 
 }
