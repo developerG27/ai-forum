@@ -712,6 +712,7 @@
         background: $light-primary;
         font-family: $font-secondary;
         margin-bottom: 300px;
+        padding: 50px 0px;
         
 
         .wrap{
@@ -722,8 +723,8 @@
             
             .arrow{
                 width: 30%;
-                height: 200px; 
-                background: $dark-primary;
+                height: 100px; 
+                background: $primary;
             }
 
             .box{
@@ -739,13 +740,15 @@
                     font-weight: bolder;
                     color: $dark-primary;
                     font-size: 1.8em;
-                    margin:30px 0px;
+                    margin: 0px;
+                    line-height: 1.8em;
                     text-transform: uppercase;
                 }
                 
                 address{
                     color: $primary;
                     text-transform: uppercase;
+                    margin: 0px 0px 10px 0px;
                 }
                 
                 p{
@@ -757,7 +760,7 @@
                 position: absolute;
                 width: 100%;
                 text-align: center;
-                top: 199px;
+                top: 250px;
                 @include flexbox(row, space-between, baseline);
 
                 img{
