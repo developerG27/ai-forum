@@ -658,7 +658,7 @@ body, html {
   .location {
     display: block !important;
     width: 100%;
-    background: #42dcd4;
+    background: #e9f2f2;
     font-family: "Poppins", sans-serif;
     margin-bottom: 300px;
   }
@@ -683,10 +683,10 @@ body, html {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
   }
   .location .wrap .box img {
-    width: 100px;
+    width: 50px;
     object-fit: cover;
   }
   .location .wrap .box h3 {
@@ -707,10 +707,15 @@ body, html {
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 238px;
+    top: 199px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
   }
   .location .wrap .box-img img {
-    width: 33.1%;
+    width: 33.3%;
     object-fit: contain;
   }
 }

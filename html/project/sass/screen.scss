@@ -709,7 +709,7 @@
     .location{
         display: block !important;
         width: 100%;
-        background: $primary;
+        background: $light-primary;
         font-family: $font-secondary;
         margin-bottom: 300px;
         
@@ -728,10 +728,10 @@
 
             .box{
                 width: 60%;
-                @include flexbox(column, flex-start, center);
+                @include flexbox(column, flex-start, flex-start);
 
                 img{
-                    width: 100px;
+                    width: 50px;
                     object-fit: cover;
                 }
                 
@@ -757,10 +757,11 @@
                 position: absolute;
                 width: 100%;
                 text-align: center;
-                top: 238px;
+                top: 199px;
+                @include flexbox(row, space-between, baseline);
 
                 img{
-                    width: 33.1%;
+                    width: 33.3%;
                     object-fit: contain;
                 }
             }
