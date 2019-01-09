@@ -675,8 +675,21 @@ body, html {
   }
   .location .wrap .arrow {
     width: 30%;
-    height: 100px;
+    height: auto;
+  }
+  .location .wrap .arrow .line .first, .location .wrap .arrow .line .second {
+    width: 20px;
+    height: 4px;
     background: #42dcd4;
+  }
+  .location .wrap .arrow .line .first {
+    transform: rotate(45deg);
+    border-radius: 10px 0px 0px 10px;
+  }
+  .location .wrap .arrow .line .second {
+    transform: rotate(-45deg);
+    margin-top: 8px;
+    border-radius: 10px 0px 0px 10px;
   }
   .location .wrap .box {
     width: 60%;

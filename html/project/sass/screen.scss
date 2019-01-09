@@ -723,8 +723,29 @@
             
             .arrow{
                 width: 30%;
-                height: 100px; 
-                background: $primary;
+                height: auto;
+                
+                .line{
+                    .first, .second{
+                        width: 20px;
+                        height: 4px;
+                        background: $primary;
+                        
+                    }
+
+                    .first{
+                        transform: rotate(45deg);
+                        border-radius: 10px 0px 0px 10px;
+                    }
+                    
+                    .second{
+                        transform: rotate(-45deg);
+                        margin-top: 8px;
+                        border-radius: 10px 0px 0px 10px;
+                    }
+                }
+
+
             }
 
             .box{
