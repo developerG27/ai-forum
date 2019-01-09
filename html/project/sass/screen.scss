@@ -312,6 +312,12 @@
 }
 
 
+//location
+.location{
+    display: none;
+}
+
+
 //newsletter
 .newsletter{
     background:$background-primary;
@@ -542,6 +548,10 @@
         max-width: 300px;
     }
 
+    .second-section{
+        background-image: url(../img/background-xl.png) !important;
+    }
+
     //Third Section
     .third-section{
         @include flexbox(row, space-between , baseline);
@@ -672,6 +682,32 @@
             color: $primary;
             font-weight: bolder;
         }
+    }
+
+    
+
+    //Second section
+    .second-section{
+        background-image: url(../img/background-xl.png) !important;
+    }
+
+    //Third Section 
+    .third-section{
+        @include flexbox(row, space-between , baseline);
+        h3{
+            width: 100%;
+        }
+        .box{
+            width: 30%;
+            min-height: 330px;
+            margin-bottom: 0px;
+        }
+    }
+
+
+    //location
+    .location{
+        display: block !important;
     }
 
 }

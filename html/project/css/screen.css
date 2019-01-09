@@ -336,6 +336,10 @@ body, html {
   line-height: 30px;
 }
 
+.location {
+  display: none;
+}
+
 .newsletter {
   background: #e9f2f2;
   padding: 40px 0px;
@@ -521,6 +525,10 @@ body, html {
     max-width: 300px;
   }
 
+  .second-section {
+    background-image: url(../img/background-xl.png) !important;
+  }
+
   .third-section {
     display: flex;
     flex-direction: row;
@@ -625,6 +633,30 @@ body, html {
     text-transform: uppercase;
     color: #42dcd4;
     font-weight: bolder;
+  }
+
+  .second-section {
+    background-image: url(../img/background-xl.png) !important;
+  }
+
+  .third-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .third-section h3 {
+    width: 100%;
+  }
+  .third-section .box {
+    width: 30%;
+    min-height: 330px;
+    margin-bottom: 0px;
+  }
+
+  .location {
+    display: block !important;
   }
 }
 
