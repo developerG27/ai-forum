@@ -84,6 +84,9 @@ body, html {
 .header .logo {
   width: 100px;
 }
+.header .menu-laptop {
+  display: none;
+}
 .header .burgher-menu {
   width: 30px;
   height: 30px;
@@ -529,6 +532,48 @@ body, html {
     width: 45%;
     min-height: 330px;
     margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1400px) {
+  .burgher-menu {
+    display: none !important;
+  }
+
+  .menu-laptop {
+    display: block !important;
+    font-family: "Open Sans", sans-serif;
+    color: #232349;
+  }
+  .menu-laptop .primary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .menu-laptop .primary .item {
+    margin-left: 20px;
+  }
+  .menu-laptop .primary .item:last-child {
+    text-transform: uppercase;
+    color: #42dcd4;
+    font-weight: bolder;
+  }
+  .menu-laptop .primary .expand {
+    position: relative;
+  }
+  .menu-laptop .primary .secondary {
+    position: absolute;
+    top: 48px;
+    left: -20px;
+    background: #232349;
+    color: #fff;
+    z-index: 2;
+    padding: 40px;
+  }
+  .menu-laptop .primary .secondary .secondary-item {
+    line-height: 30px;
   }
 }
 

@@ -18,6 +18,10 @@
         width: 100px;
     }
 
+    .menu-laptop{
+        display: none;
+    }
+
 
     .burgher-menu{
         width:30px;
@@ -553,5 +557,51 @@
         
     }
 
-    
+}
+
+
+//Laptop
+@media screen and (min-width: 960px) and (max-width: 1400px){
+    .burgher-menu{
+        display: none !important;
+    }
+    .menu-laptop{
+        display: block !important;
+        font-family: $font-primary;
+        color: $dark-primary;
+
+        .primary{
+            @include flexbox(row, space-between, center);
+            position: relative;
+
+            .item{
+                margin-left: 20px;
+
+
+                &:last-child{
+                    text-transform: uppercase;
+                    color: $primary;
+                    font-weight: bolder;
+                }
+
+            }
+            .expand{
+                position: relative;
+            }
+            .secondary{
+                position: absolute;
+                top: 48px;
+                left: -20px;
+                background: $dark-primary;
+                color: $color-white;
+                z-index: 2;
+                padding: 40px;
+
+                .secondary-item{
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+
 }
