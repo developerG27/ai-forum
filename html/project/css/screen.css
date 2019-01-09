@@ -544,7 +544,7 @@ body, html {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 560px) and (max-width: 768px) {
+@media screen and (min-width: 560px) and (max-width: 959px) {
   .nav-aside {
     max-width: 300px;
   }

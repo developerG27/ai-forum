@@ -579,7 +579,7 @@
 
 
 //Tablet
-@media screen and (min-width: 560px) and (max-width: 768px) {
+@media screen and (min-width: 560px) and (max-width: 959px) {
 
    //Aside Navbar
    .nav-aside {
@@ -1167,15 +1167,15 @@
  }
 
 
- @keyframes arrow-animated {
-   0% {opacity: .4; transform: translateX(0px) scale(2.4); }
-   25%{opacity: 1; transform:translateX(20px) scale(3);}
-   50%{opacity: 1; transform:translateX(20px) scale(3);}
-   100% {opacity: .4; transform: translateX(0px) scale(2.4);}
- }
+@keyframes arrow-animated {
+  0% {opacity: .4; transform: translateX(0px) scale(2.4); }
+  25%{opacity: 1; transform:translateX(20px) scale(3);}
+  50%{opacity: 1; transform:translateX(20px) scale(3);}
+  100% {opacity: .4; transform: translateX(0px) scale(2.4);}
+}
 
- @keyframes vertical-arrow-animated {
-   0% {transform: translateX(0) scale(1.8);}
-   50%{transform: translateX(50px) scale(1.8) ;}
-   100% {transform: translateX(0px) scale(1.8);}
- }
+@keyframes vertical-arrow-animated {
+  0% {transform: translateX(0) scale(1.8);}
+  50%{transform: translateX(50px) scale(1.8) ;}
+  100% {transform: translateX(0px) scale(1.8);}
+}
