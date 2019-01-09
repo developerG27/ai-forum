@@ -261,6 +261,9 @@ body, html {
   margin: 80px auto 0px auto;
   font-family: "Open Sans", sans-serif;
 }
+.first-section .box {
+  margin-top: -100px !important;
+}
 .first-section h3 {
   font-weight: bold;
   color: #232349;
@@ -398,8 +401,10 @@ body, html {
   color: #42dcd4;
 }
 .newsletter .wrap .form .append .up {
-  top: 4px !important;
+  top: 8px !important;
   font-size: 0.7em;
+  color: #232349;
+  font-weight: bolder;
   transition-duration: 0.5s;
 }
 .newsletter .wrap .form .input-checkbox {
@@ -636,23 +641,64 @@ body, html {
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
+    padding: 60px 0px 0px;
   }
   .first-section .box {
     width: 50%;
+  }
+  .first-section .box .box-scopri {
+    border: 2px solid #42dcd4;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    margin-top: 40px;
+    width: 230px;
+  }
+  .first-section .box .box-scopri .scopri {
+    text-transform: uppercase;
+    color: #42dcd4;
+    display: block !important;
+    font-weight: bolder;
+  }
+  .first-section .box .box-scopri .arrow {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .first-section .box .box-scopri .arrow .line {
+    transform: scale(0.5);
+    margin-right: -11px;
+  }
+  .first-section .box .box-scopri .arrow .line:last-child {
+    margin-right: 0px;
+  }
+  .first-section .box .box-scopri .arrow .line .first,
+.first-section .box .box-scopri .arrow .line .second {
+    width: 20px;
+    height: 4px;
+    background: #42dcd4;
+  }
+  .first-section .box .box-scopri .arrow .line .first {
+    transform: rotate(47deg);
+    border-radius: 3px 0px 0px 3px;
+  }
+  .first-section .box .box-scopri .arrow .line .second {
+    transform: rotate(-45deg);
+    margin-top: 7.5px;
+    border-radius: 3px 0px 0px 3px;
   }
   .first-section img {
     margin: 0px;
     max-width: 400px;
     object-fit: contain;
-  }
-  .first-section .scopri {
-    display: inline-block !important;
-    border: 3px solid #42dcd4;
-    border-radius: 5px;
-    padding: 20px;
-    text-transform: uppercase;
-    color: #42dcd4;
-    font-weight: bolder;
   }
 
   .second-section {

@@ -228,6 +228,10 @@
    margin: 80px auto 0px auto;
    font-family: $font-primary;
 
+   .box{
+      margin-top: -100px !important;
+   }
+
    h3 {
       font-weight: bold;
       color: $dark-primary;
@@ -396,9 +400,12 @@
             }
 
             .up {
-               top: 4px !important;
+               top: 8px !important;
                font-size: .7em;
+               color: $dark-primary;
+               font-weight: bolder;
                transition-duration: .5s;
+
             }
          }
 
@@ -694,9 +701,62 @@
       justify-content: space-between;
       flex-direction: row-reverse;
       align-items: center;
+      padding: 60px 0px 0px;
 
       .box {
-         width: 50%
+         width: 50%;
+
+
+         .box-scopri {
+            border: 2px solid $primary;
+            border-radius: 3px;
+            @include flexbox(row, space-between, center);
+            position: relative;
+            padding: 20px;
+            margin-top: 40px;
+            width: 230px;
+   
+            .scopri {
+               text-transform: uppercase;
+               color: $primary;
+               display: block !important; 
+               font-weight: bolder;
+            }
+   
+            .arrow {
+               height: auto;
+               @include flexbox (row, flex-start, center);
+   
+               .line {
+                  transform: scale(.5);
+                  margin-right: -11px;
+   
+                  &:last-child {
+                     margin-right: 0px;
+                  }
+   
+                  .first,
+                  .second {
+                     width: 20px;
+                     height: 4px;
+                     background: $primary;
+                  }
+   
+                  .first {
+                     transform: rotate(47deg);
+                     border-radius: 3px 0px 0px 3px;
+                  }
+   
+                  .second {
+                     transform: rotate(-45deg);
+                     margin-top: 7.5px;
+                     border-radius: 3px 0px 0px 3px;
+                  }
+               }
+            }
+   
+   
+         }
       }
 
       img {
@@ -705,15 +765,6 @@
          object-fit: contain;
       }
 
-      .scopri {
-         display: inline-block !important;
-         border: 3px solid $primary;
-         border-radius: 5px;
-         padding: 20px;
-         text-transform: uppercase;
-         color: $primary;
-         font-weight: bolder;
-      }
    }
 
 
