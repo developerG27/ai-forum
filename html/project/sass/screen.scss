@@ -850,6 +850,19 @@
     
     //Newsletter
     .newsletter{
+        background: $color-white;
+        position: relative;
+        left: 5%;
+        margin-bottom: 450px;
+
+        .wrap{
+            background: $light-primary;
+            padding: 50px;
+            width: 90%;
+            position: absolute;
+            clip-path: inset(0 20% 0% 0%);
+            overflow: visible;
+        }
         .box-input{
             @include flexbox(row,flex-start,center);  
 
