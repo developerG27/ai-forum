@@ -537,6 +537,15 @@
         color: $dark-primary;
         @include flexbox(row, space-between, flex-start);
 
+        .box-img-footer{
+            width: 20%;
+        }
+        
+        .box-text-footer{
+            width: 55%;
+            text-align: right;
+        }
+
         .text{
             margin: 30px 0px;
             

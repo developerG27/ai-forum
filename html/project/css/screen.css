@@ -522,6 +522,13 @@ body, html {
   justify-content: space-between;
   align-items: flex-start;
 }
+.footer .wrap .box-img-footer {
+  width: 20%;
+}
+.footer .wrap .box-text-footer {
+  width: 55%;
+  text-align: right;
+}
 .footer .wrap .text {
   margin: 30px 0px;
   font-weight: bolder;
