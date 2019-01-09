@@ -415,18 +415,45 @@
                 }
             }
 
-            .input-submit{
+            .subscribe{
                 width: 100%;
-                border: 0px;
-                text-transform: uppercase;
-                color: $color-white;
-                background: $dark-primary;
-                font-size: 2em;
-                font-weight: bolder;
-                padding: 20px;
-                margin-top: 20px;
-                text-align: left;
+                height: auto;
+                position: relative;
+
+                .input-submit{
+                    width: 100%;
+                    border: 0px;
+                    text-transform: uppercase;
+                    color: $color-white;
+                    background: $dark-primary;
+                    font-size: 1.8em;
+                    font-weight: bolder;
+                    padding: 35px 20px;
+                    margin-top: 20px;
+                    position: relative !important;
+                    text-align:left;
+                }
+
+                .fa-angle-double-right{
+                    position: absolute;
+                    top: 55px;
+                    right: 60px;
+                    color: $color-white;
+                    font-size: 30px;
+
+                    &:nth-child(2){
+                        right: 38px;
+                    }
+
+                    &:nth-child(3){
+                        right: 26px;
+                    }
+                }
             }
+
+            
+
+            
         }
     }
 }

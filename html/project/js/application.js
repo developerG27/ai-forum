@@ -52,12 +52,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
    inputEmail.addEventListener('mouseout',function(){
       pEmail.classList.remove('up');
-      
+
       if(inputEmail.value.length > 0 ){
          pEmail.classList.add('up');
       }
    })
-
-   
 
 })

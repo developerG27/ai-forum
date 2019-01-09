@@ -423,17 +423,36 @@ body, html {
   font-size: 0.7em;
   line-height: 20px;
 }
-.newsletter .wrap .form .input-submit {
+.newsletter .wrap .form .subscribe {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.newsletter .wrap .form .subscribe .input-submit {
   width: 100%;
   border: 0px;
   text-transform: uppercase;
   color: #fff;
   background: #232349;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bolder;
-  padding: 20px;
+  padding: 35px 20px;
   margin-top: 20px;
+  position: relative !important;
   text-align: left;
+}
+.newsletter .wrap .form .subscribe .fa-angle-double-right {
+  position: absolute;
+  top: 55px;
+  right: 60px;
+  color: #fff;
+  font-size: 30px;
+}
+.newsletter .wrap .form .subscribe .fa-angle-double-right:nth-child(2) {
+  right: 38px;
+}
+.newsletter .wrap .form .subscribe .fa-angle-double-right:nth-child(3) {
+  right: 26px;
 }
 
 .contacts {
