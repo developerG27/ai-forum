@@ -666,11 +666,13 @@ body, html {
     justify-content: space-between;
     align-items: flex-start;
   }
+  .second-section .wrap .box-arrow {
+    width: 10%;
+  }
   .second-section .wrap .vertical-arrow {
-    width: 20%;
     display: flex;
     transform: rotate(90deg);
-    margin-top: -30px;
+    margin-top: -90px;
   }
   .second-section .wrap .vertical-arrow .line {
     transform: scale(3);
