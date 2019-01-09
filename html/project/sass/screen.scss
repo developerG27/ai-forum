@@ -723,16 +723,58 @@
       background-image: url(../img/background-xl.png) !important;
       background-size: cover;
 
+      .wrap {
+         @include flexbox(row, space-between, flex-start);
+
+         .vertical-arrow {
+            width: 20%;
+            display: flex;
+            transform: rotate(90deg);
+            margin-top: -30px;
+
+            .line {
+               transform: scale(3);
+               margin-right: 38px;
+
+               &:last-child {
+                  margin-right: 0px;
+               }  
+
+               .first,
+               .second {
+                  width: 20px;
+                  height: 4px;
+                  background: $primary;
+               }
+
+               .first {
+                  transform: rotate(47deg);
+                  border-radius: 0px
+               }
+
+               .second {
+                  transform: rotate(-45deg);
+                  margin-top: 7.5px;
+                  border-radius: 0px;
+               }
+            }
+         }
+
+         .box-call-to-action {
+            width: 80%;
+         }
+      }
+
       .box-scopri {
          border: 2px solid $color-white;
          border-radius: 3px;
-         @include flexbox(row,space-between, center);
+         @include flexbox(row, space-between, center);
          position: relative;
          padding: 20px;
          margin-top: 40px;
          width: 220px;
 
-         .scopri{
+         .scopri {
             text-transform: uppercase;
          }
 
@@ -744,7 +786,7 @@
                transform: scale(.5);
                margin-right: -8px;
 
-               &:last-child{
+               &:last-child {
                   margin-right: 0px;
                }
 

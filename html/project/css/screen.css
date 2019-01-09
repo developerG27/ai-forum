@@ -659,6 +659,44 @@ body, html {
     background-image: url(../img/background-xl.png) !important;
     background-size: cover;
   }
+  .second-section .wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .second-section .wrap .vertical-arrow {
+    width: 20%;
+    display: flex;
+    transform: rotate(90deg);
+    margin-top: -30px;
+  }
+  .second-section .wrap .vertical-arrow .line {
+    transform: scale(3);
+    margin-right: 38px;
+  }
+  .second-section .wrap .vertical-arrow .line:last-child {
+    margin-right: 0px;
+  }
+  .second-section .wrap .vertical-arrow .line .first,
+.second-section .wrap .vertical-arrow .line .second {
+    width: 20px;
+    height: 4px;
+    background: #42dcd4;
+  }
+  .second-section .wrap .vertical-arrow .line .first {
+    transform: rotate(47deg);
+    border-radius: 0px;
+  }
+  .second-section .wrap .vertical-arrow .line .second {
+    transform: rotate(-45deg);
+    margin-top: 7.5px;
+    border-radius: 0px;
+  }
+  .second-section .wrap .box-call-to-action {
+    width: 80%;
+  }
   .second-section .box-scopri {
     border: 2px solid #fff;
     border-radius: 3px;
