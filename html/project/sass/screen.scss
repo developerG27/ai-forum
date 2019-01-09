@@ -856,25 +856,47 @@
         margin-bottom: 450px;
 
         .wrap{
-            background: linear-gradient(to right,  $light-primary 90%,  $color-white 10%);
+            background: linear-gradient(to right,  $light-primary 80%,  $color-white 20%);
             padding:50px;
             width: 90%;
             position: absolute;
             overflow: visible;
+
+            p{
+                max-width: 80%;
+            }
         }
         .box-input{
-            @include flexbox(row,flex-start,center);  
+            @include flexbox(row,space-between,center);
+
+
+            .input-name-email{
+                display: flex;
+                width: 65%;
+            }
 
             .append{
-                width: 33%;
+                width: 50%;
+
+                p{
+                    top: 35px !important;
+                }
             }
             
             .input{
                 border: 2px solid $primary !important;
+                padding: 30px !important;
+            }
+            .input-name{
+                border-right: 1px solid $primary !important;
+            }
+            .input-email{
+                border-left: 1px solid $primary !important;
             }
 
             .subscribe-laptop{
                 width: 30% !important;
+                position: relative;
 
                 .input-submit{
                     width: 100%;
@@ -884,11 +906,44 @@
                     background: $dark-primary;
                     font-size: 1.8em;
                     font-weight: bolder;
-                    padding: 18px 20px;
+                    padding: 30px 20px;
                     position: relative !important;
                     text-align:left;
                 }
+
+                .arrow{
+                    position: absolute;
+                    right: 30px;
+                    top: 25px;
+                    height: auto;
+                    @include flexbox (row, flex-start, center );
+                    
+                    .line{
+                        transform: scale(.8);
+                        margin-right: -8px;
+                        .first, .second{
+                            width: 20px;
+                            height: 4px;
+                            background: $color-white; 
+                        }
+    
+                        .first{
+                            transform: rotate(47deg);
+                            border-radius: 3px 0px 0px 3px;
+                        }
+                        
+                        .second{
+                            transform: rotate(-45deg);
+                            margin-top: 7.5px;
+                            border-radius: 3px 0px 0px 3px;
+                        }
+                    }
+                }
             }
+        }
+
+        .privacy{
+            max-width: 80%;
         }
     }
 

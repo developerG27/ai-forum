@@ -803,27 +803,45 @@ body, html {
     margin-bottom: 450px;
   }
   .newsletter .wrap {
-    background: linear-gradient(to right, #e9f2f2 90%, #fff 10%);
+    background: linear-gradient(to right, #e9f2f2 80%, #fff 20%);
     padding: 50px;
     width: 90%;
     position: absolute;
     overflow: visible;
   }
+  .newsletter .wrap p {
+    max-width: 80%;
+  }
   .newsletter .box-input {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
   }
+  .newsletter .box-input .input-name-email {
+    display: flex;
+    width: 65%;
+  }
   .newsletter .box-input .append {
-    width: 33%;
+    width: 50%;
+  }
+  .newsletter .box-input .append p {
+    top: 35px !important;
   }
   .newsletter .box-input .input {
     border: 2px solid #42dcd4 !important;
+    padding: 30px !important;
+  }
+  .newsletter .box-input .input-name {
+    border-right: 1px solid #42dcd4 !important;
+  }
+  .newsletter .box-input .input-email {
+    border-left: 1px solid #42dcd4 !important;
   }
   .newsletter .box-input .subscribe-laptop {
     width: 30% !important;
+    position: relative;
   }
   .newsletter .box-input .subscribe-laptop .input-submit {
     width: 100%;
@@ -833,9 +851,41 @@ body, html {
     background: #232349;
     font-size: 1.8em;
     font-weight: bolder;
-    padding: 18px 20px;
+    padding: 30px 20px;
     position: relative !important;
     text-align: left;
+  }
+  .newsletter .box-input .subscribe-laptop .arrow {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .newsletter .box-input .subscribe-laptop .arrow .line {
+    transform: scale(0.8);
+    margin-right: -8px;
+  }
+  .newsletter .box-input .subscribe-laptop .arrow .line .first, .newsletter .box-input .subscribe-laptop .arrow .line .second {
+    width: 20px;
+    height: 4px;
+    background: #fff;
+  }
+  .newsletter .box-input .subscribe-laptop .arrow .line .first {
+    transform: rotate(47deg);
+    border-radius: 3px 0px 0px 3px;
+  }
+  .newsletter .box-input .subscribe-laptop .arrow .line .second {
+    transform: rotate(-45deg);
+    margin-top: 7.5px;
+    border-radius: 3px 0px 0px 3px;
+  }
+  .newsletter .privacy {
+    max-width: 80%;
   }
 
   .subscribe {
