@@ -569,7 +569,7 @@ body, html {
     margin-bottom: 0px;
   }
 }
-@media screen and (min-width: 960px) and (max-width: 1400px) {
+@media screen and (min-width: 960px) {
   .burgher-menu {
     display: none !important;
   }
@@ -720,8 +720,11 @@ body, html {
     margin-top: -90px;
   }
   .second-section .wrap .vertical-arrow .line {
-    transform: scale(3);
-    margin-right: 38px;
+    margin-right: 20px;
+    animation-name: vertical-arrow-animated;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
   .second-section .wrap .vertical-arrow .line:last-child {
     margin-right: 0px;
@@ -837,6 +840,10 @@ body, html {
   .location .wrap .arrow .line {
     transform: scale(3);
     margin-right: 30px;
+    animation-name: arrow-animated;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
   .location .wrap .arrow .line .first,
 .location .wrap .arrow .line .second {
@@ -1058,6 +1065,36 @@ body, html {
 
 canvas.particles-js-canvas-el {
   position: absolute;
+}
+
+@keyframes arrow-animated {
+  0% {
+    opacity: 0.4;
+    transform: translateX(0px) scale(2.4);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(20px) scale(3);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(20px) scale(3);
+  }
+  100% {
+    opacity: 0.4;
+    transform: translateX(0px) scale(2.4);
+  }
+}
+@keyframes vertical-arrow-animated {
+  0% {
+    transform: translateX(0) scale(1.8);
+  }
+  50% {
+    transform: translateX(50px) scale(1.8);
+  }
+  100% {
+    transform: translateX(0px) scale(1.8);
+  }
 }
 
 /*# sourceMappingURL=screen.css.map */
