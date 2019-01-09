@@ -213,7 +213,6 @@ body, html {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  background-image: url(../img/particels.png);
   background-size: cover;
   color: #fff;
   font-family: "Poppins", sans-serif;
@@ -827,7 +826,7 @@ body, html {
     align-items: center;
   }
   .location .wrap .arrow {
-    width: 25%;
+    width: 30%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -855,7 +854,7 @@ body, html {
     border-radius: 3px 0px 0px 3px;
   }
   .location .wrap .box {
-    width: 75%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -955,7 +954,7 @@ body, html {
     background: #fff;
     position: relative;
     left: 5%;
-    margin-bottom: 500px;
+    margin-bottom: 550px;
   }
   .newsletter .wrap {
     background: linear-gradient(to right, #e9f2f2 82%, #fff 18%);
@@ -1052,6 +1051,13 @@ body, html {
   .contacts {
     display: none;
   }
+}
+#particles-js {
+  background: linear-gradient(to right, #04817d, #42dcd4);
+}
+
+canvas.particles-js-canvas-el {
+  position: absolute;
 }
 
 /*# sourceMappingURL=screen.css.map */
