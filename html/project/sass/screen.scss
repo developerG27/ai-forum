@@ -243,7 +243,8 @@
 //Second section
 .second-section{
     background-image: url(../img/second-section.png);
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
     width: 100%;
     padding: 70px 0px;
     font-family: $font-primary;
@@ -372,11 +373,10 @@
                 appearance: none;
                 -moz-appearance: none;
                 -webkit-appearance: none;
-                width: 130px;
-                height: 20px;
                 position: relative;
                 border: 3px solid $dark-primary;
                 cursor: pointer;
+                padding: 5px;
 
                 &:before{
                     content: '';
@@ -400,6 +400,7 @@
             .privacy{
                 display: flex;
                 justify-content: space-between;
+                align-items: baseline;
                 margin-top: 20px;
             }
             .privacy-text{
@@ -523,4 +524,34 @@
             }
         }
     }
+}
+
+
+//Tablet
+@media screen and (min-width: 560px) and (max-width: 768px){
+
+    //Aside Navbar
+    .nav-aside{
+        max-width: 300px;
+    }
+
+    //Third Section
+    .third-section{
+        @include flexbox(row, space-between , baseline);
+        h3{
+            width: 100%;
+        }
+        .box{
+            width: 45%;
+            min-height: 330px;
+            margin-bottom: 0px;
+        }
+    }
+
+    //Newsletter
+    .input-checkbox{
+        
+    }
+
+    
 }

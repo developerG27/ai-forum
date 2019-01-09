@@ -277,7 +277,8 @@ body, html {
 
 .second-section {
   background-image: url(../img/second-section.png);
-  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
   width: 100%;
   padding: 70px 0px;
   font-family: "Open Sans", sans-serif;
@@ -388,11 +389,10 @@ body, html {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  width: 130px;
-  height: 20px;
   position: relative;
   border: 3px solid #232349;
   cursor: pointer;
+  padding: 5px;
 }
 .newsletter .wrap .form .input-checkbox:before {
   content: "";
@@ -412,6 +412,7 @@ body, html {
 .newsletter .wrap .form .privacy {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   margin-top: 20px;
 }
 .newsletter .wrap .form .privacy-text span {
@@ -507,6 +508,28 @@ body, html {
 }
 .footer .wrap .text span {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 560px) and (max-width: 768px) {
+  .nav-aside {
+    max-width: 300px;
+  }
+
+  .third-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .third-section h3 {
+    width: 100%;
+  }
+  .third-section .box {
+    width: 45%;
+    min-height: 330px;
+    margin-bottom: 0px;
+  }
 }
 
 /*# sourceMappingURL=screen.css.map */
