@@ -353,6 +353,9 @@ body, html {
   margin: 0 auto;
   width: 90%;
 }
+.newsletter .wrap .subscribe-laptop {
+  display: none;
+}
 .newsletter .wrap h3 {
   font-weight: bolder;
   color: #232349;
@@ -513,12 +516,18 @@ body, html {
   width: 90%;
   margin: 0 auto;
   color: #232349;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .footer .wrap .text {
   margin: 30px 0px;
   font-weight: bolder;
   line-height: 25px;
   font-size: 1.1em;
+  word-wrap: break-word;
 }
 .footer .wrap .text span {
   text-decoration: underline;
@@ -846,6 +855,7 @@ body, html {
   .newsletter .box-input .subscribe-laptop {
     width: 30% !important;
     position: relative;
+    display: block !important;
   }
   .newsletter .box-input .subscribe-laptop .input-submit {
     width: 100%;
