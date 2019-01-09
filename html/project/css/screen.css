@@ -340,6 +340,10 @@ body, html {
   display: none;
 }
 
+.partner {
+  display: none !important;
+}
+
 .newsletter {
   background: #e9f2f2;
   padding: 40px 0px;
@@ -800,10 +804,10 @@ body, html {
     background: #fff;
     position: relative;
     left: 5%;
-    margin-bottom: 450px;
+    margin-bottom: 500px;
   }
   .newsletter .wrap {
-    background: linear-gradient(to right, #e9f2f2 80%, #fff 20%);
+    background: linear-gradient(to right, #e9f2f2 82%, #fff 18%);
     padding: 50px;
     width: 90%;
     position: absolute;
@@ -858,7 +862,7 @@ body, html {
   .newsletter .box-input .subscribe-laptop .arrow {
     position: absolute;
     right: 30px;
-    top: 25px;
+    top: 36px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -889,6 +893,10 @@ body, html {
   }
 
   .subscribe {
+    display: none;
+  }
+
+  .contacts {
     display: none;
   }
 }

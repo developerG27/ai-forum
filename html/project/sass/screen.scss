@@ -318,6 +318,13 @@
 }
 
 
+//partner
+.partner{
+    display: none !important;
+}
+
+
+
 //newsletter
 .newsletter{
     background:$background-primary;
@@ -853,10 +860,10 @@
         background: $color-white;
         position: relative;
         left: 5%;
-        margin-bottom: 450px;
+        margin-bottom: 500px;
 
         .wrap{
-            background: linear-gradient(to right,  $light-primary 80%,  $color-white 20%);
+            background: linear-gradient(to right,  $light-primary 82%,  $color-white 18%);
             padding:50px;
             width: 90%;
             position: absolute;
@@ -914,7 +921,7 @@
                 .arrow{
                     position: absolute;
                     right: 30px;
-                    top: 25px;
+                    top: 36px;
                     height: auto;
                     @include flexbox (row, flex-start, center );
                     
@@ -948,6 +955,13 @@
     }
 
     .subscribe {
+        display: none;
+    }
+
+    
+    //contacts
+
+    .contacts{
         display: none;
     }
     
