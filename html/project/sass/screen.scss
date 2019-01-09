@@ -856,11 +856,10 @@
         margin-bottom: 450px;
 
         .wrap{
-            background: $light-primary;
-            padding: 50px;
+            background: linear-gradient(to right,  $light-primary 90%,  $color-white 10%);
+            padding:50px;
             width: 90%;
             position: absolute;
-            clip-path: inset(0 20% 0% 0%);
             overflow: visible;
         }
         .box-input{
@@ -875,7 +874,7 @@
             }
 
             .subscribe-laptop{
-                width: 33% !important;
+                width: 30% !important;
 
                 .input-submit{
                     width: 100%;

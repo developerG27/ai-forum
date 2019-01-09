@@ -803,11 +803,10 @@ body, html {
     margin-bottom: 450px;
   }
   .newsletter .wrap {
-    background: #e9f2f2;
+    background: linear-gradient(to right, #e9f2f2 90%, #fff 10%);
     padding: 50px;
     width: 90%;
     position: absolute;
-    clip-path: inset(0 20% 0% 0%);
     overflow: visible;
   }
   .newsletter .box-input {
@@ -824,7 +823,7 @@ body, html {
     border: 2px solid #42dcd4 !important;
   }
   .newsletter .box-input .subscribe-laptop {
-    width: 33% !important;
+    width: 30% !important;
   }
   .newsletter .box-input .subscribe-laptop .input-submit {
     width: 100%;
