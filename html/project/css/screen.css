@@ -801,13 +801,32 @@ body, html {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: center;
   }
   .newsletter .box-input .append {
-    width: 50%;
+    width: 33%;
   }
   .newsletter .box-input .input {
     border: 2px solid #42dcd4 !important;
+  }
+  .newsletter .box-input .subscribe-laptop {
+    width: 33% !important;
+  }
+  .newsletter .box-input .subscribe-laptop .input-submit {
+    width: 100%;
+    border: 0px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #232349;
+    font-size: 1.8em;
+    font-weight: bolder;
+    padding: 18px 20px;
+    position: relative !important;
+    text-align: left;
+  }
+
+  .subscribe {
+    display: none;
   }
 }
 

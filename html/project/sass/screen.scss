@@ -851,17 +851,39 @@
     //Newsletter
     .newsletter{
         .box-input{
-            @include flexbox(row,flex-start,baseline);  
+            @include flexbox(row,flex-start,center);  
 
             .append{
-                width: 50%;
+                width: 33%;
             }
             
             .input{
                 border: 2px solid $primary !important;
             }
+
+            .subscribe-laptop{
+                width: 33% !important;
+
+                .input-submit{
+                    width: 100%;
+                    border: 0px;
+                    text-transform: uppercase;
+                    color: $color-white;
+                    background: $dark-primary;
+                    font-size: 1.8em;
+                    font-weight: bolder;
+                    padding: 18px 20px;
+                    position: relative !important;
+                    text-align:left;
+                }
+            }
         }
     }
+
+    .subscribe {
+        display: none;
+    }
+    
     
 
 }
