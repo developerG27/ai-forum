@@ -657,6 +657,53 @@ body, html {
 
   .second-section {
     background-image: url(../img/background-xl.png) !important;
+    background-size: cover;
+  }
+  .second-section .box-scopri {
+    border: 2px solid #fff;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    margin-top: 40px;
+    width: 220px;
+  }
+  .second-section .box-scopri .scopri {
+    text-transform: uppercase;
+  }
+  .second-section .box-scopri .arrow {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .second-section .box-scopri .arrow .line {
+    transform: scale(0.5);
+    margin-right: -8px;
+  }
+  .second-section .box-scopri .arrow .line:last-child {
+    margin-right: 0px;
+  }
+  .second-section .box-scopri .arrow .line .first,
+.second-section .box-scopri .arrow .line .second {
+    width: 20px;
+    height: 4px;
+    background: #fff;
+  }
+  .second-section .box-scopri .arrow .line .first {
+    transform: rotate(47deg);
+    border-radius: 3px 0px 0px 3px;
+  }
+  .second-section .box-scopri .arrow .line .second {
+    transform: rotate(-45deg);
+    margin-top: 7.5px;
+    border-radius: 3px 0px 0px 3px;
   }
 
   .third-section {
@@ -706,7 +753,8 @@ body, html {
     transform: scale(3);
     margin-right: 30px;
   }
-  .location .wrap .arrow .line .first, .location .wrap .arrow .line .second {
+  .location .wrap .arrow .line .first,
+.location .wrap .arrow .line .second {
     width: 20px;
     height: 4px;
     background: #42dcd4;
@@ -790,7 +838,8 @@ body, html {
     transform: scale(0.7);
     margin-right: -8px;
   }
-  .partner .partner-title .arrow .line .first, .partner .partner-title .arrow .line .second {
+  .partner .partner-title .arrow .line .first,
+.partner .partner-title .arrow .line .second {
     width: 20px;
     height: 4px;
     background: #42dcd4;
@@ -891,7 +940,8 @@ body, html {
     transform: scale(0.8);
     margin-right: -8px;
   }
-  .newsletter .box-input .subscribe-laptop .arrow .line .first, .newsletter .box-input .subscribe-laptop .arrow .line .second {
+  .newsletter .box-input .subscribe-laptop .arrow .line .first,
+.newsletter .box-input .subscribe-laptop .arrow .line .second {
     width: 20px;
     height: 4px;
     background: #fff;
