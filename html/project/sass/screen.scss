@@ -708,6 +708,63 @@
     //location
     .location{
         display: block !important;
+        width: 100%;
+        background: $primary;
+        font-family: $font-secondary;
+        margin-bottom: 300px;
+        
+
+        .wrap{
+            width: 95%;
+            margin: auto;
+            position: relative;
+            @include flexbox(row, space-between, center);
+            
+            .arrow{
+                width: 30%;
+                height: 200px; 
+                background: $dark-primary;
+            }
+
+            .box{
+                width: 60%;
+                @include flexbox(column, flex-start, center);
+
+                img{
+                    width: 100px;
+                    object-fit: cover;
+                }
+                
+                h3{
+                    font-weight: bolder;
+                    color: $dark-primary;
+                    font-size: 1.8em;
+                    margin:30px 0px;
+                    text-transform: uppercase;
+                }
+                
+                address{
+                    color: $primary;
+                    text-transform: uppercase;
+                }
+                
+                p{
+                    font-weight: 300;
+                }
+            }
+
+            .box-img{
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                top: 238px;
+
+                img{
+                    width: 33.1%;
+                    object-fit: contain;
+                }
+            }
+        }
     }
 
 }
