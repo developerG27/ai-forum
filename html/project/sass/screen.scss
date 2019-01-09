@@ -716,21 +716,23 @@
         
 
         .wrap{
-            width: 95%;
+            width: 90%;
             margin: auto;
             position: relative;
             @include flexbox(row, space-between, center);
             
             .arrow{
-                width: 30%;
+                width: 25%;
                 height: auto;
+                @include flexbox (row, flex-start, center );
                 
                 .line{
+                    transform: scale(3);
+                    margin-right: 30px;
                     .first, .second{
                         width: 20px;
                         height: 4px;
-                        background: $primary;
-                        
+                        background: $primary; 
                     }
 
                     .first{
@@ -749,7 +751,7 @@
             }
 
             .box{
-                width: 60%;
+                width: 75%;
                 @include flexbox(column, flex-start, flex-start);
 
                 img{

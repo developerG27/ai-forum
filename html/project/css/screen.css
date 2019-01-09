@@ -664,7 +664,7 @@ body, html {
     padding: 50px 0px;
   }
   .location .wrap {
-    width: 95%;
+    width: 90%;
     margin: auto;
     position: relative;
     display: flex;
@@ -674,8 +674,17 @@ body, html {
     align-items: center;
   }
   .location .wrap .arrow {
-    width: 30%;
+    width: 25%;
     height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .location .wrap .arrow .line {
+    transform: scale(3);
+    margin-right: 30px;
   }
   .location .wrap .arrow .line .first, .location .wrap .arrow .line .second {
     width: 20px;
@@ -692,7 +701,7 @@ body, html {
     border-radius: 10px 0px 0px 10px;
   }
   .location .wrap .box {
-    width: 60%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
