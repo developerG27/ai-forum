@@ -562,6 +562,8 @@
 
 //Laptop
 @media screen and (min-width: 960px) and (max-width: 1400px){
+
+    //Secondary menu
     .burgher-menu{
         display: none !important;
     }
@@ -596,12 +598,48 @@
                 color: $color-white;
                 z-index: 2;
                 padding: 40px;
+                display: none;
 
                 .secondary-item{
                     line-height: 30px;
+
+                    &:nth-child(2){
+                        color: $primary;
+                    }
                 }
             }
         }
+    }
+
+    .block{
+        display: block !important;
+    }
+
+    
+    //Jumbotron
+    .jumbotron{
+
+        .wrap{
+            h1{
+                font-size: 5em;
+                font-weight: bolder;
+            }
+
+            h3{
+                font-size: 2.4em;
+                font-weight: 200;
+            }
+
+            p{
+                font-size: 2.2em;
+            }
+        }
+
+        .sponsor{
+            text-align: left;
+            left: 5%;
+        }
+        
     }
 
 }

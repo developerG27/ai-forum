@@ -571,9 +571,33 @@ body, html {
     color: #fff;
     z-index: 2;
     padding: 40px;
+    display: none;
   }
   .menu-laptop .primary .secondary .secondary-item {
     line-height: 30px;
+  }
+  .menu-laptop .primary .secondary .secondary-item:nth-child(2) {
+    color: #42dcd4;
+  }
+
+  .block {
+    display: block !important;
+  }
+
+  .jumbotron .wrap h1 {
+    font-size: 5em;
+    font-weight: bolder;
+  }
+  .jumbotron .wrap h3 {
+    font-size: 2.4em;
+    font-weight: 200;
+  }
+  .jumbotron .wrap p {
+    font-size: 2.2em;
+  }
+  .jumbotron .sponsor {
+    text-align: left;
+    left: 5%;
   }
 }
 
