@@ -683,6 +683,21 @@ body, html {
     text-align: left !important;
     left: calc(50%-200px);
   }
+  .jumbotron .sponsor span {
+    position: relative;
+    padding-right: 130px !important;
+  }
+  .jumbotron .sponsor span::after {
+    margin-left: 5px;
+    font-weight: light;
+    font-family: "Poppins", sans-serif;
+    content: ">>>>>" !important;
+    font-weight: 500 !important;
+    padding-left: 20px;
+    margin-top: -8px;
+    position: absolute;
+    font-size: 1.7em !important;
+  }
 
   .first-section .wrap {
     display: flex;

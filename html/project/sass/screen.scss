@@ -665,6 +665,7 @@
 //Laptop
 @media screen and (min-width: 960px) {
 
+
    //Secondary menu
    .burgher-menu {
       display: none !important;
@@ -754,6 +755,26 @@
          max-width: 1200px;
          text-align: left !important;
          left: calc(50%-200px);
+
+         span{
+            position: relative;
+            padding-right: 130px !important;
+
+            &::after {
+               margin-left: 5px;
+               font-weight: light;
+               font-family: $font-secondary;
+               content: ">>>>>" !important;
+               font-weight: 500 !important;
+               padding-left: 20px;
+               margin-top: -8px;
+               position: absolute;
+               font-size: 1.7em !important;
+            }
+
+         }
+
+         
       }
 
    }
