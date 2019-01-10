@@ -701,6 +701,7 @@
 
 
             &:last-child {
+               border: 0px;
                text-transform: uppercase;
                color: $primary;
                font-weight: bolder;
@@ -720,7 +721,7 @@
             color: $color-white;
             z-index: 2;
             padding: 40px;
-            display: none;
+            opacity: 0;
 
             .secondary-item {
                line-height: 30px;
@@ -734,7 +735,8 @@
    }
 
    .block {
-      display: block !important;
+      opacity:1 !important;
+      transition-duration: .5s;
    }
 
 

@@ -58,6 +58,15 @@ document.addEventListener("DOMContentLoaded", function () {
       }
    })
 
+
+   //Secondary menu
+   let activatorSecondaryMenu = document.querySelector('#activator-secondary-menu');
+   let secondaryMenu = document.querySelector('#secondary-menu')
+   activatorSecondaryMenu.addEventListener('click', function () {
+      secondaryMenu.classList.toggle('block');
+   })
+
+
    //Contacts
 
    //Funzione che calcola la lunghezza dell'elemento per dargli la stessa altezza

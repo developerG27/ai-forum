@@ -653,6 +653,7 @@ body, html {
     height: 15px;
   }
   .menu-laptop .primary .item:last-child {
+    border: 0px;
     text-transform: uppercase;
     color: #42dcd4;
     font-weight: bolder;
@@ -668,7 +669,7 @@ body, html {
     color: #fff;
     z-index: 2;
     padding: 40px;
-    display: none;
+    opacity: 0;
   }
   .menu-laptop .primary .secondary .secondary-item {
     line-height: 30px;
@@ -678,7 +679,8 @@ body, html {
   }
 
   .block {
-    display: block !important;
+    opacity: 1 !important;
+    transition-duration: 0.5s;
   }
 
   .jumbotron .wrap h1 {
