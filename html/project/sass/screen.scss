@@ -222,16 +222,9 @@
       .box {
          margin-top: 100px !important;
 
-         h3 {
-            font-weight: bold;
-            color: $dark-primary;
-            font-size: 2em;
-            margin-bottom: 30px;
-         }
-
          p {
             color: $color-dark;
-            line-height: 1.5em;
+            line-height: 1.5em;  
             margin-bottom: 40px;
          }
 
@@ -1043,15 +1036,6 @@
                object-fit: cover;
             }
 
-            h3 {
-               font-weight: bolder;
-               color: $dark-primary;
-               font-size: 1.8em;
-               margin: 0px;
-               line-height: 1.8em;
-               text-transform: uppercase;
-            }
-
             address {
                color: $primary;
                text-transform: uppercase;
@@ -1324,4 +1308,14 @@ canvas.particles-js-canvas-el {
          left: 5%;
       }
    }
+}
+
+//Universal Class
+h3.title-section {
+   font-weight: bolder;
+   color: $dark-primary;
+   font-size: 1.8em;
+   margin: 0px;
+   line-height: 1.8em;
+   text-transform: uppercase;
 }

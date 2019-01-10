@@ -257,12 +257,6 @@ body, html {
 .first-section .wrap .box {
   margin-top: 100px !important;
 }
-.first-section .wrap .box h3 {
-  font-weight: bold;
-  color: #232349;
-  font-size: 2em;
-  margin-bottom: 30px;
-}
 .first-section .wrap .box p {
   color: #444444;
   line-height: 1.5em;
@@ -963,14 +957,6 @@ body, html {
     width: 50px;
     object-fit: cover;
   }
-  .location .wrap .box h3 {
-    font-weight: bolder;
-    color: #232349;
-    font-size: 1.8em;
-    margin: 0px;
-    line-height: 1.8em;
-    text-transform: uppercase;
-  }
   .location .wrap .box address {
     color: #42dcd4;
     text-transform: uppercase;
@@ -1202,6 +1188,14 @@ canvas.particles-js-canvas-el {
   .newsletter .wrap {
     left: 5%;
   }
+}
+h3.title-section {
+  font-weight: bolder;
+  color: #232349;
+  font-size: 1.8em;
+  margin: 0px;
+  line-height: 1.8em;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=screen.css.map */
