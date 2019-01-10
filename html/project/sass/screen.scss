@@ -627,6 +627,8 @@
    //contacts
    .contacts{
       @include flexbox(row, space-between, flex-start);
+      margin-bottom: 30px; 
+
       h3{
          width: 100%;
       }
@@ -867,7 +869,8 @@
          position: relative;
          padding: 20px;
          margin-top: 40px;
-         width: 220px;
+         width: 240px;
+         font-weight: bolder;
 
          .scopri {
             text-transform: uppercase;

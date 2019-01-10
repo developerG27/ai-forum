@@ -581,6 +581,7 @@ body, html {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 30px;
   }
   .contacts h3 {
     width: 100%;
@@ -784,7 +785,8 @@ body, html {
     position: relative;
     padding: 20px;
     margin-top: 40px;
-    width: 220px;
+    width: 240px;
+    font-weight: bolder;
   }
   .second-section .box-scopri .scopri {
     text-transform: uppercase;
