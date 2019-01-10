@@ -436,36 +436,6 @@ body, html {
   position: relative !important;
   text-align: left;
 }
-.newsletter .wrap .form .subscribe .arrow {
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  position: absolute;
-  right: 15px;
-  top: 62px;
-}
-.newsletter .wrap .form .subscribe .arrow .line {
-  transform: scale(0.8);
-  margin-right: -5px;
-}
-.newsletter .wrap .form .subscribe .arrow .line .first,
-.newsletter .wrap .form .subscribe .arrow .line .second {
-  width: 20px;
-  height: 4px;
-  background: #fff;
-}
-.newsletter .wrap .form .subscribe .arrow .line .first {
-  transform: rotate(47deg);
-  border-radius: 3px 0px 0px 3px;
-}
-.newsletter .wrap .form .subscribe .arrow .line .second {
-  transform: rotate(-45deg);
-  margin-top: 7.5px;
-  border-radius: 3px 0px 0px 3px;
-}
 
 .contacts {
   font-family: "Poppins", sans-serif;
@@ -977,33 +947,6 @@ body, html {
     justify-content: flex-start;
     align-items: center;
     height: 100px;
-  }
-  .partner .wrap .partner-title .arrow {
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .partner .wrap .partner-title .arrow .line {
-    transform: scale(0.7);
-    margin-right: -8px;
-  }
-  .partner .wrap .partner-title .arrow .line .first,
-.partner .wrap .partner-title .arrow .line .second {
-    width: 20px;
-    height: 4px;
-    background: #42dcd4;
-  }
-  .partner .wrap .partner-title .arrow .line .first {
-    transform: rotate(47deg);
-    border-radius: 3px 0px 0px 3px;
-  }
-  .partner .wrap .partner-title .arrow .line .second {
-    transform: rotate(-45deg);
-    margin-top: 7.5px;
-    border-radius: 3px 0px 0px 3px;
   }
   .partner .wrap .partner-title h3 {
     margin-left: 20px;

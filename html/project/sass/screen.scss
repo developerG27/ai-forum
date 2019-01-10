@@ -434,36 +434,7 @@
                text-align: left;
             }
 
-            .arrow {
-               height: auto;
-               @include flexbox (row, flex-start, center);
-               position: absolute;
-               right: 15px;
-               top: 62px;
-
-               .line {
-                  transform: scale(.8);
-                  margin-right: -5px;
-
-                  .first,
-                  .second {
-                     width: 20px;
-                     height: 4px;
-                     background: $color-white;
-                  }
-
-                  .first {
-                     transform: rotate(47deg);
-                     border-radius: 3px 0px 0px 3px;
-                  }
-
-                  .second {
-                     transform: rotate(-45deg);
-                     margin-top: 7.5px;
-                     border-radius: 3px 0px 0px 3px;
-                  }
-               }
-            }
+            
          }
       }
    }
@@ -648,7 +619,6 @@
             margin: 5px 0px;
             font-size: .9em;
          }
-
       }
    }
 
@@ -1053,34 +1023,6 @@
          .partner-title {
             @include flexbox(row, flex-start, center);
             height: 100px;
-
-            .arrow {
-               height: auto;
-               @include flexbox (row, flex-start, center);
-
-               .line {
-                  transform: scale(.7);
-                  margin-right: -8px;
-
-                  .first,
-                  .second {
-                     width: 20px;
-                     height: 4px;
-                     background: $primary;
-                  }
-
-                  .first {
-                     transform: rotate(47deg);
-                     border-radius: 3px 0px 0px 3px;
-                  }
-
-                  .second {
-                     transform: rotate(-45deg);
-                     margin-top: 7.5px;
-                     border-radius: 3px 0px 0px 3px;
-                  }
-               }
-            }
 
             h3 {
                margin-left: 20px;
