@@ -1176,4 +1176,10 @@ canvas.particles-js-canvas-el {
   margin: auto;
 }
 
+@media screen and (max-width: 1200px) {
+  .newsletter .wrap {
+    left: 5%;
+  }
+}
+
 /*# sourceMappingURL=screen.css.map */

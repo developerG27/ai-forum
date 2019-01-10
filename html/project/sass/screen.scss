@@ -1138,6 +1138,7 @@
          p {
             max-width: 80%;
          }
+
       }
 
       .box-input {
@@ -1294,4 +1295,14 @@ canvas.particles-js-canvas-el {
 .wrap {
    max-width: 1200px;
    margin: auto;
+}
+
+@media screen and (max-width: 1200px){
+   .newsletter{
+      .wrap{
+         left: 5%;
+      }
+
+   }
+   
 }

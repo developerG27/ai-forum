@@ -81,6 +81,17 @@ document.addEventListener("DOMContentLoaded", function () {
    perfectSquare();
 
 
+   // function newsletterStraight(){
+   //    let $newsletter = document.querySelector('.newsletter .wrap');
+   //    let $newsletterWidth = $newsletter.offsetWidth;
+   //    console.log($newsletterWidth);
+
+   //    $newsletter.style.left = 1
+
+   // }
+   // newsletterStraight();
+
+
    //Funzione che ricarica la pagina ad ogni resize
    window.onresize = function() {
       location.reload();
