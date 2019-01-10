@@ -588,6 +588,7 @@
 
    .second-section {
       background-image: url(../img/background-xl.png) !important;
+      background-size: cover;
    }
 
    //Third Section
@@ -604,6 +605,24 @@
          margin-bottom: 0px;
       }
    }
+
+   //contacts
+   .contacts{
+      @include flexbox(row, center, flex-start);
+      h3{
+         width: 100%;
+      }
+
+      address{
+         width: 45%;
+         min-height: 300px;
+         margin:0px 5px 0px 5px;
+      }
+
+      
+   }
+
+   
 
 }
 

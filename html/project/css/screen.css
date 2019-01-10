@@ -551,6 +551,7 @@ body, html {
 
   .second-section {
     background-image: url(../img/background-xl.png) !important;
+    background-size: cover;
   }
 
   .third-section {
@@ -567,6 +568,22 @@ body, html {
     width: 45%;
     min-height: 330px;
     margin-bottom: 0px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .contacts h3 {
+    width: 100%;
+  }
+  .contacts address {
+    width: 45%;
+    min-height: 300px;
+    margin: 0px 5px 0px 5px;
   }
 }
 @media screen and (min-width: 960px) {
