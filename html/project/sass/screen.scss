@@ -690,6 +690,13 @@
          @include flexbox(row, space-between, center);
          position: relative;
 
+         &:hover{
+            .secondary{
+               transition-duration: .5s;
+               opacity:1;
+            }
+         }
+
          .item {
             margin-left: 20px;
             cursor: pointer;
@@ -697,6 +704,10 @@
             &:hover{
                border-bottom: 5px solid $primary;
                height: 15px;
+            }
+
+            &:hover .second-section{
+               display: blok !important;
             }
 
 
@@ -708,10 +719,6 @@
 
          }
 
-         .expand {
-            position: relative;
-         }
-
          .secondary {
             position: absolute;
             top: 48px;
@@ -720,7 +727,7 @@
             color: $color-white;
             z-index: 2;
             padding: 40px;
-            display: none;
+            opacity: 0;
 
             .secondary-item {
                line-height: 30px;
