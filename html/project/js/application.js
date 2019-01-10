@@ -4,14 +4,18 @@ document.addEventListener("DOMContentLoaded", function () {
    let activatorNav = document.querySelector('#activator-nav');
    let burgherNav = document.querySelector('#burgher-nav');
    let body = document.body;
+   let bar1 = document.querySelector('.bar-1');
+   let bar3 = document.querySelector('.bar-3');
 
    activatorNav.addEventListener('click', function () {
 
-      
 
       if (burgherNav.classList.contains('nav-start')) {
          // activatorNav.style.transform = "rotate(0deg)";
+         
          burgherNav.classList.add('nav-end');
+         bar1.style.width = "70%";
+         bar3.style.width = "50%";
          if (burgherNav.classList.contains('nav-start')) {
             burgherNav.classList.remove('nav-start')
 
@@ -19,13 +23,15 @@ document.addEventListener("DOMContentLoaded", function () {
       } else if (burgherNav.classList.contains('nav-end')) {
          // activatorNav.style.transform = "rotate(10deg)";
          burgherNav.classList.add('nav-start');
+         bar1.style.width= "100%";
 
          if (burgherNav.classList.contains('nav-end')) {
             burgherNav.classList.remove('nav-end');
          }
       } else {
          burgherNav.classList.add('nav-start');
-         // activatorNav.style.transform = "rotate(90deg)";
+         bar1.style.width= "100%";
+         bar3.style.width = "100%";
       }
 
       body.classList.toggle('lock');
