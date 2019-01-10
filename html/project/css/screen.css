@@ -457,7 +457,6 @@ body, html {
   text-align: left;
 }
 .newsletter .wrap .form .subscribe .arrow {
-  width: 30%;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -465,7 +464,7 @@ body, html {
   justify-content: flex-start;
   align-items: center;
   position: absolute;
-  right: 10px;
+  right: 15px;
   top: 62px;
 }
 .newsletter .wrap .form .subscribe .arrow .line {
@@ -585,6 +584,9 @@ body, html {
     font-size: 1.8em;
   }
 
+  .third-section {
+    padding: 50px 0px 0px 0px;
+  }
   .third-section .wrap {
     display: flex;
     flex-direction: row;
@@ -596,11 +598,10 @@ body, html {
     width: 100%;
   }
   .third-section .wrap .box {
-    width: 45%;
+    width: 46%;
     min-height: 330px;
     margin-bottom: 0px;
   }
-
   .contacts {
     display: flex;
     flex-direction: row;

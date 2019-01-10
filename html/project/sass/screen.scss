@@ -458,11 +458,10 @@
             }
 
             .arrow {
-               width: 30%;
                height: auto;
                @include flexbox (row, flex-start, center);
                position: absolute;
-               right: 10px;
+               right: 15px;
                top: 62px;
 
                .line {
@@ -626,6 +625,7 @@
 
    //Third Section
    .third-section {
+      padding: 50px 0px 0px 0px;
       .wrap {
          @include flexbox(row, space-between, baseline);
 
@@ -634,12 +634,23 @@
          }
 
          .box {
-            width: 45%;
+            width: 46%;
             min-height: 330px;
             margin-bottom: 0px;
          }
-
       }
+
+      //Newsletter
+      .newsletter{
+         
+         .wrap{
+            .subscribe{
+               .arrow{
+               }
+            }
+         }  
+      }
+
 
    }
 
