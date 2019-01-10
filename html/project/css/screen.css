@@ -602,23 +602,8 @@ body, html {
     min-height: 330px;
     margin-bottom: 0px;
   }
-  .third-section .contacts .wrap {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  .third-section .contacts .wrap h3 {
-    width: 100%;
-  }
-  .third-section .contacts .wrap address {
-    width: 45%;
-  }
 
-  .contacts {
+  .contacts .wrap {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -626,12 +611,11 @@ body, html {
     align-items: flex-start;
     margin-bottom: 30px;
   }
-  .contacts h3 {
+  .contacts .wrap h3 {
     width: 100%;
   }
-  .contacts address {
-    width: 45%;
-    min-height: 300px;
+  .contacts .wrap address {
+    width: 48% !important;
     margin: 5px 0px;
   }
 }

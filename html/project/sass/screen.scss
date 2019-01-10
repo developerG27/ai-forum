@@ -641,43 +641,26 @@
          }
       }
 
-      //Contacts
-      .contacts {
-         .wrap {
-            width: 90%;
-
-            @include flexbox(row, space-between, center);
-            margin-bottom: 30px;
-
-            h3 {
-               width: 100%;
-            }
-
-            address {
-               width: 45%;
-            }
-
-         }
-
-      }
-
-
    }
 
    //contacts
    .contacts {
-      @include flexbox(row, space-between, flex-start);
-      margin-bottom: 30px;
+
+      .wrap{
+         @include flexbox(row, space-between, flex-start);
+         margin-bottom: 30px;
 
       h3 {
          width: 100%;
       }
 
       address {
-         width: 45%;
-         min-height: 300px;
+         width: 48% !important;
          margin: 5px 0px;
       }
+
+      }
+      
    }
 }
 
