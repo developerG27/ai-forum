@@ -51,6 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
       pEmail.classList.add('up');
    })
 
+   // inputEmail.addEventListener('mouseon')
+
    inputName.addEventListener('mouseout', function () {
       pName.classList.remove('up');
       if (inputName.value.length > 0) {
@@ -64,6 +66,14 @@ document.addEventListener("DOMContentLoaded", function () {
       if (inputEmail.value.length > 0) {
          pEmail.classList.add('up');
       }
+   })
+
+   inputName.addEventListener('keypress',function(){
+      pName.classList.add('up');
+   })
+
+   inputEmail.addEventListener('keypress',function(){
+      pEmail.classList.add('up');
    })
 
 
