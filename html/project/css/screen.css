@@ -357,6 +357,11 @@ body, html {
   padding: 28px 20px;
   font-size: 1.4em;
 }
+.newsletter .wrap .form .input:focus {
+  outline: none !important;
+  border-color: #42dcd4;
+  box-shadow: 0 0 2px #42dcd4;
+}
 .newsletter .wrap .form .input-name {
   border-bottom: 1px solid #42dcd4;
 }
