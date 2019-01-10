@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
    //Contacts
 
-   //Funzione che calcola la lunghezza per dargli la stessa altezzas
+   //Funzione che calcola la lunghezza dell'elemento per dargli la stessa altezza
    function perfectSquare() {
       var square = document.getElementsByClassName('square');
       
@@ -78,10 +78,11 @@ document.addEventListener("DOMContentLoaded", function () {
          square[i].style.height = perfectSquare + "px";
       }
    }
-
    perfectSquare();
 
 
-
-
+   //Funzione che ricarica la pagina ad ogni resize
+   window.onresize = function() {
+      location.reload();
+   }
 })

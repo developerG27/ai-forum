@@ -554,6 +554,19 @@ body, html {
   line-height: 30px;
 }
 
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .nav-aside {
+    width: 80% !important;
+  }
+
+  .contacts .wrap h3 {
+    width: 100%;
+  }
+  .contacts .wrap .square {
+    width: 100% !important;
+    max-height: 230px !important;
+  }
+}
 @media screen and (min-width: 560px) and (max-width: 959px) {
   .footer .box-text-footer {
     width: 50% !important;
@@ -572,17 +585,17 @@ body, html {
     font-size: 1.8em;
   }
 
-  .third-section {
+  .third-section .wrap {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
   }
-  .third-section h3 {
+  .third-section .wrap h3 {
     width: 100%;
   }
-  .third-section .box {
+  .third-section .wrap .box {
     width: 45%;
     min-height: 330px;
     margin-bottom: 0px;

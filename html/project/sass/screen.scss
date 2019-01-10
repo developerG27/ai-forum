@@ -570,10 +570,34 @@
 }
 
 
+// Mobile L
+@media screen and (min-width: 376px) and (max-width:425px) {
+
+   //Aside Nav
+   .nav-aside {
+      width: 80% !important;
+   }
+
+   //Contacts
+   .contacts {
+      .wrap {
+
+         h3 {
+            width: 100%;
+         }
+
+         .square {
+            width: 100% !important;
+            max-height: 230px !important;
+         }
+
+      }
+   }
+}
 
 
 
-// ----- Tablet
+// Tablet
 @media screen and (min-width: 560px) and (max-width: 959px) {
 
    .footer {
@@ -602,17 +626,21 @@
 
    //Third Section
    .third-section {
-      @include flexbox(row, space-between, baseline);
+      .wrap {
+         @include flexbox(row, space-between, baseline);
 
-      h3 {
-         width: 100%;
+         h3 {
+            width: 100%;
+         }
+
+         .box {
+            width: 45%;
+            min-height: 330px;
+            margin-bottom: 0px;
+         }
+
       }
 
-      .box {
-         width: 45%;
-         min-height: 330px;
-         margin-bottom: 0px;
-      }
    }
 
    //contacts
