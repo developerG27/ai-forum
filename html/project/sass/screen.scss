@@ -501,6 +501,22 @@
    .wrap {
       width: 90%;
 
+      @media screen and (min-width: 850px) and (max-width: 959px){
+         @include flexbox(row, space-between, baseline);
+
+         .square{
+            width: 32% !important;
+         }
+
+         address{
+            font-size: .91em !important;
+         }
+         h5{
+            font-size: 1.1em !important;
+         }
+         
+      }
+
       h3 {
          font-weight: bolder;
          color: $dark-primary;
