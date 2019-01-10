@@ -301,13 +301,6 @@ body, html {
 .third-section .wrap {
   width: 90%;
 }
-.third-section .wrap h3 {
-  font-weight: bolder;
-  color: #232349;
-  font-size: 1.8em;
-  margin: 30px 0px;
-  text-transform: uppercase;
-}
 .third-section .wrap .number {
   display: flex;
   justify-content: center;
@@ -345,13 +338,6 @@ body, html {
 }
 .newsletter .wrap .subscribe-laptop {
   display: none;
-}
-.newsletter .wrap h3 {
-  font-weight: bolder;
-  color: #232349;
-  font-size: 1.8em;
-  margin: 30px 0px;
-  text-transform: uppercase;
 }
 .newsletter .wrap p {
   color: #444444;
@@ -504,13 +490,6 @@ body, html {
   .contacts .wrap h5 {
     font-size: 1.1em !important;
   }
-}
-.contacts .wrap h3 {
-  font-weight: bolder;
-  color: #232349;
-  font-size: 1.8em;
-  margin: 30px 0px;
-  text-transform: uppercase;
 }
 .contacts .wrap p {
   color: #444444;
