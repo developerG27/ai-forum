@@ -1025,7 +1025,7 @@ body, html {
     text-transform: uppercase;
   }
   .partner .box-logo img {
-    width: 225px;
+    width: 18.5% !important;
     margin-right: 10px;
   }
 
