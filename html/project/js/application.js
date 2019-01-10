@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
          // activatorNav.style.transform = "rotate(10deg)";
          burgherNav.classList.add('nav-start');
          bar1.style.width= "100%";
+         bar3.style.width = "100%";
 
          if (burgherNav.classList.contains('nav-end')) {
             burgherNav.classList.remove('nav-end');
