@@ -338,16 +338,15 @@ body, html {
 }
 
 .partner {
-  display: none !important;
+  display: none;
 }
 
 .newsletter {
   background: #e9f2f2;
-  padding: 40px 0px;
   font-family: "Open Sans", sans-serif;
+  padding: 40px 0px;
 }
 .newsletter .wrap {
-  margin: 0 auto;
   width: 90%;
 }
 .newsletter .wrap .subscribe-laptop {
@@ -370,13 +369,8 @@ body, html {
 .newsletter .wrap .form .input {
   width: 100%;
   border: 2px solid #42dcd4;
-  padding: 20px;
+  padding: 28px 20px;
   font-size: 1.4em;
-}
-.newsletter .wrap .form .input::placeholder {
-  color: #42dcd4;
-  opacity: 1;
-  /* Firefox */
 }
 .newsletter .wrap .form .input-name {
   border-bottom: 1px solid #42dcd4;
@@ -417,9 +411,8 @@ body, html {
   left: 0%;
   right: 0%;
   bottom: 0%;
-  background-color: #232349;
-  box-shadow: inset 0 0 0 1px #fff6;
-  transition: all 0.2s;
+  background: #232349;
+  transition: all 0.4s;
   opacity: 0;
 }
 .newsletter .wrap .form .input-checkbox:checked:before {
@@ -444,6 +437,11 @@ body, html {
   width: 100%;
   height: auto;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .newsletter .wrap .form .subscribe .input-submit {
   width: 100%;
@@ -458,18 +456,36 @@ body, html {
   position: relative !important;
   text-align: left;
 }
-.newsletter .wrap .form .subscribe .fa-angle-double-right {
+.newsletter .wrap .form .subscribe .arrow {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
   position: absolute;
-  top: 55px;
-  right: 60px;
-  color: #fff;
-  font-size: 30px;
+  right: 10px;
+  top: 62px;
 }
-.newsletter .wrap .form .subscribe .fa-angle-double-right:nth-child(2) {
-  right: 38px;
+.newsletter .wrap .form .subscribe .arrow .line {
+  transform: scale(0.8);
+  margin-right: -5px;
 }
-.newsletter .wrap .form .subscribe .fa-angle-double-right:nth-child(3) {
-  right: 26px;
+.newsletter .wrap .form .subscribe .arrow .line .first,
+.newsletter .wrap .form .subscribe .arrow .line .second {
+  width: 20px;
+  height: 4px;
+  background: #fff;
+}
+.newsletter .wrap .form .subscribe .arrow .line .first {
+  transform: rotate(47deg);
+  border-radius: 3px 0px 0px 3px;
+}
+.newsletter .wrap .form .subscribe .arrow .line .second {
+  transform: rotate(-45deg);
+  margin-top: 7.5px;
+  border-radius: 3px 0px 0px 3px;
 }
 
 .contacts {

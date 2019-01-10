@@ -314,34 +314,26 @@
          color: $color-dark;
          line-height: 30px;
       }
-
    }
-
-   
 }
 
-
-//location
+//Location
 .location {
    display: none;
 }
 
-
-//partner
+//Partner
 .partner {
-   display: none !important;
+   display: none;
 }
 
-
-
-//newsletter
+//Newsletter
 .newsletter {
    background: $background-primary;
-   padding: 40px 0px;
    font-family: $font-primary;
-
+   padding: 40px 0px;
+   
    .wrap {
-      margin: 0 auto;
       width: 90%;
 
       .subscribe-laptop {
@@ -367,14 +359,8 @@
          .input {
             width: 100%;
             border: 2px solid $primary;
-            padding: 20px;
+            padding: 28px 20px;
             font-size: 1.4em;
-
-            &::placeholder {
-               color: $primary;
-               opacity: 1;
-               /* Firefox */
-            }
          }
 
          .input-name {
@@ -402,7 +388,6 @@
                color: $dark-primary;
                font-weight: bolder;
                transition-duration: .5s;
-
             }
          }
 
@@ -422,9 +407,8 @@
                left: 0%;
                right: 0%;
                bottom: 0%;
-               background-color: $dark-primary;
-               box-shadow: inset 0 0 0 1px #fff6;
-               transition: all .2s;
+               background: $dark-primary;
+               transition: all .4s;
                opacity: 0;
             }
 
@@ -432,7 +416,6 @@
                opacity: 1;
             }
          }
-
 
          .privacy {
             display: flex;
@@ -458,6 +441,7 @@
             width: 100%;
             height: auto;
             position: relative;
+            @include flexbox(row, space-between, center);
 
             .input-submit {
                width: 100%;
@@ -473,26 +457,38 @@
                text-align: left;
             }
 
-            .fa-angle-double-right {
+            .arrow {
+               width: 30%;
+               height: auto;
+               @include flexbox (row, flex-start, center);
                position: absolute;
-               top: 55px;
-               right: 60px;
-               color: $color-white;
-               font-size: 30px;
+               right: 10px;
+               top: 62px;
 
-               &:nth-child(2) {
-                  right: 38px;
-               }
-
-               &:nth-child(3) {
-                  right: 26px;
+               .line {
+                  transform: scale(.8);
+                  margin-right: -5px;
+         
+                  .first,
+                  .second {
+                     width: 20px;
+                     height: 4px;
+                     background: $color-white;
+                  }
+   
+                  .first {
+                     transform: rotate(47deg);
+                     border-radius: 3px 0px 0px 3px;
+                  }
+   
+                  .second {
+                     transform: rotate(-45deg);
+                     margin-top: 7.5px;
+                     border-radius: 3px 0px 0px 3px;
+                  }
                }
             }
          }
-
-
-
-
       }
    }
 }
