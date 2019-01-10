@@ -602,6 +602,22 @@ body, html {
     min-height: 330px;
     margin-bottom: 0px;
   }
+  .third-section .contacts .wrap {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .third-section .contacts .wrap h3 {
+    width: 100%;
+  }
+  .third-section .contacts .wrap address {
+    width: 45%;
+  }
+
   .contacts {
     display: flex;
     flex-direction: row;

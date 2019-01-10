@@ -626,6 +626,7 @@
    //Third Section
    .third-section {
       padding: 50px 0px 0px 0px;
+
       .wrap {
          @include flexbox(row, space-between, baseline);
 
@@ -640,15 +641,24 @@
          }
       }
 
-      //Newsletter
-      .newsletter{
-         
-         .wrap{
-            .subscribe{
-               .arrow{
-               }
+      //Contacts
+      .contacts {
+         .wrap {
+            width: 90%;
+
+            @include flexbox(row, space-between, center);
+            margin-bottom: 30px;
+
+            h3 {
+               width: 100%;
             }
-         }  
+
+            address {
+               width: 45%;
+            }
+
+         }
+
       }
 
 
