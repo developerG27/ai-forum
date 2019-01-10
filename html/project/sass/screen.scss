@@ -442,7 +442,36 @@
                text-align: left;
             }
 
-            
+            .arrow {
+               position: absolute;
+               right: 18px;
+               top: 62px;
+               height: auto;
+               @include flexbox (row, flex-start, center);
+
+               .line {
+                  transform: scale(1);
+                  margin-right: -2px;
+
+                  .first,
+                  .second {
+                     width: 20px;
+                     height: 4px;
+                     background: $color-white;
+                  }
+
+                  .first {
+                     transform: rotate(47deg);
+                     border-radius: 3px 0px 0px 3px;
+                  }
+
+                  .second {
+                     transform: rotate(-45deg);
+                     margin-top: 7.5px;
+                     border-radius: 3px 0px 0px 3px;
+                  }
+               }
+            }
          }
       }
    }
@@ -453,6 +482,7 @@
 
 .contacts {
    font-family: $font-secondary;
+   padding: 50px 0px;
 
    .wrap {
       width: 90%;
@@ -566,8 +596,7 @@
    //Jumbotron
    .jumbotron{
       .sponsor{
-         
-
+      
          span{
             position: relative;
             padding-right: 130px !important;
