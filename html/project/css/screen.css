@@ -553,7 +553,7 @@ body, html {
   line-height: 30px;
 }
 
-@media screen and (min-width: 376px) and (max-width: 425px) {
+@media screen and (min-width: 376px) and (max-width: 559px) {
   .nav-aside {
     width: 80% !important;
   }
