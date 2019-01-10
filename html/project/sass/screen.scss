@@ -637,6 +637,10 @@
       h3 {
          font-size: 1.8em;
       }
+
+      img{
+         max-width: 60% !important;
+      }
    }
 
    //Third Section
@@ -1319,7 +1323,5 @@ canvas.particles-js-canvas-el {
       .wrap{
          left: 5%;
       }
-
    }
-   
 }
