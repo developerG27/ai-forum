@@ -644,10 +644,6 @@ body, html {
     align-items: center;
     position: relative;
   }
-  .menu-laptop .primary:hover .secondary {
-    transition-duration: 0.5s;
-    opacity: 1;
-  }
   .menu-laptop .primary .item {
     margin-left: 20px;
     cursor: pointer;
@@ -656,13 +652,13 @@ body, html {
     border-bottom: 5px solid #42dcd4;
     height: 15px;
   }
-  .menu-laptop .primary .item:hover .second-section {
-    display: blok !important;
-  }
   .menu-laptop .primary .item:last-child {
     text-transform: uppercase;
     color: #42dcd4;
     font-weight: bolder;
+  }
+  .menu-laptop .primary .expand {
+    position: relative;
   }
   .menu-laptop .primary .secondary {
     position: absolute;
@@ -672,7 +668,7 @@ body, html {
     color: #fff;
     z-index: 2;
     padding: 40px;
-    opacity: 0;
+    display: none;
   }
   .menu-laptop .primary .secondary .secondary-item {
     line-height: 30px;
