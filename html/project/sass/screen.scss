@@ -692,6 +692,12 @@
 
          .item {
             margin-left: 20px;
+            cursor: pointer;
+
+            &:hover{
+               border-bottom: 5px solid $primary;
+               height: 15px;
+            }
 
 
             &:last-child {
@@ -1038,7 +1044,7 @@
             position: absolute;
             width: 100%;
             text-align: center;
-            top: 250px;
+            top: 175px;
             @include flexbox(row, space-between, baseline);
 
             img {
@@ -1053,6 +1059,7 @@
    //Partner
    .partner {
       display: block;
+      margin-top:-145px;
 
       .wrap {
          width: 90%;
@@ -1105,7 +1112,7 @@
 
       .box-logo {
          img {
-            width: 180px;
+            width: 225px;
             margin-right: 10px;
          }
       }
@@ -1133,8 +1140,6 @@
 
       .box-input {
          @include flexbox(row, space-between, center);
-
-
          .input-name-email {
             display: flex;
             width: 65%;

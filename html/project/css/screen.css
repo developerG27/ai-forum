@@ -646,6 +646,11 @@ body, html {
   }
   .menu-laptop .primary .item {
     margin-left: 20px;
+    cursor: pointer;
+  }
+  .menu-laptop .primary .item:hover {
+    border-bottom: 5px solid #42dcd4;
+    height: 15px;
   }
   .menu-laptop .primary .item:last-child {
     text-transform: uppercase;
@@ -954,7 +959,7 @@ body, html {
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 250px;
+    top: 175px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -968,6 +973,7 @@ body, html {
 
   .partner {
     display: block;
+    margin-top: -145px;
   }
   .partner .wrap {
     width: 90%;
@@ -1017,7 +1023,7 @@ body, html {
     text-transform: uppercase;
   }
   .partner .box-logo img {
-    width: 180px;
+    width: 225px;
     margin-right: 10px;
   }
 
