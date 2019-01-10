@@ -226,6 +226,7 @@
    width: 90%;
    margin: 80px auto 0px auto;
    font-family: $font-primary;
+   margin-top: 190px;
 
    .box{
       margin-top: -100px !important;
@@ -553,33 +554,42 @@
       color: $dark-primary;
       @include flexbox(row, space-between, flex-start);
 
-      .box-img-footer {
-         width: 20%;
-      }
+      // .box-img-footer {
+      //    width: 20%;
+      // }
 
-      .box-text-footer {
-         width: 55%;
-         text-align: right;
-      }
+      // .box-text-footer {
+      //    width: 55%;
+      //    text-align: right;
+      // }
+      .box-text-footer{
+         width: 100%;
 
-      .text {
-         margin: 30px 0px;
-
-         font-weight: bolder;
-         line-height: 25px;
-         font-size: 1.1em;
-         word-wrap: break-word;
-
-         span {
-            text-decoration: underline;
+         .text {
+            margin: 30px 0px;
+   
+            font-weight: bolder;
+            line-height: 25px;
+            font-size: 1.1em;
+            word-wrap: break-word;
+   
+            span {
+               text-decoration: underline;
+            }
          }
-      }
+      } 
    }
 }
 
 
-//Tablet
+// Tablet
 @media screen and (min-width: 560px) and (max-width: 959px) {
+
+   .footer{
+      .box-text-footer{
+         width: 50% !important;
+      }
+   }
 
    //Aside Navbar
    .nav-aside {
@@ -589,6 +599,14 @@
    .second-section {
       background-image: url(../img/background-xl.png) !important;
       background-size: cover;
+   }
+
+   //First Section
+   .first-section{
+
+      h3{
+         font-size: 1.8em;
+      }
    }
 
    //Third Section
@@ -608,7 +626,7 @@
 
    //contacts
    .contacts{
-      @include flexbox(row, center, flex-start);
+      @include flexbox(row, space-between, flex-start);
       h3{
          width: 100%;
       }
@@ -616,19 +634,20 @@
       address{
          width: 45%;
          min-height: 300px;
-         margin:0px 5px 0px 5px;
+         margin: 5px 0px;
       }
-
-      
    }
-
-   
-
 }
 
 
 //Laptop
 @media screen and (min-width: 960px) {
+
+   .footer{
+      .box-text-footer{
+         width: 50% !important;
+      }
+   }
 
    //Secondary menu
    .burgher-menu {
@@ -1159,12 +1178,15 @@
                }
             }
          }
+
       }
 
       .privacy {
          max-width: 80%;
       }
    }
+
+   
 
    .subscribe {
       display: none;
@@ -1198,3 +1220,5 @@
   50%{transform: translateX(50px) scale(1.8) ;}
   100% {transform: translateX(0px) scale(1.8);}
 }
+
+

@@ -259,6 +259,7 @@ body, html {
   width: 90%;
   margin: 80px auto 0px auto;
   font-family: "Open Sans", sans-serif;
+  margin-top: 190px;
 }
 .first-section .box {
   margin-top: -100px !important;
@@ -526,25 +527,25 @@ body, html {
   justify-content: space-between;
   align-items: flex-start;
 }
-.footer .wrap .box-img-footer {
-  width: 20%;
-}
 .footer .wrap .box-text-footer {
-  width: 55%;
-  text-align: right;
+  width: 100%;
 }
-.footer .wrap .text {
+.footer .wrap .box-text-footer .text {
   margin: 30px 0px;
   font-weight: bolder;
   line-height: 25px;
   font-size: 1.1em;
   word-wrap: break-word;
 }
-.footer .wrap .text span {
+.footer .wrap .box-text-footer .text span {
   text-decoration: underline;
 }
 
 @media screen and (min-width: 560px) and (max-width: 959px) {
+  .footer .box-text-footer {
+    width: 50% !important;
+  }
+
   .nav-aside {
     max-width: 300px;
   }
@@ -552,6 +553,10 @@ body, html {
   .second-section {
     background-image: url(../img/background-xl.png) !important;
     background-size: cover;
+  }
+
+  .first-section h3 {
+    font-size: 1.8em;
   }
 
   .third-section {
@@ -574,7 +579,7 @@ body, html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
   }
   .contacts h3 {
@@ -583,10 +588,14 @@ body, html {
   .contacts address {
     width: 45%;
     min-height: 300px;
-    margin: 0px 5px 0px 5px;
+    margin: 5px 0px;
   }
 }
 @media screen and (min-width: 960px) {
+  .footer .box-text-footer {
+    width: 50% !important;
+  }
+
   .burgher-menu {
     display: none !important;
   }
