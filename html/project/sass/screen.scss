@@ -4,14 +4,11 @@
 
 //Header
 .header {
-   @include flexbox(row, space-between, center);
-   height: 80px;
-   max-width: 100% !important;
-   width: 90%;
-   margin: auto;
 
    .wrap {
-      max-width: 90%;
+      width: 90%;
+      @include flexbox(row, space-between, center);
+      height: 80px;
    }
 
    .logo {
@@ -160,9 +157,6 @@
 }
 
 
-
-
-
 //Jumbotron
 .jumbotron {
    width: 100%;
@@ -176,8 +170,6 @@
 
    .wrap {
       width: 90%;
-      margin: auto;
-      overflow-x: hidden !important;
 
       h1 {
          font-size: 3em;
@@ -193,27 +185,26 @@
          font-size: 1.6em;
          padding: 40px 0px 40px 0px;
          text-transform: uppercase;
-
       }
-   }
 
-   .sponsor {
-      width: 100%;
-      position: absolute;
-      bottom: -10px;
-      text-align: center;
-
-      span {
-         text-transform: uppercase;
-         background: $primary;
-         padding: 30px 20px;
-         font-size: 1.5em;
-
-         &::after {
-            margin-left: 5px;
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            content: "\f101";
+      .sponsor {
+         width: 90%;
+         position: absolute;
+         bottom: -10px;
+         text-align: center;
+   
+         span {
+            text-transform: uppercase;
+            background: $primary;
+            padding: 30px 20px;
+            font-size: 1.5em;
+   
+            &::after {
+               margin-left: 5px;
+               font-family: "Font Awesome 5 Free";
+               font-weight: 900;
+               content: "\f101";
+            }
          }
       }
    }
@@ -223,41 +214,44 @@
 
 //First section
 .first-section {
-   width: 90%;
-   margin: 80px auto 0px auto;
    font-family: $font-primary;
-   margin-top: 190px;
 
-   .box{
-      margin-top: -100px !important;
+   .wrap{
+      width: 90%;
+
+      .box{
+         margin-top: 100px !important;
+
+         h3 {
+            font-weight: bold;
+            color: $dark-primary;
+            font-size: 2em;
+            margin-bottom: 30px;
+         }
+      
+         p {
+            color: $color-dark;
+            line-height: 1.5em;
+            margin-bottom: 40px;
+         }
+      
+         .box-scopri {
+            display: none;
+         }
+      }
+
+      img {
+         max-width: 100%;
+         width: 90% !important;
+         object-fit: cover;
+         margin: 40px 0px -2px 0px;
+      }
    }
 
-   h3 {
-      font-weight: bold;
-      color: $dark-primary;
-      font-size: 1.8;
-      margin-bottom: 30px;
-   }
+   
 
-   p {
-      color: $color-dark;
-      line-height: 1.5em;
-      margin-bottom: 40px;
-   }
-
-   .scopri {
-      display: none;
-   }
-
-
-
-   img {
-      max-width: 100%;
-      object-fit: cover;
-      margin: 40px 0px -2px 0px;
-   }
+   
 }
-
 
 //Second section
 .second-section {
@@ -265,13 +259,12 @@
    background-repeat: no-repeat;
    background-size: 100%;
    width: 100%;
-   padding: 70px 0px;
    font-family: $font-primary;
    color: $color-white;
+   padding: 70px 0px;
 
    .wrap {
       width: 90%;
-      margin: 0px auto;
 
       h3 {
          text-transform: uppercase;
@@ -286,41 +279,45 @@
    }
 }
 
-
-//third-section
+//Third-section
 .third-section {
-   width: 90%;
-   margin: 0px auto;
    font-family: $font-primary;
    padding: 70px 0px;
 
-   h3 {
-      font-weight: bolder;
-      color: $dark-primary;
-      font-size: 1.8em;
-      margin: 30px 0px;
-      text-transform: uppercase;
+   .wrap{
+      width: 90%;
+
+      h3 {
+         font-weight: bolder;
+         color: $dark-primary;
+         font-size: 1.8em;
+         margin: 30px 0px;
+         text-transform: uppercase;
+      }
+   
+      .number {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: $color-white;
+         background: $primary;
+         font-size: 1.8em;
+         font-weight: bolder;
+         border-radius: 50%;
+         width: 40px;
+         height: 40px;
+         margin: 40px 0px 20px 0px;
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      }
+   
+      p {
+         color: $color-dark;
+         line-height: 30px;
+      }
+
    }
 
-   .number {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: $color-white;
-      background: $primary;
-      font-size: 1.8em;
-      font-weight: bolder;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      margin: 40px 0px 20px 0px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-   }
-
-   p {
-      color: $color-dark;
-      line-height: 30px;
-   }
+   
 }
 
 
@@ -1225,3 +1222,7 @@
 }
 
 
+.wrap{
+   max-width: 1000px;
+   margin: auto;
+}

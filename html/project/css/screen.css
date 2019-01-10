@@ -67,19 +67,14 @@ body, html {
   position: fixed;
 }
 
-.header {
+.header .wrap {
+  width: 90%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  max-width: 100% !important;
-  width: 90%;
-  margin: auto;
-}
-.header .wrap {
-  max-width: 90%;
 }
 .header .logo {
   width: 100px;
@@ -220,8 +215,6 @@ body, html {
 }
 .jumbotron .wrap {
   width: 90%;
-  margin: auto;
-  overflow-x: hidden !important;
 }
 .jumbotron .wrap h1 {
   font-size: 3em;
@@ -236,19 +229,19 @@ body, html {
   padding: 40px 0px 40px 0px;
   text-transform: uppercase;
 }
-.jumbotron .sponsor {
-  width: 100%;
+.jumbotron .wrap .sponsor {
+  width: 90%;
   position: absolute;
   bottom: -10px;
   text-align: center;
 }
-.jumbotron .sponsor span {
+.jumbotron .wrap .sponsor span {
   text-transform: uppercase;
   background: #42dcd4;
   padding: 30px 20px;
   font-size: 1.5em;
 }
-.jumbotron .sponsor span::after {
+.jumbotron .wrap .sponsor span::after {
   margin-left: 5px;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -256,30 +249,31 @@ body, html {
 }
 
 .first-section {
-  width: 90%;
-  margin: 80px auto 0px auto;
   font-family: "Open Sans", sans-serif;
-  margin-top: 190px;
 }
-.first-section .box {
-  margin-top: -100px !important;
+.first-section .wrap {
+  width: 90%;
 }
-.first-section h3 {
+.first-section .wrap .box {
+  margin-top: 100px !important;
+}
+.first-section .wrap .box h3 {
   font-weight: bold;
   color: #232349;
-  font-size: 1.8;
+  font-size: 2em;
   margin-bottom: 30px;
 }
-.first-section p {
+.first-section .wrap .box p {
   color: #444444;
   line-height: 1.5em;
   margin-bottom: 40px;
 }
-.first-section .scopri {
+.first-section .wrap .box .box-scopri {
   display: none;
 }
-.first-section img {
+.first-section .wrap img {
   max-width: 100%;
+  width: 90% !important;
   object-fit: cover;
   margin: 40px 0px -2px 0px;
 }
@@ -289,13 +283,12 @@ body, html {
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
-  padding: 70px 0px;
   font-family: "Open Sans", sans-serif;
   color: #fff;
+  padding: 70px 0px;
 }
 .second-section .wrap {
   width: 90%;
-  margin: 0px auto;
 }
 .second-section .wrap h3 {
   text-transform: uppercase;
@@ -308,19 +301,20 @@ body, html {
 }
 
 .third-section {
-  width: 90%;
-  margin: 0px auto;
   font-family: "Open Sans", sans-serif;
   padding: 70px 0px;
 }
-.third-section h3 {
+.third-section .wrap {
+  width: 90%;
+}
+.third-section .wrap h3 {
   font-weight: bolder;
   color: #232349;
   font-size: 1.8em;
   margin: 30px 0px;
   text-transform: uppercase;
 }
-.third-section .number {
+.third-section .wrap .number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -334,7 +328,7 @@ body, html {
   margin: 40px 0px 20px 0px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-.third-section p {
+.third-section .wrap p {
   color: #444444;
   line-height: 30px;
 }
@@ -1123,6 +1117,10 @@ canvas.particles-js-canvas-el {
   100% {
     transform: translateX(0px) scale(1.8);
   }
+}
+.wrap {
+  max-width: 1000px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=screen.css.map */
