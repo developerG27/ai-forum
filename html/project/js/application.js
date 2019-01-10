@@ -35,25 +35,25 @@ document.addEventListener("DOMContentLoaded", function () {
    let pEmail = document.querySelector('.p-email');
 
 
-   inputName.addEventListener('click',function(){
+   inputName.addEventListener('click', function () {
       pName.classList.add('up');
    })
 
-   inputEmail.addEventListener('click',function(){
+   inputEmail.addEventListener('click', function () {
       pEmail.classList.add('up');
    })
 
-   inputName.addEventListener('mouseout',function(){
+   inputName.addEventListener('mouseout', function () {
       pName.classList.remove('up');
-      if(inputName.value.length > 0 ){
+      if (inputName.value.length > 0) {
          pName.classList.add('up');
       }
    })
 
-   inputEmail.addEventListener('mouseout',function(){
+   inputEmail.addEventListener('mouseout', function () {
       pEmail.classList.remove('up');
 
-      if(inputEmail.value.length > 0 ){
+      if (inputEmail.value.length > 0) {
          pEmail.classList.add('up');
       }
    })
@@ -62,8 +62,26 @@ document.addEventListener("DOMContentLoaded", function () {
    //Secondary menu
    let activatorSecondaryMenu = document.querySelector('#activator-secondary-menu');
    let secondaryMenu = document.querySelector('#secondary-menu')
-   activatorSecondaryMenu.addEventListener('click',function(){
+   activatorSecondaryMenu.addEventListener('click', function () {
       secondaryMenu.classList.toggle('block');
    })
+
+
+   //Contacts
+
+   //Funzione che calcola la lunghezza per dargli la stessa altezzas
+   function perfectSquare() {
+      var square = document.getElementsByClassName('square');
+      
+      for (var i = 0; i < square.length; i++) {
+         let perfectSquare = square[i].offsetWidth;
+         square[i].style.height = perfectSquare + "px";
+      }
+   }
+
+   perfectSquare();
+
+
+
 
 })

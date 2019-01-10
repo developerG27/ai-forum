@@ -489,22 +489,23 @@ body, html {
 }
 
 .contacts {
-  width: 90%;
-  margin: auto;
   font-family: "Poppins", sans-serif;
 }
-.contacts h3 {
+.contacts .wrap {
+  width: 90%;
+}
+.contacts .wrap h3 {
   font-weight: bolder;
   color: #232349;
   font-size: 1.8em;
   margin: 30px 0px;
   text-transform: uppercase;
 }
-.contacts p {
+.contacts .wrap p {
   color: #444444;
   line-height: 25px;
 }
-.contacts address {
+.contacts .wrap address {
   background: #e9f2f2;
   margin-bottom: 20px;
   padding: 25px;
@@ -513,8 +514,9 @@ body, html {
   font-weight: bolder;
   line-height: 30px;
   word-wrap: break-word;
+  width: 100% !important;
 }
-.contacts address h5 {
+.contacts .wrap address h5 {
   color: #42dcd4;
   font-weight: bolder;
   font-size: 1.4em;
@@ -525,7 +527,7 @@ body, html {
 .footer {
   background: #42dcd4;
   padding: 50px 0px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .footer .wrap {
   width: 90%;
@@ -548,7 +550,8 @@ body, html {
   word-wrap: break-word;
 }
 .footer .wrap .box-text-footer .text span {
-  text-decoration: underline;
+  border-bottom: 1px solid #232349;
+  line-height: 30px;
 }
 
 @media screen and (min-width: 560px) and (max-width: 959px) {

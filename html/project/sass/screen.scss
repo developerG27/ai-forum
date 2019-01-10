@@ -192,13 +192,13 @@
          position: absolute;
          bottom: -10px;
          text-align: center;
-   
+
          span {
             text-transform: uppercase;
             background: $primary;
             padding: 30px 20px;
             font-size: 1.5em;
-   
+
             &::after {
                margin-left: 5px;
                font-family: "Font Awesome 5 Free";
@@ -216,10 +216,10 @@
 .first-section {
    font-family: $font-primary;
 
-   .wrap{
+   .wrap {
       width: 90%;
 
-      .box{
+      .box {
          margin-top: 100px !important;
 
          h3 {
@@ -228,13 +228,13 @@
             font-size: 2em;
             margin-bottom: 30px;
          }
-      
+
          p {
             color: $color-dark;
             line-height: 1.5em;
             margin-bottom: 40px;
          }
-      
+
          .box-scopri {
             display: none;
          }
@@ -248,9 +248,9 @@
       }
    }
 
-   
 
-   
+
+
 }
 
 //Second section
@@ -284,7 +284,7 @@
    font-family: $font-primary;
    padding: 70px 0px;
 
-   .wrap{
+   .wrap {
       width: 90%;
 
       h3 {
@@ -294,7 +294,7 @@
          margin: 30px 0px;
          text-transform: uppercase;
       }
-   
+
       .number {
          display: flex;
          justify-content: center;
@@ -309,7 +309,7 @@
          margin: 40px 0px 20px 0px;
          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
       }
-   
+
       p {
          color: $color-dark;
          line-height: 30px;
@@ -332,7 +332,7 @@
    background: $background-primary;
    font-family: $font-primary;
    padding: 40px 0px;
-   
+
    .wrap {
       width: 90%;
 
@@ -468,19 +468,19 @@
                .line {
                   transform: scale(.8);
                   margin-right: -5px;
-         
+
                   .first,
                   .second {
                      width: 20px;
                      height: 4px;
                      background: $color-white;
                   }
-   
+
                   .first {
                      transform: rotate(47deg);
                      border-radius: 3px 0px 0px 3px;
                   }
-   
+
                   .second {
                      transform: rotate(-45deg);
                      margin-top: 7.5px;
@@ -494,52 +494,54 @@
 }
 
 
-//contact
+//Contacts
 
 .contacts {
-   width: 90%;
-   margin: auto;
    font-family: $font-secondary;
 
-   h3 {
-      font-weight: bolder;
-      color: $dark-primary;
-      font-size: 1.8em;
-      margin: 30px 0px;
-      text-transform: uppercase;
-   }
+   .wrap {
+      width: 90%;
 
-   p {
-      color: $color-dark;
-      line-height: 25px;
-   }
-
-   address {
-      background: $background-primary;
-      margin-bottom: 20px;
-      padding: 25px;
-      color: $dark-primary;
-      font-size: 1.1em;
-      font-weight: bolder;
-      line-height: 30px;
-      word-wrap: break-word;
-
-      h5 {
-         color: $primary;
+      h3 {
          font-weight: bolder;
-         font-size: 1.4em;
+         color: $dark-primary;
+         font-size: 1.8em;
+         margin: 30px 0px;
          text-transform: uppercase;
+      }
+
+      p {
+         color: $color-dark;
+         line-height: 25px;
+      }
+
+      address {
+         background: $background-primary;
+         margin-bottom: 20px;
+         padding: 25px;
+         color: $dark-primary;
+         font-size: 1.1em;
+         font-weight: bolder;
          line-height: 30px;
+         word-wrap: break-word;
+         width: 100% !important;
+
+         h5 {
+            color: $primary;
+            font-weight: bolder;
+            font-size: 1.4em;
+            text-transform: uppercase;
+            line-height: 30px;
+         }
       }
    }
 }
 
-
-//footer
+//Footer
 .footer {
    background: $primary;
    padding: 50px 0px;
-   font-family: $font-primary;
+   font-family: $font-secondary;
 
    .wrap {
       width: 90%;
@@ -547,39 +549,35 @@
       color: $dark-primary;
       @include flexbox(row, space-between, flex-start);
 
-      // .box-img-footer {
-      //    width: 20%;
-      // }
-
-      // .box-text-footer {
-      //    width: 55%;
-      //    text-align: right;
-      // }
-      .box-text-footer{
+      .box-text-footer {
          width: 100%;
 
          .text {
             margin: 30px 0px;
-   
+
             font-weight: bolder;
             line-height: 25px;
             font-size: 1.1em;
             word-wrap: break-word;
-   
+
             span {
-               text-decoration: underline;
+               border-bottom: 1px solid $dark-primary;
+               line-height: 30px;
             }
          }
-      } 
+      }
    }
 }
 
 
-// Tablet
+
+
+
+// ----- Tablet
 @media screen and (min-width: 560px) and (max-width: 959px) {
 
-   .footer{
-      .box-text-footer{
+   .footer {
+      .box-text-footer {
          width: 50% !important;
       }
    }
@@ -595,9 +593,9 @@
    }
 
    //First Section
-   .first-section{
+   .first-section {
 
-      h3{
+      h3 {
          font-size: 1.8em;
       }
    }
@@ -618,15 +616,15 @@
    }
 
    //contacts
-   .contacts{
+   .contacts {
       @include flexbox(row, space-between, flex-start);
-      margin-bottom: 30px; 
+      margin-bottom: 30px;
 
-      h3{
+      h3 {
          width: 100%;
       }
 
-      address{
+      address {
          width: 45%;
          min-height: 300px;
          margin: 5px 0px;
@@ -638,8 +636,8 @@
 //Laptop
 @media screen and (min-width: 960px) {
 
-   .footer{
-      .box-text-footer{
+   .footer {
+      .box-text-footer {
          width: 50% !important;
       }
    }
@@ -747,38 +745,38 @@
             padding: 20px;
             margin-top: 40px;
             width: 230px;
-   
+
             .scopri {
                text-transform: uppercase;
                color: $primary;
-               display: block !important; 
+               display: block !important;
                font-weight: bolder;
             }
-   
+
             .arrow {
                height: auto;
                @include flexbox (row, flex-start, center);
-   
+
                .line {
                   transform: scale(.5);
                   margin-right: -11px;
-   
+
                   &:last-child {
                      margin-right: 0px;
                   }
-   
+
                   .first,
                   .second {
                      width: 20px;
                      height: 4px;
                      background: $primary;
                   }
-   
+
                   .first {
                      transform: rotate(47deg);
                      border-radius: 3px 0px 0px 3px;
                   }
-   
+
                   .second {
                      transform: rotate(-45deg);
                      margin-top: 7.5px;
@@ -786,8 +784,8 @@
                   }
                }
             }
-   
-   
+
+
          }
       }
 
@@ -809,7 +807,7 @@
       .wrap {
          @include flexbox(row, space-between, flex-start);
 
-         .box-arrow{
+         .box-arrow {
             width: 10%;
          }
 
@@ -817,18 +815,18 @@
             display: flex;
             transform: rotate(90deg);
             margin-top: -90px;
-    
+
 
             .line {
                margin-right: 15px;
                animation-name: vertical-arrow-animated;
                animation-duration: 1.5s;
-               animation-iteration-count:infinite;
-               animation-timing-function:linear;
+               animation-iteration-count: infinite;
+               animation-timing-function: linear;
 
                &:last-child {
                   margin-right: 0px;
-               }  
+               }
 
                .first,
                .second {
@@ -941,17 +939,17 @@
             width: 30%;
             height: auto;
             @include flexbox (row, flex-start, center);
-            
+
 
             .line {
                transform: scale(3);
                margin-right: 30px;
                animation-name: arrow-animated;
                animation-duration: 1.3s;
-               animation-iteration-count:infinite;
-               animation-timing-function:linear;
-               
-               
+               animation-iteration-count: infinite;
+               animation-timing-function: linear;
+
+
 
                .first,
                .second {
@@ -1182,7 +1180,7 @@
       }
    }
 
-   
+
 
    .subscribe {
       display: none;
@@ -1198,27 +1196,51 @@
 
 #particles-js {
    background: linear-gradient(to right, #04817d, $primary);
- }
- canvas.particles-js-canvas-el{
-    position: absolute;
- }
+}
+
+canvas.particles-js-canvas-el {
+   position: absolute;
+}
 
 
 @keyframes arrow-animated {
-  0% {opacity: .4; transform: translateX(0px) scale(2.4); }
-  25%{opacity: 1; transform:translateX(20px) scale(3);}
-  50%{opacity: 1; transform:translateX(20px) scale(3);}
-  100% {opacity: .4; transform: translateX(0px) scale(2.4);}
+   0% {
+      opacity: .4;
+      transform: translateX(0px) scale(2.4);
+   }
+
+   25% {
+      opacity: 1;
+      transform: translateX(20px) scale(3);
+   }
+
+   50% {
+      opacity: 1;
+      transform: translateX(20px) scale(3);
+   }
+
+   100% {
+      opacity: .4;
+      transform: translateX(0px) scale(2.4);
+   }
 }
 
 @keyframes vertical-arrow-animated {
-  0% {transform: translateX(0) scale(1.8);}
-  50%{transform: translateX(50px) scale(1.8) ;}
-  100% {transform: translateX(0px) scale(1.8);}
+   0% {
+      transform: translateX(0) scale(1.8);
+   }
+
+   50% {
+      transform: translateX(50px) scale(1.8);
+   }
+
+   100% {
+      transform: translateX(0px) scale(1.8);
+   }
 }
 
 
-.wrap{
+.wrap {
    max-width: 1000px;
    margin: auto;
 }
