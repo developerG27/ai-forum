@@ -646,27 +646,27 @@
    //contacts
    .contacts {
 
-      .wrap{
+      .wrap {
          @include flexbox(row, space-between, flex-start);
          margin-bottom: 30px;
 
-      h3 {
-         width: 100%;
-      }
+         h3 {
+            width: 100%;
+         }
 
-      address {
-         width: 48% !important;
-         margin: 5px 0px;
-      }
+         address {
+            width: 48% !important;
+            margin: 5px 0px;
+         }
 
       }
    }
 
    //Footer
-   .footer{
+   .footer {
       padding: 30px 0px !important;
-      
-      .wrap{
+
+      .wrap {
          align-items: flex-end !important;
       }
    }
@@ -675,12 +675,6 @@
 
 //Laptop
 @media screen and (min-width: 960px) {
-
-   .footer {
-      .box-text-footer {
-         width: 50% !important;
-      }
-   }
 
    //Secondary menu
    .burgher-menu {
@@ -767,74 +761,70 @@
 
    //First section
    .first-section {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      align-items: center;
-      padding: 60px 0px 0px;
+      .wrap {
+         @include flexbox(row-reverse, space-between, flex-end);
+         padding: 50px 0px 0px 0px;
 
-      .box {
-         width: 50%;
+         .box {
+            width: 50%;
+            height: 500px;
 
+            .box-scopri {
+               border: 2px solid $primary;
+               border-radius: 3px;
+               @include flexbox(row, space-between, center);
+               position: relative;
+               padding: 20px;
+               margin-top: 40px;
+               width: 230px;
 
-         .box-scopri {
-            border: 2px solid $primary;
-            border-radius: 3px;
-            @include flexbox(row, space-between, center);
-            position: relative;
-            padding: 20px;
-            margin-top: 40px;
-            width: 230px;
+               .scopri {
+                  text-transform: uppercase;
+                  color: $primary;
+                  display: block !important;
+                  font-weight: bolder;
+               }
 
-            .scopri {
-               text-transform: uppercase;
-               color: $primary;
-               display: block !important;
-               font-weight: bolder;
-            }
+               .arrow {
+                  height: auto;
+                  @include flexbox (row, flex-start, center);
 
-            .arrow {
-               height: auto;
-               @include flexbox (row, flex-start, center);
+                  .line {
+                     transform: scale(.5);
+                     margin-right: -11px;
 
-               .line {
-                  transform: scale(.5);
-                  margin-right: -11px;
+                     &:last-child {
+                        margin-right: 0px;
+                     }
 
-                  &:last-child {
-                     margin-right: 0px;
-                  }
+                     .first,
+                     .second {
+                        width: 20px;
+                        height: 4px;
+                        background: $primary;
+                     }
 
-                  .first,
-                  .second {
-                     width: 20px;
-                     height: 4px;
-                     background: $primary;
-                  }
+                     .first {
+                        transform: rotate(47deg);
+                        border-radius: 3px 0px 0px 3px;
+                     }
 
-                  .first {
-                     transform: rotate(47deg);
-                     border-radius: 3px 0px 0px 3px;
-                  }
-
-                  .second {
-                     transform: rotate(-45deg);
-                     margin-top: 7.5px;
-                     border-radius: 3px 0px 0px 3px;
+                     .second {
+                        transform: rotate(-45deg);
+                        margin-top: 7.5px;
+                        border-radius: 3px 0px 0px 3px;
+                     }
                   }
                }
             }
+         }
 
-
+         img {
+            margin: 0px;
+            max-width: 400px;
+            object-fit: contain;
          }
       }
-
-      img {
-         margin: 0px;
-         max-width: 400px;
-         object-fit: contain;
-      }
-
    }
 
 
@@ -945,16 +935,18 @@
 
    //Third Section 
    .third-section {
-      @include flexbox(row, space-between, baseline);
+      .wrap {
+         @include flexbox(row, space-between, baseline);
 
-      h3 {
-         width: 100%;
-      }
+         h3 {
+            width: 100%;
+         }
 
-      .box {
-         width: 30%;
-         min-height: 330px;
-         margin-bottom: 0px;
+         .box {
+            width: 30%;
+            min-height: 330px;
+            margin-bottom: 0px;
+         }
       }
    }
 
@@ -1058,51 +1050,55 @@
 
    //Partner
    .partner {
-      width: 90%;
-      margin: auto;
-      font-family: $font-secondary;
-      padding: 0px 0px 60px 0px;
+      display: block;
 
-      .partner-title {
-         @include flexbox(row, flex-start, center);
-         height: 100px;
+      .wrap {
+         width: 90%;
+         font-family: $font-secondary;
+         padding: 0px 0px 60px 0px;
 
-         .arrow {
-            height: auto;
-            @include flexbox (row, flex-start, center);
+         .partner-title {
+            @include flexbox(row, flex-start, center);
+            height: 100px;
 
-            .line {
-               transform: scale(.7);
-               margin-right: -8px;
+            .arrow {
+               height: auto;
+               @include flexbox (row, flex-start, center);
 
-               .first,
-               .second {
-                  width: 20px;
-                  height: 4px;
-                  background: $primary;
+               .line {
+                  transform: scale(.7);
+                  margin-right: -8px;
+
+                  .first,
+                  .second {
+                     width: 20px;
+                     height: 4px;
+                     background: $primary;
+                  }
+
+                  .first {
+                     transform: rotate(47deg);
+                     border-radius: 3px 0px 0px 3px;
+                  }
+
+                  .second {
+                     transform: rotate(-45deg);
+                     margin-top: 7.5px;
+                     border-radius: 3px 0px 0px 3px;
+                  }
                }
+            }
 
-               .first {
-                  transform: rotate(47deg);
-                  border-radius: 3px 0px 0px 3px;
-               }
+            h3 {
+               margin-left: 20px;
+               font-weight: bolder;
+               color: $dark-primary;
+               font-size: 1.6em;
 
-               .second {
-                  transform: rotate(-45deg);
-                  margin-top: 7.5px;
-                  border-radius: 3px 0px 0px 3px;
-               }
+               text-transform: uppercase;
             }
          }
 
-         h3 {
-            margin-left: 20px;
-            font-weight: bolder;
-            color: $dark-primary;
-            font-size: 1.6em;
-
-            text-transform: uppercase;
-         }
       }
 
       .box-logo {
@@ -1118,7 +1114,6 @@
    .newsletter {
       background: $color-white;
       position: relative;
-      left: 5%;
       margin-bottom: 550px;
 
       .wrap {
@@ -1162,6 +1157,7 @@
          .input-email {
             border-left: 1px solid $primary !important;
          }
+         
 
          .subscribe-laptop {
             width: 30% !important;
@@ -1214,6 +1210,9 @@
          }
 
       }
+      .subscribe {
+         display: none !important;
+      }
 
       .privacy {
          max-width: 80%;
@@ -1221,16 +1220,18 @@
    }
 
 
+   
 
-   .subscribe {
+   //Contacts
+   .contacts {
       display: none;
    }
 
-
-   //contacts
-
-   .contacts {
-      display: none;
+   //Footer
+   .footer {
+      .box-text-footer {
+         width: 50% !important;
+      }
    }
 }
 
@@ -1281,6 +1282,6 @@ canvas.particles-js-canvas-el {
 
 
 .wrap {
-   max-width: 1000px;
+   max-width: 1200px;
    margin: auto;
 }
