@@ -688,8 +688,10 @@ body, html {
     font-size: 2.2em;
   }
   .jumbotron .sponsor {
-    text-align: left;
-    left: 5%;
+    width: 90%;
+    max-width: 1200px;
+    text-align: left !important;
+    left: calc(50%-200px);
   }
 
   .first-section .wrap {
@@ -1030,6 +1032,7 @@ body, html {
     width: 90%;
     position: absolute;
     overflow: visible;
+    left: calc(50% - 600px);
   }
   .newsletter .wrap p {
     max-width: 80%;

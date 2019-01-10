@@ -752,8 +752,10 @@
       }
 
       .sponsor {
-         text-align: left;
-         left: 5%;
+         width: 90%;
+         max-width: 1200px;
+         text-align: left !important;
+         left: calc(50%-200px);
       }
 
    }
@@ -1122,6 +1124,7 @@
          width: 90%;
          position: absolute;
          overflow: visible;
+         left: calc(50% - 600px);
 
          p {
             max-width: 80%;
