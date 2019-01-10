@@ -557,7 +557,7 @@ body, html {
 
 @media screen and (min-width: 376px) and (max-width: 559px) {
   .nav-aside {
-    width: 80% !important;
+    width: 60% !important;
   }
 
   .contacts .wrap h3 {
@@ -1021,7 +1021,6 @@ body, html {
     height: 100px;
   }
   .partner .wrap .partner-title h3 {
-    margin-left: 20px;
     font-weight: bolder;
     color: #232349;
     font-size: 1.6em;

@@ -352,7 +352,6 @@
                border-color:  $primary;
                box-shadow: 0 0 2px  $primary;
             }
-
          }
 
          .input-name {
@@ -575,7 +574,7 @@
 
    //Aside Nav
    .nav-aside {
-      width: 80% !important;
+      width: 60% !important;
    }
 
    //Contacts
@@ -1116,7 +1115,6 @@
             height: 100px;
 
             h3 {
-               margin-left: 20px;
                font-weight: bolder;
                color: $dark-primary;
                font-size: 1.6em;
@@ -1305,7 +1303,6 @@ canvas.particles-js-canvas-el {
       transform: translateX(0px) scale(1.8);
    }
 }
-
 
 .wrap {
    max-width: 1200px;
