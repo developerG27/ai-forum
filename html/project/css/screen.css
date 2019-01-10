@@ -240,12 +240,19 @@ body, html {
   background: #42dcd4;
   padding: 30px 20px;
   font-size: 1.5em;
+  padding: 30px 150px 30px 20px;
 }
 .jumbotron .wrap .sponsor span::after {
   margin-left: 5px;
-  font-family: "Font Awesome 5 Free";
+  padding-top: 20px;
   font-weight: 900;
-  content: "";
+  font-family: "Poppins", sans-serif;
+  content: ">>>>>";
+  font-weight: lighter;
+  font-size: 2em;
+  position: absolute;
+  padding-left: 30px;
+  top: -30px;
 }
 
 .first-section {

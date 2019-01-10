@@ -34,9 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
          bar1.style.width= "100%";
          bar3.style.width = "100%";
       }
-
       body.classList.toggle('lock');
-
    })
 
 
