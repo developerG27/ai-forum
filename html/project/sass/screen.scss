@@ -82,6 +82,11 @@
             &:checked~.tab-content {
                max-height: 100vh;
             }
+
+            &:checked~label::after{
+               margin-left: 20px;
+               font-weight: bolder;
+            }
          }
 
          label {

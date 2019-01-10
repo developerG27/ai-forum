@@ -143,6 +143,10 @@ body, html {
 .burgher-nav .nav-aside .tab input:checked ~ .tab-content {
   max-height: 100vh;
 }
+.burgher-nav .nav-aside .tab input:checked ~ label::after {
+  margin-left: 20px;
+  font-weight: bolder;
+}
 .burgher-nav .nav-aside .tab label {
   position: relative;
   display: block;

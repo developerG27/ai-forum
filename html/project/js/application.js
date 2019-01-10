@@ -7,9 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
    let bar1 = document.querySelector('.bar-1');
    let bar3 = document.querySelector('.bar-3');
 
+
    activatorNav.addEventListener('click', function () {
-
-
       if (burgherNav.classList.contains('nav-start')) {
          // activatorNav.style.transform = "rotate(0deg)";
          
@@ -36,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       body.classList.toggle('lock');
    })
-
 
    //Checkbox
    let inputName = document.querySelector('.input-name');
