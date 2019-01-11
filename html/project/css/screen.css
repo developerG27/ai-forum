@@ -273,12 +273,13 @@ body, html {
   width: 90%;
 }
 .third-section .wrap .number {
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   background: #42dcd4;
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: bolder;
   border-radius: 50%;
   width: 40px;
@@ -318,7 +319,7 @@ body, html {
   border: 0px;
   font-size: 2em;
   text-transform: uppercase;
-  padding: 50px 0px;
+  padding: 30px 0px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }

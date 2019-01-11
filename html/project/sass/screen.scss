@@ -245,12 +245,13 @@
       width: 90%;
 
       .number {
+         font-family: $font-secondary;
          display: flex;
          justify-content: center;
          align-items: center;
          color: $color-white;
          background: $primary;
-         font-size: 1.8em;
+         font-size: 1.6em;
          font-weight: bolder;
          border-radius: 50%;
          width: 40px;
@@ -296,7 +297,7 @@
             border: 0px;
             font-size: 2em;
             text-transform: uppercase;
-            padding: 50px 0px;
+            padding: 30px 0px;
             font-family: $font-secondary;
             font-weight: 700;
          }
