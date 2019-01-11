@@ -28,7 +28,7 @@
          color: $color-white;
          padding: 20px;
          
-         a{
+         .link-item{
 
             .item{
                line-height: 35px;
@@ -37,6 +37,15 @@
             &:nth-child(1){
                color: $primary;
 
+               .item{
+                  &:after{
+                     content: ">";
+                     display: inline-block;
+                     font-family: $font-secondary;
+                     font-weight: 500;
+                     transform: rotate(90deg);
+                  }
+               }
             }
          }
 
@@ -469,7 +478,6 @@
 
          .text {
             margin: 30px 0px;
-
             font-weight: 700;
             line-height: 25px;
             font-size: 1.1em;
@@ -653,21 +661,14 @@
             color: $dark-primary;
             font-size:.9em !important;
 
-            a{
+            .link-item{
                color: $dark-primary !important;
                font-weight: 500;
                @include flexbox(row, space-between,center);
                &:nth-child(1){
                   color: $primary !important;
 
-                  &:after{
-                     content: ">";
-                     display: inline-block;
-                     margin-left: 10px;
-                     transform: rotate(90deg);  
-                     font-family: $font-secondary; 
 
-                  }
                }
                .item{
                   font-size: 1em;
@@ -1096,7 +1097,6 @@
       }
    }
 
-
    //Newsletter
    .newsletter {
       background: $color-white;
@@ -1203,9 +1203,6 @@
       }
    }
 
-
-   
-
    //Contacts
    .contacts {
       display: none;
@@ -1226,7 +1223,6 @@
 canvas.particles-js-canvas-el {
    position: absolute;
 }
-
 
 @keyframes arrow-animated {
    0% {
@@ -1286,7 +1282,6 @@ h3.title-section {
    line-height: 1.8em;
    text-transform: uppercase;
 }
-
 
 a{
    color: $color-white;
