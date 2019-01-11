@@ -28,7 +28,7 @@
          padding: 20px;
 
          .item{
-            line-height:30px;
+            line-height:40px;
             
             &:first-of-type{
                &:after{
@@ -52,7 +52,7 @@
             margin-left: 20px;
 
             .secondary-item{
-               line-height: 30px;
+               line-height: 40px;
 
                &:nth-child(2){
                   color: $primary;
@@ -67,6 +67,7 @@
       opacity: 1 !important;
       height: auto !important;
       transition-duration: .5s;
+      padding: 10px 0px;
    }
 
 

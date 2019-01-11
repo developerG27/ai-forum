@@ -92,7 +92,7 @@ body, html {
   padding: 20px;
 }
 .header .menu-laptop .primary .item {
-  line-height: 30px;
+  line-height: 40px;
 }
 .header .menu-laptop .primary .item:first-of-type:after {
   content: ">";
@@ -112,7 +112,7 @@ body, html {
   margin-left: 20px;
 }
 .header .menu-laptop .primary .secondary .secondary-item {
-  line-height: 30px;
+  line-height: 40px;
 }
 .header .menu-laptop .primary .secondary .secondary-item:nth-child(2) {
   color: #42dcd4;
@@ -121,6 +121,7 @@ body, html {
   opacity: 1 !important;
   height: auto !important;
   transition-duration: 0.5s;
+  padding: 10px 0px;
 }
 .header .burgher-menu {
   width: 30px;
