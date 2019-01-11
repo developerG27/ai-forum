@@ -611,6 +611,13 @@ body, html {
     min-height: auto !important;
     width: 100%;
   }
+}
+@media screen and (min-width: 960px) and (min-width: 1100px) {
+  .header .wrap .primary {
+    font-size: 1em !important;
+  }
+}
+@media screen and (min-width: 960px) {
   .header .wrap .primary .link-item {
     color: #232349 !important;
     font-weight: 500;
@@ -634,6 +641,8 @@ body, html {
     border-bottom: 0px;
     margin-right: 0px !important;
   }
+}
+@media screen and (min-width: 960px) {
   .header .wrap .primary .secondary {
     opacity: 0;
     height: 0;
@@ -653,18 +662,21 @@ body, html {
   .header .wrap .primary .secondary a:nth-child(2) {
     color: #42dcd4 !important;
   }
-
+}
+@media screen and (min-width: 960px) {
   .visibile {
     opacity: 1 !important;
     height: auto !important;
     transition-duration: 0.5s;
   }
-
+}
+@media screen and (min-width: 960px) {
   .block {
     opacity: 1 !important;
     transition-duration: 0.5s;
   }
-
+}
+@media screen and (min-width: 960px) {
   .jumbotron .wrap h1 {
     font-size: 5em;
     font-weight: 700;
@@ -697,7 +709,8 @@ body, html {
     position: absolute;
     font-size: 1.7em !important;
   }
-
+}
+@media screen and (min-width: 960px) {
   .first-section .wrap {
     display: flex;
     flex-direction: row-reverse;
@@ -771,7 +784,8 @@ body, html {
     max-width: 47%;
     object-fit: contain;
   }
-
+}
+@media screen and (min-width: 960px) {
   .second-section {
     background-image: url(../img/background-xl.png) !important;
     background-size: cover;
@@ -866,7 +880,8 @@ body, html {
     margin-top: 7.5px;
     border-radius: 3px 0px 0px 3px;
   }
-
+}
+@media screen and (min-width: 960px) {
   .third-section .wrap {
     display: flex;
     flex-direction: row;
@@ -882,7 +897,8 @@ body, html {
     min-height: 330px;
     margin-bottom: 0px;
   }
-
+}
+@media screen and (min-width: 960px) {
   .location {
     display: block !important;
     width: 100%;
@@ -968,7 +984,8 @@ body, html {
     width: 33.3%;
     object-fit: contain;
   }
-
+}
+@media screen and (min-width: 960px) {
   .partner {
     display: block;
     margin-top: -145px;
@@ -1026,7 +1043,8 @@ body, html {
     width: 18.5% !important;
     margin-right: 10px;
   }
-
+}
+@media screen and (min-width: 960px) {
   .newsletter {
     background: #fff;
     position: relative;
@@ -1121,11 +1139,13 @@ body, html {
   .newsletter .privacy {
     max-width: 80%;
   }
-
+}
+@media screen and (min-width: 960px) {
   .contacts {
     display: none;
   }
-
+}
+@media screen and (min-width: 960px) {
   .footer .box-text-footer {
     width: 50% !important;
   }
