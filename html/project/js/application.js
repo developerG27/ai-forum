@@ -80,4 +80,10 @@ document.addEventListener("DOMContentLoaded", function () {
    window.onresize = function() {
       location.reload();
    }
+
+   //Cambia il testo del button nell header
+   if(body.offsetWidth < 425){
+      let changeText = document.querySelector('#changeText');
+      changeText.textContent = "Contattaci";
+   }
 })
