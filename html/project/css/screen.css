@@ -90,7 +90,9 @@ body, html {
   position: absolute;
   background: #232349;
   color: #fff;
-  padding: 20px;
+  padding: 30px;
+  min-height: 500px;
+  width: 88%;
 }
 .header .menu-laptop .primary .link-item .item {
   line-height: 35px;
