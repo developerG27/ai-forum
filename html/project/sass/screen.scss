@@ -188,8 +188,7 @@
       width: 90%;
 
       .box {
-         margin-top: 0px !important;
-         transform: translateY(-45%);
+         margin-top: 80px;
 
          p {
             color: $color-dark;
@@ -781,6 +780,7 @@
 
          .box {
             width: 50%;
+            transform: translateY(-45%);
 
             .box-scopri {
                border: 2px solid $primary;

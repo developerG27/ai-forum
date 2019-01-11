@@ -227,8 +227,7 @@ body, html {
   width: 90%;
 }
 .first-section .wrap .box {
-  margin-top: 0px !important;
-  transform: translateY(-45%);
+  margin-top: 80px;
 }
 .first-section .wrap .box p {
   color: #444444;
@@ -699,6 +698,7 @@ body, html {
   }
   .first-section .wrap .box {
     width: 50%;
+    transform: translateY(-45%);
   }
   .first-section .wrap .box .box-scopri {
     border: 2px solid #42dcd4;
