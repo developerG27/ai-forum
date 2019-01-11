@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+   
 
    //nav aside
    let activatorNav = document.querySelector('#activator-nav');
@@ -43,24 +44,22 @@ document.addEventListener("DOMContentLoaded", function () {
    let pEmail = document.querySelector('.p-email');
 
 
-   inputName.addEventListener('click', function () {
+   inputName.addEventListener('focus', function () {
       pName.classList.add('up');
    })
 
-   inputEmail.addEventListener('click', function () {
+   inputEmail.addEventListener('focus', function () {
       pEmail.classList.add('up');
    })
 
-   // inputEmail.addEventListener('mouseon')
-
-   inputName.addEventListener('mouseout', function () {
+   inputName.addEventListener('blur', function () {
       pName.classList.remove('up');
       if (inputName.value.length > 0) {
          pName.classList.add('up');
       }
    })
 
-   inputEmail.addEventListener('mouseout', function () {
+   inputEmail.addEventListener('blur', function () {
       pEmail.classList.remove('up');
 
       if (inputEmail.value.length > 0) {
