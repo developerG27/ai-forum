@@ -964,6 +964,36 @@ body, html {
     display: block;
     margin-top: -145px;
   }
+  .partner .arrow {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .partner .arrow .line {
+    transform: scale(0.5);
+    margin-right: -11px;
+  }
+  .partner .arrow .line:last-child {
+    margin-right: 0px;
+  }
+  .partner .arrow .line .first,
+.partner .arrow .line .second {
+    width: 20px;
+    height: 4px;
+    background: #42dcd4;
+  }
+  .partner .arrow .line .first {
+    transform: rotate(47deg);
+    border-radius: 3px 0px 0px 3px;
+  }
+  .partner .arrow .line .second {
+    transform: rotate(-45deg);
+    margin-top: 7.5px;
+    border-radius: 3px 0px 0px 3px;
+  }
   .partner .wrap {
     width: 90%;
     font-family: "Poppins", sans-serif;

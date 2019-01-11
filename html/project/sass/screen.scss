@@ -499,13 +499,8 @@
                      content: '/';
                      margin: 0px 10px;
                   }
-
                }
-               
-
             }
-
-            
          }
       }
    }
@@ -1066,6 +1061,38 @@
    .partner {
       display: block;
       margin-top:-145px;
+
+      .arrow {
+         height: auto;
+         @include flexbox (row, flex-start, center);
+
+         .line {
+            transform: scale(.5);
+            margin-right: -11px;
+
+            &:last-child {
+               margin-right: 0px;
+            }
+
+            .first,
+            .second {
+               width: 20px;
+               height: 4px;
+               background: $primary;
+            }
+
+            .first {
+               transform: rotate(47deg);
+               border-radius: 3px 0px 0px 3px;
+            }
+
+            .second {
+               transform: rotate(-45deg);
+               margin-top: 7.5px;
+               border-radius: 3px 0px 0px 3px;
+            }
+         }
+      }
 
       .wrap {
          width: 90%;
