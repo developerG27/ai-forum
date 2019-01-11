@@ -682,10 +682,8 @@
                         border-bottom: 0px;
                         margin-right: 0px !important;
                      }
-                  }
-                  
+                  }  
                }
-
             }
 
             .secondary{
@@ -1167,7 +1165,7 @@
             .arrow {
                position: absolute;
                right: 18px;
-               top: 37px;
+               top: 64px;
                height: auto;
                @include flexbox (row, flex-start, center);
 

@@ -1049,7 +1049,7 @@ body, html {
   .newsletter .box-input .subscribe-laptop .arrow {
     position: absolute;
     right: 18px;
-    top: 37px;
+    top: 64px;
     height: auto;
     display: flex;
     flex-direction: row;
