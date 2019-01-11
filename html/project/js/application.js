@@ -10,31 +10,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
    activatorNav.addEventListener('click', function () {
-      if (burgherNav.classList.contains('nav-start')) {
-         // activatorNav.style.transform = "rotate(0deg)";
-         
-         burgherNav.classList.add('nav-end');
+      burgherNav.classList.toggle('show');
+      body.classList.toggle('lock');
+
+      if (burgherNav.classList.contains('show')) {
+         bar1.style.width= "100%";
+         bar3.style.width = "100%";
+      } else{
          bar1.style.width = "70%";
          bar3.style.width = "50%";
-         if (burgherNav.classList.contains('nav-start')) {
-            burgherNav.classList.remove('nav-start')
-
-         }
-      } else if (burgherNav.classList.contains('nav-end')) {
-         // activatorNav.style.transform = "rotate(10deg)";
-         burgherNav.classList.add('nav-start');
-         bar1.style.width= "100%";
-         bar3.style.width = "100%";
-
-         if (burgherNav.classList.contains('nav-end')) {
-            burgherNav.classList.remove('nav-end');
-         }
-      } else {
-         burgherNav.classList.add('nav-start');
-         bar1.style.width= "100%";
-         bar3.style.width = "100%";
-      }
-      body.classList.toggle('lock');
+      } 
    })
 
    //Checkbox

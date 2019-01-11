@@ -18,7 +18,8 @@
 
    .menu-laptop {
       .primary{
-         right: 0px;
+         right: -100%;
+         transition-duration: 1s;
          z-index: 2;
          top: 80px;
          font-family: $font-primary;
@@ -69,11 +70,17 @@
       transition-duration: .5s;
       padding: 10px 0px;
    }
+   .show{
+      right: 0% !important;
+      transition-duration: 1s;
+   }
 
 
    .burgher-menu {
       width: 30px;
       height: 30px;
+      position: absolute;
+      right: 5%;
       @include flexbox(row, flex-end, center);
 
       .bar {
