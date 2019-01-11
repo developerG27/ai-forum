@@ -1121,4 +1121,9 @@ h3.title-section {
   text-transform: uppercase;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=screen.css.map */
