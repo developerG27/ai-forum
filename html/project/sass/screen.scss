@@ -63,12 +63,9 @@
                &:nth-child(2){
                   color: $primary;
                }
-
             }
          }
-
       }
-      
    }
    .visibile{
       opacity: 1 !important;
@@ -469,6 +466,7 @@
    background: $primary;
    padding: 50px 0px;
    font-family: $font-secondary;
+   text-align: left;
 
    .wrap {
       width: 90%;
@@ -485,12 +483,12 @@
             line-height: 25px;
             font-size: 1.1em;
             word-wrap: break-word;
-            text-align:right;
+            text-align:left;
          }
       }
 
       .cookie{
-         @include flexbox(row, flex-end, center);
+         @include flexbox(row, flex-start, center);
 
          a{
             color: $dark-primary;
@@ -1240,6 +1238,13 @@
    .footer {
       .box-text-footer {
          width: 50% !important;
+      }
+
+      .text{
+         text-align: right !important;
+      }
+      .cookie{
+         justify-content: flex-end !important;
       }
    }
 }
