@@ -66,6 +66,9 @@ body, html {
   position: fixed;
 }
 
+.header {
+  position: relative;
+}
 .header .wrap {
   width: 90%;
   display: flex;
@@ -78,8 +81,46 @@ body, html {
 .header .logo {
   width: 100px;
 }
-.header .menu-laptop {
-  display: none;
+.header .menu-laptop .primary {
+  right: 0px;
+  z-index: 2;
+  top: 80px;
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  background: #232349;
+  color: #fff;
+  padding: 20px;
+}
+.header .menu-laptop .primary .item {
+  line-height: 30px;
+}
+.header .menu-laptop .primary .item:first-of-type:after {
+  content: ">";
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  margin-left: 5px;
+  transform: rotate(90deg) !important;
+}
+.header .menu-laptop .primary .item:last-child {
+  color: #42dcd4;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.header .menu-laptop .primary .secondary {
+  opacity: 0;
+  height: 0;
+  margin-left: 20px;
+}
+.header .menu-laptop .primary .secondary .secondary-item {
+  line-height: 30px;
+}
+.header .menu-laptop .primary .secondary .secondary-item:nth-child(2) {
+  color: #42dcd4;
+}
+.header .visibile {
+  opacity: 1 !important;
+  height: auto !important;
+  transition-duration: 0.5s;
 }
 .header .burgher-menu {
   width: 30px;
@@ -107,91 +148,6 @@ body, html {
 }
 .header .burgher-menu .bar:nth-child(3) {
   width: 50%;
-}
-
-.burgher-nav {
-  max-width: 100vw;
-  overflow-x: hidden !important;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-}
-.burgher-nav .nav-aside {
-  width: 88%;
-  padding: 25px;
-  background: #232349;
-  min-height: 500px;
-  color: #d3d3db;
-  font-family: "Open Sans", sans-serif;
-  position: absolute;
-  top: 80px;
-  z-index: 1;
-  transform: translateX(100%);
-}
-.burgher-nav .nav-aside .tab {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-.burgher-nav .nav-aside .tab input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
-.burgher-nav .nav-aside .tab input:checked ~ .tab-content {
-  max-height: 100vh;
-}
-.burgher-nav .nav-aside .tab input:checked ~ label::after {
-  margin-left: 20px;
-  font-weight: bolder;
-}
-.burgher-nav .nav-aside .tab label {
-  position: relative;
-  display: block;
-  cursor: pointer;
-  line-height: 40px;
-}
-.burgher-nav .nav-aside .tab label::after {
-  margin-left: 5px;
-  font-family: "Poppins", sans-serif;
-  font-weight: lighter;
-  content: ">";
-  transform: rotate(90deg);
-}
-.burgher-nav .nav-aside .tab .tab-content {
-  max-height: 0;
-  overflow: hidden;
-  margin-left: 20px;
-  line-height: 40px;
-  -webkit-transition: max-height 0.35s;
-  -o-transition: max-height 0.35s;
-  transition: max-height 0.35s;
-}
-.burgher-nav .nav-aside .tab .secondary-item :nth-child(2) {
-  color: #42dcd4;
-}
-.burgher-nav .nav-aside .item {
-  line-height: 40px;
-}
-.burgher-nav .nav-aside .item:nth-child(1)::after, .burgher-nav .nav-aside .item:nth-child(3)::after {
-  margin-left: 5px;
-  font-weight: 900;
-  content: ">";
-  font-family: "Poppins", sans-serif;
-  font-weight: lighter;
-}
-.burgher-nav .nav-aside .item:last-child {
-  color: #42dcd4;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.burgher-nav .nav-aside .secondary-item {
-  line-height: 40px;
-}
-.burgher-nav .nav-aside .secondary-item:nth-child(2) {
-  color: #42dcd4;
 }
 
 .nav-start {
@@ -650,58 +606,6 @@ body, html {
   }
 }
 @media screen and (min-width: 960px) {
-  .burgher-menu {
-    display: none !important;
-  }
-
-  .menu-laptop {
-    display: block !important;
-    font-family: "Open Sans", sans-serif;
-    color: #232349;
-  }
-  .menu-laptop .primary {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
-  .menu-laptop .primary .item {
-    font-size: 0.92em;
-    margin-left: 15px;
-    cursor: pointer;
-  }
-  .menu-laptop .primary .item:hover {
-    border-bottom: 5px solid #42dcd4;
-    height: 15px;
-  }
-  .menu-laptop .primary .item:last-child {
-    border: 0px;
-    text-transform: uppercase;
-    color: #42dcd4;
-    font-weight: bolder;
-  }
-  .menu-laptop .primary .expand {
-    position: relative;
-  }
-  .menu-laptop .primary .secondary {
-    position: absolute;
-    top: 48px;
-    left: -20px;
-    background: #232349;
-    color: #fff;
-    z-index: 2;
-    padding: 40px;
-    opacity: 0;
-  }
-  .menu-laptop .primary .secondary .secondary-item {
-    line-height: 30px;
-  }
-  .menu-laptop .primary .secondary .secondary-item:nth-child(2) {
-    color: #42dcd4;
-  }
-
   .block {
     opacity: 1 !important;
     transition-duration: 0.5s;
