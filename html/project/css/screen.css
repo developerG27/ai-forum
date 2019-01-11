@@ -604,6 +604,8 @@ body, html {
     transition-duration: 0s;
     color: #232349;
     font-size: 0.9em !important;
+    min-height: auto !important;
+    width: 100%;
   }
   .header .wrap .primary .link-item {
     color: #232349 !important;

@@ -656,6 +656,8 @@
             transition-duration: 0s;
             color: $dark-primary;
             font-size:.9em !important;
+            min-height: auto !important;
+            width: 100%;
 
             .link-item{
                color: $dark-primary !important;
