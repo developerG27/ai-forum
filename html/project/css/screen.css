@@ -470,10 +470,21 @@ body, html {
   line-height: 25px;
   font-size: 1.1em;
   word-wrap: break-word;
+  text-align: right;
 }
-.footer .wrap .box-text-footer .text span {
-  border-bottom: 1px solid #232349;
-  line-height: 30px;
+.footer .wrap .cookie {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer .wrap .cookie a {
+  color: #232349;
+}
+.footer .wrap .cookie a:nth-child(1) p:after, .footer .wrap .cookie a:nth-child(2) p:after {
+  content: "/";
+  margin: 0px 10px;
 }
 
 @media screen and (min-width: 376px) and (max-width: 559px) {
@@ -582,21 +593,33 @@ body, html {
     color: #232349;
     font-size: 0.9em !important;
   }
-  .header .wrap .primary .item {
+  .header .wrap .primary a {
+    color: #232349 !important;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .wrap .primary a:nth-child(1) {
+    color: #42dcd4 !important;
+  }
+  .header .wrap .primary a:nth-child(1):after {
+    content: ">";
+    display: inline-block;
+    margin-left: 10px;
+    transform: rotate(90deg);
+    font-family: "Poppins", sans-serif;
+  }
+  .header .wrap .primary a .item {
     font-size: 1em;
     margin-left: 10px;
   }
-  .header .wrap .primary .item:first-of-type {
+  .header .wrap .primary a .item:first-of-type {
     position: relative;
   }
-  .header .wrap .primary .item:hover {
-    cursor: pointer;
-    height: 23px;
-    min-height: 27px;
-    border-bottom: 7px solid #42dcd4;
-    transition-duration: 0.1s;
-  }
-  .header .wrap .primary .item:last-child:hover {
+  .header .wrap .primary a .item:last-child:hover {
     border-bottom: 0px;
     margin-right: 0px !important;
   }
@@ -612,6 +635,12 @@ body, html {
     z-index: 2;
     padding: 20px;
     margin-left: -10px !important;
+  }
+  .header .wrap .primary .secondary a {
+    color: #fff !important;
+  }
+  .header .wrap .primary .secondary a:nth-child(2) {
+    color: #42dcd4 !important;
   }
 
   .visibile {

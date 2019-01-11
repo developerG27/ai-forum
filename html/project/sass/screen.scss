@@ -33,8 +33,10 @@
             .item{
                line-height: 35px;
             }
+
             &:nth-child(1){
                color: $primary;
+
             }
          }
 
@@ -472,11 +474,30 @@
             line-height: 25px;
             font-size: 1.1em;
             word-wrap: break-word;
+            text-align:right;
+         }
+      }
 
-            span {
-               border-bottom: 1px solid $dark-primary;
-               line-height: 30px;
+      .cookie{
+         @include flexbox(row, flex-end, center);
+
+         a{
+            color: $dark-primary;
+
+            &:nth-child(1), &:nth-child(2){
+
+               p{
+                  &:after{
+                     content: '/';
+                     margin: 0px 10px;
+                  }
+
+               }
+               
+
             }
+
+            
          }
       }
    }
@@ -632,28 +653,38 @@
             color: $dark-primary;
             font-size:.9em !important;
 
-            .item{
-               font-size: 1em;
-               margin-left: 10px;
-               &:first-of-type{
-                  position: relative;
-               }
+            a{
+               color: $dark-primary !important;
+               font-weight: 500;
+               @include flexbox(row, space-between,center);
+               &:nth-child(1){
+                  color: $primary !important;
 
-               &:hover{
-                  cursor: pointer;
-                  height: 23px;
-                  min-height: 27px;
-                  border-bottom: 7px solid $primary;
-                  transition-duration: .1s;
-               }
+                  &:after{
+                     content: ">";
+                     display: inline-block;
+                     margin-left: 10px;
+                     transform: rotate(90deg);  
+                     font-family: $font-secondary; 
 
-               &:last-child{
-                  &:hover{
-                     border-bottom: 0px;
-                     margin-right: 0px !important;
                   }
                }
-               
+               .item{
+                  font-size: 1em;
+                  margin-left: 10px;
+                  &:first-of-type{
+                     position: relative;
+                  }
+   
+                  &:last-child{
+                     &:hover{
+                        border-bottom: 0px;
+                        margin-right: 0px !important;
+                     }
+                  }
+                  
+               }
+
             }
 
             .secondary{
@@ -668,6 +699,14 @@
                z-index: 2;
                padding: 20px;
                margin-left: -10px !important;
+
+               a{
+                  color: $color-white !important;
+
+                  &:nth-child(2){
+                     color: $primary !important;
+                  }
+               }
             }
 
          }
