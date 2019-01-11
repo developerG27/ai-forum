@@ -259,7 +259,7 @@ body, html {
   text-transform: uppercase;
   margin-bottom: 20px;
   font-size: 2em;
-  font-weight: bolder;
+  font-weight: 700;
 }
 .second-section .wrap p {
   line-height: 1.5em;
@@ -280,7 +280,7 @@ body, html {
   color: #fff;
   background: #42dcd4;
   font-size: 1.6em;
-  font-weight: bolder;
+  font-weight: 700;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -362,7 +362,7 @@ body, html {
   top: 8px !important;
   font-size: 0.7em;
   color: #232349;
-  font-weight: bolder;
+  font-weight: 700;
   transition-duration: 0.5s;
 }
 .newsletter .wrap .form .input-checkbox {
@@ -397,7 +397,7 @@ body, html {
 .newsletter .wrap .form .privacy-text span {
   color: #232349;
   text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: 700;
 }
 .newsletter .wrap .form .privacy-text p {
   font-size: 0.7em;
@@ -439,14 +439,14 @@ body, html {
   padding: 25px;
   color: #232349;
   font-size: 1.1em;
-  font-weight: bolder;
+  font-weight: 700;
   line-height: 30px;
   word-wrap: break-word;
   width: 100% !important;
 }
 .contacts .wrap address h5 {
   color: #42dcd4;
-  font-weight: bolder;
+  font-weight: 700;
   font-size: 1.4em;
   text-transform: uppercase;
   line-height: 30px;
@@ -472,7 +472,7 @@ body, html {
 }
 .footer .wrap .box-text-footer .text {
   margin: 30px 0px;
-  font-weight: bolder;
+  font-weight: 700;
   line-height: 25px;
   font-size: 1.1em;
   word-wrap: break-word;
@@ -633,7 +633,7 @@ body, html {
 
   .jumbotron .wrap h1 {
     font-size: 5em;
-    font-weight: bolder;
+    font-weight: 700;
   }
   .jumbotron .wrap h3 {
     font-size: 2.4em;
@@ -700,7 +700,7 @@ body, html {
   .first-section .wrap .box .box-scopri .scopri {
     text-transform: uppercase;
     display: block !important;
-    font-weight: bolder;
+    font-weight: 700;
   }
   .first-section .wrap .box .box-scopri .arrow {
     height: auto;
@@ -797,7 +797,7 @@ body, html {
     padding: 20px;
     margin-top: 40px;
     width: 240px;
-    font-weight: bolder;
+    font-weight: 700;
   }
   .second-section .box-scopri .scopri {
     text-transform: uppercase;
@@ -953,7 +953,7 @@ body, html {
     height: 100px;
   }
   .partner .wrap .partner-title h3 {
-    font-weight: bolder;
+    font-weight: 700;
     color: #232349;
     font-size: 1.6em;
     text-transform: uppercase;
@@ -1018,7 +1018,7 @@ body, html {
     color: #fff;
     background: #232349;
     font-size: 1.8em;
-    font-weight: bolder;
+    font-weight: 700;
     padding: 30px 20px;
     position: relative !important;
     text-align: left;
@@ -1113,7 +1113,7 @@ canvas.particles-js-canvas-el {
   }
 }
 h3.title-section {
-  font-weight: bolder;
+  font-weight: 700;
   color: #232349;
   font-size: 1.8em;
   margin: 0px;

@@ -227,7 +227,7 @@
          text-transform: uppercase;
          margin-bottom: 20px;
          font-size: 2em;
-         font-weight: bolder;
+         font-weight: 700;
       }
 
       p {
@@ -252,7 +252,7 @@
          color: $color-white;
          background: $primary;
          font-size: 1.6em;
-         font-weight: bolder;
+         font-weight: 700;
          border-radius: 50%;
          width: 40px;
          height: 40px;
@@ -348,7 +348,7 @@
                top: 8px !important;
                font-size: .7em;
                color: $dark-primary;
-               font-weight: bolder;
+               font-weight: 700;
                transition-duration: .5s;
             }
          }
@@ -390,7 +390,7 @@
             span {
                color: $dark-primary;
                text-transform: uppercase;
-               font-weight: bolder;
+               font-weight: 700;
             }
 
             p {
@@ -439,14 +439,14 @@
          padding: 25px;
          color: $dark-primary;
          font-size: 1.1em;
-         font-weight: bolder;
+         font-weight: 700;
          line-height: 30px;
          word-wrap: break-word;
          width: 100% !important;
 
          h5 {
             color: $primary;
-            font-weight: bolder;
+            font-weight: 700;
             font-size: 1.4em;
             text-transform: uppercase;
             line-height: 30px;
@@ -473,7 +473,7 @@
          .text {
             margin: 30px 0px;
 
-            font-weight: bolder;
+            font-weight: 700;
             line-height: 25px;
             font-size: 1.1em;
             word-wrap: break-word;
@@ -697,7 +697,7 @@
       .wrap {
          h1 {
             font-size: 5em;
-            font-weight: bolder;
+            font-weight: 700;
          }
 
          h3 {
@@ -772,7 +772,7 @@
                .scopri {
                   text-transform: uppercase;
                   display: block !important;
-                  font-weight: bolder;
+                  font-weight: 700;
                }
 
                .arrow {
@@ -881,7 +881,7 @@
          padding: 20px;
          margin-top: 40px;
          width: 240px;
-         font-weight: bolder;
+         font-weight: 700;
 
          .scopri {
             text-transform: uppercase;
@@ -1044,7 +1044,7 @@
             height: 100px;
 
             h3 {
-               font-weight: bolder;
+               font-weight: 700;
                color: $dark-primary;
                font-size: 1.6em;
 
@@ -1124,7 +1124,7 @@
                color: $color-white;
                background: $dark-primary;
                font-size: 1.8em;
-               font-weight: bolder;
+               font-weight: 700;
                padding: 30px 20px;
                position: relative !important;
                text-align: left;
@@ -1245,7 +1245,7 @@ canvas.particles-js-canvas-el {
 
 //Universal
 h3.title-section {
-   font-weight: bolder;
+   font-weight: 700;
    color: $dark-primary;
    font-size: 1.8em;
    margin: 0px;
