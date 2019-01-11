@@ -79,7 +79,7 @@ body, html {
   height: 80px;
 }
 .header .logo {
-  width: 100px;
+  max-width: 270px;
 }
 .header .menu-laptop .primary {
   right: -100%;
@@ -308,7 +308,15 @@ body, html {
   width: 90%;
 }
 .newsletter .wrap .subscribe-laptop {
-  display: none;
+  display: block;
+}
+.newsletter .wrap .subscribe-laptop .input-submit {
+  width: 100%;
+  margin-top: 20px;
+  background: #232349;
+  color: #fff;
+  border: 0px;
+  font-size: 2em;
 }
 .newsletter .wrap p {
   color: #444444;
@@ -389,59 +397,6 @@ body, html {
 .newsletter .wrap .form .privacy-text p {
   font-size: 0.7em;
   line-height: 20px;
-}
-.newsletter .wrap .form .subscribe {
-  width: 100%;
-  height: auto;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.newsletter .wrap .form .subscribe .input-submit {
-  width: 100%;
-  border: 0px;
-  text-transform: uppercase;
-  color: #fff;
-  background: #232349;
-  font-size: 1.8em;
-  font-weight: bolder;
-  padding: 35px 20px;
-  margin-top: 20px;
-  position: relative !important;
-  text-align: left;
-}
-.newsletter .wrap .form .subscribe .arrow {
-  position: absolute;
-  right: 18px;
-  top: 62px;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-.newsletter .wrap .form .subscribe .arrow .line {
-  transform: scale(1);
-  margin-right: -2px;
-}
-.newsletter .wrap .form .subscribe .arrow .line .first,
-.newsletter .wrap .form .subscribe .arrow .line .second {
-  width: 20px;
-  height: 4px;
-  background: #fff;
-}
-.newsletter .wrap .form .subscribe .arrow .line .first {
-  transform: rotate(47deg);
-  border-radius: 3px 0px 0px 3px;
-}
-.newsletter .wrap .form .subscribe .arrow .line .second {
-  transform: rotate(-45deg);
-  margin-top: 7.5px;
-  border-radius: 3px 0px 0px 3px;
 }
 
 .contacts {
@@ -728,10 +683,17 @@ body, html {
     padding: 20px;
     margin-top: 40px;
     width: 230px;
+    color: #42dcd4;
+    transition-duration: 0.5s;
+  }
+  .first-section .wrap .box .box-scopri:hover {
+    color: white;
+    background: #42dcd4;
+    cursor: pointer;
+    transition-duration: 0.5s;
   }
   .first-section .wrap .box .box-scopri .scopri {
     text-transform: uppercase;
-    color: #42dcd4;
     display: block !important;
     font-weight: bolder;
   }
@@ -1085,9 +1047,6 @@ body, html {
     transform: rotate(-45deg);
     margin-top: 7.5px;
     border-radius: 3px 0px 0px 3px;
-  }
-  .newsletter .subscribe {
-    display: none !important;
   }
   .newsletter .privacy {
     max-width: 80%;
