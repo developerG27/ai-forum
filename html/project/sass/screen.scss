@@ -190,7 +190,8 @@
       width: 90%;
 
       .box {
-         margin-top: 100px !important;
+         margin-top: 0px !important;
+         transform: translateY(-10%);
 
          p {
             color: $color-dark;
@@ -208,6 +209,7 @@
          width: 90% !important;
          object-fit: cover;
          margin: 40px 0px -2px 0px;
+         margin-top: 50px !important;
       }
    }
 
@@ -781,7 +783,6 @@
 
          .box {
             width: 50%;
-            height: 500px;
 
             .box-scopri {
                border: 2px solid $primary;
@@ -844,7 +845,7 @@
 
          img {
             margin: 0px;
-            max-width: 400px;
+            max-width: 450px;
             object-fit: contain;
          }
       }

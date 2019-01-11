@@ -227,7 +227,8 @@ body, html {
   width: 90%;
 }
 .first-section .wrap .box {
-  margin-top: 100px !important;
+  margin-top: 0px !important;
+  transform: translateY(-10%);
 }
 .first-section .wrap .box p {
   color: #444444;
@@ -242,6 +243,7 @@ body, html {
   width: 90% !important;
   object-fit: cover;
   margin: 40px 0px -2px 0px;
+  margin-top: 50px !important;
 }
 
 .second-section {
@@ -697,7 +699,6 @@ body, html {
   }
   .first-section .wrap .box {
     width: 50%;
-    height: 500px;
   }
   .first-section .wrap .box .box-scopri {
     border: 2px solid #42dcd4;
@@ -757,7 +758,7 @@ body, html {
   }
   .first-section .wrap img {
     margin: 0px;
-    max-width: 400px;
+    max-width: 450px;
     object-fit: contain;
   }
 
