@@ -20,32 +20,24 @@
       .primary{
          right: -100%;
          transition-duration: 1s;
-         z-index: 2;
+         z-index: 3;
          top: 80px;
          font-family: $font-primary;
          position: absolute;
          background: $dark-primary;
          color: $color-white;
          padding: 20px;
-         .item{
-            line-height:40px;
-            
-            &:first-of-type{
-               &:after{
-                  content: ">";
-                  font-family: $font-secondary;
-                  display: inline-block;
-                  margin-left: 5px;
-                  transform: rotate(90deg) !important;
-               }
-            }
+         
+         a{
 
-            &:last-child{
+            .item{
+               line-height: 35px;
+            }
+            &:nth-child(1){
                color: $primary;
-               text-transform: uppercase;
-               font-weight: 700;
             }
          }
+
          .secondary{
             opacity:0;
             height: 0;

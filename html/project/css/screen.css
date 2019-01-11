@@ -84,7 +84,7 @@ body, html {
 .header .menu-laptop .primary {
   right: -100%;
   transition-duration: 1s;
-  z-index: 2;
+  z-index: 3;
   top: 80px;
   font-family: "Open Sans", sans-serif;
   position: absolute;
@@ -92,20 +92,11 @@ body, html {
   color: #fff;
   padding: 20px;
 }
-.header .menu-laptop .primary .item {
-  line-height: 40px;
+.header .menu-laptop .primary a .item {
+  line-height: 35px;
 }
-.header .menu-laptop .primary .item:first-of-type:after {
-  content: ">";
-  font-family: "Poppins", sans-serif;
-  display: inline-block;
-  margin-left: 5px;
-  transform: rotate(90deg) !important;
-}
-.header .menu-laptop .primary .item:last-child {
+.header .menu-laptop .primary a:nth-child(1) {
   color: #42dcd4;
-  text-transform: uppercase;
-  font-weight: 700;
 }
 .header .menu-laptop .primary .secondary {
   opacity: 0;
