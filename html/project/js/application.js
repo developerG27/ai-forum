@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
    
-
    //nav aside
    let activatorNav = document.querySelector('#activator-nav');
    let burgherNav = document.querySelector('#burgher-nav');
    let body = document.body;
    let bar1 = document.querySelector('.bar-1');
    let bar3 = document.querySelector('.bar-3');
-
 
    activatorNav.addEventListener('click', function () {
       burgherNav.classList.toggle('show');
@@ -16,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (burgherNav.classList.contains('show')) {
          bar1.style.width= "100%";
          bar3.style.width = "100%";
-      } else{
+      } else {
          bar1.style.width = "70%";
          bar3.style.width = "50%";
       } 

@@ -27,7 +27,6 @@
          background: $dark-primary;
          color: $color-white;
          padding: 20px;
-
          .item{
             line-height:40px;
             
@@ -51,6 +50,7 @@
             opacity:0;
             height: 0;
             margin-left: 20px;
+            transition-duration: .05s;
 
             .secondary-item{
                line-height: 40px;
@@ -159,6 +159,7 @@
             background: $primary;
             padding: 30px 20px;
             font-size: 1.5em;
+            z-index:2;
 
             &::after {
                margin-left: 5px;
@@ -586,11 +587,6 @@
       }
    }
 
-   //Aside Navbar
-   .nav-aside {
-      max-width: 300px;
-   }
-
    .second-section {
       background-image: url(../img/background-xl.png) !important;
       background-size: cover;
@@ -660,6 +656,72 @@
 
 //Laptop
 @media screen and (min-width: 960px) {
+
+   //Header
+   .header{
+      .wrap{
+         position: static !important;
+         .burgher-menu{
+            display: none;
+         }
+
+         .primary{
+            position: static !important;
+            display: flex;
+            background: $color-white;
+            height: auto;
+            opacity: 1;
+            transition-duration: 0s;
+            color: $dark-primary;
+            font-size:.9em !important;
+
+            .item{
+               font-size: 1em;
+               margin-left: 10px;
+               &:first-of-type{
+                  position: relative;
+               }
+
+               &:hover{
+                  cursor: pointer;
+                  height: 23px;
+                  min-height: 27px;
+                  border-bottom: 7px solid $primary;
+                  transition-duration: .1s;
+               }
+
+               &:last-child{
+                  &:hover{
+                     border-bottom: 0px;
+                     margin-right: 0px !important;
+                  }
+               }
+               
+            }
+
+            .secondary{
+               opacity: 0 ;
+               height: 0;
+               position: absolute;
+               transition-duration: 0s;
+               background: $dark-primary;
+               color: $color-white;
+               margin-left: 0px !important;
+               top: 80px;
+               z-index: 2;
+               padding: 20px;
+               margin-left: -10px !important;
+            }
+
+         }
+      }
+   }
+   .visibile{
+      opacity: 1 !important;
+      height: auto !important;
+      transition-duration: .5s;
+   }
+   
 
    .block {
       opacity:1 !important;
