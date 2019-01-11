@@ -359,6 +359,7 @@ body, html {
   top: 32px;
   left: 20px;
   color: #42dcd4;
+  transition-duration: 0.5s;
 }
 .newsletter .wrap .form .append .up {
   top: 8px !important;
