@@ -702,7 +702,7 @@ body, html {
   }
   .first-section .wrap .box {
     width: 50%;
-    transform: translateY(-45%);
+    transform: translateY(-20%);
   }
   .first-section .wrap .box .box-scopri {
     border: 2px solid #42dcd4;
@@ -1080,6 +1080,7 @@ body, html {
     padding: 30px 20px;
     position: relative !important;
     text-align: left;
+    top: -8px;
   }
   .newsletter .box-input .subscribe-laptop .arrow {
     position: absolute;

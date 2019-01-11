@@ -777,7 +777,7 @@
 
          .box {
             width: 50%;
-            transform: translateY(-45%);
+            transform: translateY(-20%);
 
             .box-scopri {
                border: 2px solid $primary;
@@ -1188,6 +1188,7 @@
                padding: 30px 20px;
                position: relative !important;
                text-align: left;
+               top: -8px;
             }
 
             .arrow {
@@ -1221,7 +1222,6 @@
                }
             }
          }
-
       }
 
       .privacy {
