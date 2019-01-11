@@ -180,8 +180,6 @@
    }
 }
 
-
-
 //First section
 .first-section {
    font-family: $font-primary;
@@ -191,7 +189,7 @@
 
       .box {
          margin-top: 0px !important;
-         transform: translateY(-10%);
+         transform: translateY(-45%);
 
          p {
             color: $color-dark;
@@ -845,7 +843,7 @@
 
          img {
             margin: 0px;
-            max-width: 450px;
+            max-width: 47%;
             object-fit: contain;
          }
       }

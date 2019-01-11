@@ -228,7 +228,7 @@ body, html {
 }
 .first-section .wrap .box {
   margin-top: 0px !important;
-  transform: translateY(-10%);
+  transform: translateY(-45%);
 }
 .first-section .wrap .box p {
   color: #444444;
@@ -758,7 +758,7 @@ body, html {
   }
   .first-section .wrap img {
     margin: 0px;
-    max-width: 450px;
+    max-width: 47%;
     object-fit: contain;
   }
 
