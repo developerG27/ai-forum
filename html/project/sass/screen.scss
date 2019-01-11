@@ -57,12 +57,13 @@
             margin-left: 20px;
             transition-duration: .05s;
 
-            .secondary-item{
+            .link-secondary{
                line-height: 40px;
 
                &:nth-child(2){
                   color: $primary;
                }
+
             }
          }
 

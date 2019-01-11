@@ -113,10 +113,10 @@ body, html {
   margin-left: 20px;
   transition-duration: 0.05s;
 }
-.header .menu-laptop .primary .secondary .secondary-item {
+.header .menu-laptop .primary .secondary .link-secondary {
   line-height: 40px;
 }
-.header .menu-laptop .primary .secondary .secondary-item:nth-child(2) {
+.header .menu-laptop .primary .secondary .link-secondary:nth-child(2) {
   color: #42dcd4;
 }
 .header .visibile {
