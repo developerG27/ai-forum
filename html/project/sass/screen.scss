@@ -657,7 +657,7 @@ html {
 
    .footer {
       .box-text-footer {
-         width: 50% !important;
+         width: 50%;
       }
    }
 
@@ -674,7 +674,7 @@ html {
       }
 
       img {
-         max-width: 60% !important;
+         max-width: 60%;
       }
    }
 
@@ -737,10 +737,10 @@ html {
 
    //Footer
    .footer {
-      padding: 30px 0px !important;
+      padding: 30px 0px ;
 
       .wrap {
-         align-items: flex-end !important;
+         align-items: flex-end;
       }
    }
 
@@ -1430,15 +1430,15 @@ html {
    //Footer
    .footer {
       .box-text-footer {
-         width: 50% !important;
+         width: 50%;
       }
 
       .text {
-         text-align: right !important;
+         text-align: right;
       }
 
       .cookie {
-         justify-content: flex-end !important;
+         justify-content: flex-end;
       }
    }
 }

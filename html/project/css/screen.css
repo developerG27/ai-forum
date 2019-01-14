@@ -605,7 +605,7 @@ html {
   }
 
   .footer .box-text-footer {
-    width: 50% !important;
+    width: 50%;
   }
 
   .second-section {
@@ -617,7 +617,7 @@ html {
     font-size: 1.8em;
   }
   .first-section img {
-    max-width: 60% !important;
+    max-width: 60%;
   }
 
   .third-section {
@@ -670,10 +670,10 @@ html {
   }
 
   .footer {
-    padding: 30px 0px !important;
+    padding: 30px 0px;
   }
   .footer .wrap {
-    align-items: flex-end !important;
+    align-items: flex-end;
   }
 
   .newsletter .subscribe-laptop {
@@ -1288,13 +1288,13 @@ html {
 }
 @media screen and (min-width: 960px) {
   .footer .box-text-footer {
-    width: 50% !important;
+    width: 50%;
   }
   .footer .text {
-    text-align: right !important;
+    text-align: right;
   }
   .footer .cookie {
-    justify-content: flex-end !important;
+    justify-content: flex-end;
   }
 }
 #particles-js {
