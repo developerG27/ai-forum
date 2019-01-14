@@ -94,3 +94,10 @@ $(document).ready(function () {
        radioClass: 'iradio_square-blue',
    });
 });
+
+
+
+// BX Slider
+$(document).ready(function(){
+   $('.slider').bxSlider();
+ });
