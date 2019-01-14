@@ -90,8 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 $(document).ready(function () {
    $('input').iCheck({
-       checkboxClass: 'icheckbox_square-red',
-       radioClass: 'iradio_square-red',
-       increaseArea: '0%' // optional
+       checkboxClass: 'icheckbox_square-blue',
+       radioClass: 'iradio_square-blue',
    });
 });
