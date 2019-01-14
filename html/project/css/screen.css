@@ -309,7 +309,25 @@ body, html {
 }
 
 .partner {
-  display: none;
+  width: 100%;
+}
+.partner .wrap {
+  width: 90%;
+  margin: auto;
+}
+.partner .wrap .box-logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.partner .wrap .box-logo img {
+  width: 47%;
+  margin-bottom: 5%;
+}
+.partner .wrap .box-logo img:last-child {
+  margin-right: 0%;
 }
 
 .newsletter {

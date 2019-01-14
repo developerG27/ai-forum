@@ -304,7 +304,26 @@ body,html{
 
 //Partner
 .partner {
-   display: none;
+   width: 100%;
+   .wrap{
+      width: 90%;
+      margin: auto;
+
+      .box-logo{
+         @include flexbox(row, space-between, center);
+
+         img{
+            width: 47%;
+            margin-bottom: 5%;
+   
+            &:last-child{
+               margin-right: 0%;
+            }
+         }
+      }
+   }
+
+   
 }
 
 //Newsletter
