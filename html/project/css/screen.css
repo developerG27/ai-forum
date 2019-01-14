@@ -336,11 +336,11 @@ html {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 15px;
 }
 .partner .wrap .partner-title h3 {
   color: #232349;
-  font-size: 1.5em;
-  margin-bottom: 15px;
+  font-size: 1.2em;
 }
 .partner .wrap .partner-title .arrow {
   height: auto;

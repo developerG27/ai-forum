@@ -326,11 +326,12 @@ html {
 
       .partner-title {
          @include flexbox(row, flex-start, center);
+         margin-bottom: 15px;
 
          h3{
             color: $dark-primary;
-            font-size: 1.5em;
-            margin-bottom: 15px;
+            font-size: 1.2em;
+            
          }
 
          .arrow {
