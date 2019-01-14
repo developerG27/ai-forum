@@ -94,11 +94,21 @@ body, html {
   min-height: 500px;
   width: 88%;
 }
+.header .menu-laptop .primary .link-item:last-child {
+  color: #42dcd4 !important;
+  text-transform: uppercase;
+}
+.header .menu-laptop .primary .link-item :hover:before {
+  content: "";
+  position: absolute;
+  bottom: 13px;
+  width: 100%;
+  height: 5px;
+  background: #42dcd4;
+  opacity: 0.4;
+}
 .header .menu-laptop .primary .link-item .item {
   line-height: 35px;
-}
-.header .menu-laptop .primary .link-item:nth-child(1) {
-  color: #42dcd4;
 }
 .header .menu-laptop .primary .link-item:nth-child(1) .item:after {
   content: ">";
