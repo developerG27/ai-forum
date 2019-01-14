@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
       checkboxClass: 'icheckbox_square-blue',
       radioClass: 'iradio_square-blue',
    });
-
+   
    // OWl Slider
    $('.owl-carousel').owlCarousel({
       loop: true,
