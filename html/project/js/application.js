@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-   
+
    //nav aside
    let activatorNav = document.querySelector('#activator-nav');
    let burgherNav = document.querySelector('#burgher-nav');
@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
       body.classList.toggle('lock');
 
       if (burgherNav.classList.contains('show')) {
-         bar1.style.width= "100%";
+         bar1.style.width = "100%";
          bar3.style.width = "100%";
       } else {
          bar1.style.width = "70%";
          bar3.style.width = "50%";
-      } 
+      }
    })
 
    //Checkbox
@@ -50,11 +50,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
    })
 
-   inputName.addEventListener('keypress',function(){
+   inputName.addEventListener('keypress', function () {
       pName.classList.add('up');
    })
 
-   inputEmail.addEventListener('keypress',function(){
+   inputEmail.addEventListener('keypress', function () {
       pEmail.classList.add('up');
    })
 
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
    //Funzione che calcola la lunghezza dell'elemento per dargli la stessa altezza
    function perfectSquare() {
       var square = document.getElementsByClassName('square');
-      
+
       for (var i = 0; i < square.length; i++) {
          let perfectSquare = square[i].offsetWidth;
          square[i].style.height = perfectSquare + "px";
@@ -77,41 +77,39 @@ document.addEventListener("DOMContentLoaded", function () {
    perfectSquare();
 
    //Funzione che ricarica la pagina ad ogni resize
-   window.onresize = function() {
+   window.onresize = function () {
       location.reload();
    }
 
    //Cambia il testo del button nell header
-   if(body.offsetWidth < 425){
+   if (body.offsetWidth < 425) {
       let changeText = document.querySelector('#changeText');
       changeText.textContent = "Contattaci";
    }
-})
 
-$(document).ready(function () {
+
+   //Inizio Jquery
+   // iCheck
    $('input').iCheck({
-       checkboxClass: 'icheckbox_square-blue',
-       radioClass: 'iradio_square-blue',
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass: 'iradio_square-blue',
    });
-});
 
-
-$(document).ready(function(){
+   // OWl Slider
    $('.owl-carousel').owlCarousel({
-      loop:true,
-      autoplay:true,
-      autoplayTimeout:2000,
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:2
-          },
-          1200:{
-              items:3
-          }
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      responsive: {
+         0: {
+            items: 1
+         },
+         600: {
+            items: 2
+         },
+         1200: {
+            items: 3
+         }
       }
-  });
-   
- });
+   });
+})
