@@ -9,7 +9,9 @@ html {
    font-family: $font-secondary;
 }
 
-//Header
+// ---------- MOBILE
+
+// HEADER
 .header {
    position: relative;
 
@@ -125,18 +127,7 @@ html {
    }
 }
 
-.nav-start {
-   transform: translateX(0%) !important;
-   transition-duration: .5s;
-}
-
-.nav-end {
-   transform: translate(100%) !important;
-   transition-duration: .5s;
-}
-
-
-//Jumbotron
+// JUMBOTRON
 .jumbotron {
    width: 100%;
    height: 480px;
@@ -194,7 +185,7 @@ html {
    }
 }
 
-//First section
+// FIRST SECTION
 .first-section {
    font-family: $font-primary;
 
@@ -229,7 +220,7 @@ html {
 
 }
 
-//Second section
+// SECON SECTION
 .second-section {
    background-image: url(../img/second-section.png);
    background-repeat: no-repeat;
@@ -255,7 +246,7 @@ html {
    }
 }
 
-//Third-section
+// THIRD SECTION
 .third-section {
    font-family: $font-primary;
    padding: 70px 0px;
@@ -285,12 +276,12 @@ html {
    }
 }
 
-//Location
+// LOCATION
 .location {
    display: none;
 }
 
-//Partner
+// PARTNER
 .partner {
    width: 100%;
 
@@ -358,7 +349,7 @@ html {
 
 }
 
-//Newsletter
+// NEWSLETTER
 .newsletter {
    background: $background-primary;
    font-family: $font-primary;
@@ -495,9 +486,7 @@ html {
    }
 }
 
-
-//Contacts
-
+// CONTACTS
 .contacts {
    padding: 50px 0px;
 
@@ -548,7 +537,7 @@ html {
    }
 }
 
-//Footer
+// FOOTER
 .footer {
    background: $primary;
    padding: 50px 0px;
@@ -596,15 +585,15 @@ html {
 }
 
 
-// Mobile L
+// ---------- MOBILE l
 @media screen and (min-width: 376px) and (max-width:559px) {
 
-   //Aside Nav
+   // ASIDE NAV
    .nav-aside {
       width: 60% !important;
    }
 
-   //Contacts
+   // CONTACTS
    .contacts {
       .wrap {
 
@@ -623,15 +612,15 @@ html {
 
 
 
-// Tablet
+// ---------- TABLET
 @media screen and (min-width: 560px) and (max-width: 959px) {
 
-   //Header
+   // HEADER
    .primary {
       max-width: 350px;
    }
 
-   //Jumbotron
+   // JUMBOTRON
    .jumbotron {
       .sponsor {
 
@@ -655,18 +644,7 @@ html {
       }
    }
 
-   .footer {
-      .box-text-footer {
-         width: 50%;
-      }
-   }
-
-   .second-section {
-      background-image: url(../img/background-xl.png) !important;
-      background-size: cover;
-   }
-
-   //First Section
+   // FIRST SECTION
    .first-section {
 
       h3 {
@@ -674,11 +652,17 @@ html {
       }
 
       img {
-         max-width: 60%;
+         max-width: 60% !important;
       }
    }
 
-   //Third Section
+   // SECOND SECTION
+   .second-section {
+      background-image: url(../img/background-xl.png) !important;
+      background-size: cover;
+   }
+
+   // THIRD SECTION
    .third-section {
       padding: 50px 0px 0px 0px;
 
@@ -698,7 +682,7 @@ html {
 
    }
 
-   //Partner
+   // PARTNER
    .partner{
       .box-logo{
          justify-content: flex-start !important;
@@ -715,7 +699,7 @@ html {
       }
    }
 
-   //contacts
+   // CONTATTI
    .contacts {
 
       .wrap {
@@ -735,16 +719,7 @@ html {
       }
    }
 
-   //Footer
-   .footer {
-      padding: 30px 0px ;
-
-      .wrap {
-         align-items: flex-end;
-      }
-   }
-
-   //Newsletter
+   // NEWSLETTER
    .newsletter {
       .subscribe-laptop {
          position: relative;
@@ -784,26 +759,33 @@ html {
                }
             }
          }
-
       }
-
-
    }
 
+   // FOOTER
+   .footer {
+      padding: 30px 0px !important;
 
+      .wrap {
+         align-items: flex-end !important;
+      }
 
+      .box-text-footer {
+         width: 50% !important;
+      }
+
+      
+   }
 }
 
 
-//Laptop
+// ---------- LAPTOP
 @media screen and (min-width: 960px) {
 
-   //Header
-   
+   // HEADER
    .header {
       .wrap {
          position: static !important;
-         
          
          .burgher-menu {
             display: none;
@@ -887,27 +869,12 @@ html {
                   }
                }
             }
-
          }
       }
    }
 
-   .visibile {
-      opacity: 1 !important;
-      height: auto !important;
-      transition-duration: .5s;
-   }
-
-
-   .block {
-      opacity: 1 !important;
-      transition-duration: .5s;
-   }
-
-
-   //Jumbotron
+   // JUMBOTRON
    .jumbotron {
-
       .wrap {
          h1 {
             font-size: 5em;
@@ -948,8 +915,7 @@ html {
       }
    }
 
-
-   //First section
+   // FIRST SECTION
    .first-section {
       .wrap {
          @include flexbox(row-reverse, space-between, flex-end);
@@ -1036,9 +1002,7 @@ html {
       }
    }
 
-
-
-   //Second section
+   // SECOND SECTION
    .second-section {
       background-image: url(../img/background-xl.png) !important;
       background-size: cover;
@@ -1054,7 +1018,6 @@ html {
             display: flex;
             transform: rotate(90deg);
             margin-top: -90px;
-
 
             .line {
                margin-right: 15px;
@@ -1142,7 +1105,7 @@ html {
       }
    }
 
-   //Third Section 
+   // THIRD SECTION
    .third-section {
       .wrap {
          @include flexbox(row, space-between, baseline);
@@ -1159,15 +1122,13 @@ html {
       }
    }
 
-
-   //location
+   // LOCATION
    .location {
       display: block !important;
       width: 100%;
       background: $light-primary;
       margin-bottom: 400px;
       padding: 50px 0px;
-
 
       .wrap {
          width: 90%;
@@ -1180,7 +1141,6 @@ html {
             height: auto;
             @include flexbox (row, flex-start, center);
 
-
             .line {
                transform: scale(3);
                margin-right: 30px;
@@ -1188,8 +1148,6 @@ html {
                animation-duration: 1.3s;
                animation-iteration-count: infinite;
                animation-timing-function: linear;
-
-
 
                .first,
                .second {
@@ -1247,8 +1205,7 @@ html {
       }
    }
 
-
-   //Partner
+   // PARTNER
    .partner {
       display: block;
       margin-top: -145px;
@@ -1315,7 +1272,12 @@ html {
       }
    }
 
-   //Newsletter
+   // CONTATTI
+   .contacts {
+      display: none;
+   }
+
+   // NEWSLETTER
    .newsletter {
       background: $color-white;
       position: relative;
@@ -1422,35 +1384,31 @@ html {
       }
    }
 
-   //Contacts
-   .contacts {
-      display: none;
-   }
-
-   //Footer
+   // FOOTER
    .footer {
       .box-text-footer {
-         width: 50%;
+         width: 50% !important;
       }
 
       .text {
-         text-align: right;
+         text-align: right !important;
       }
 
       .cookie {
-         justify-content: flex-end;
+         justify-content: flex-end !important;
       }
    }
 }
 
-#particles-js {
-   background: linear-gradient(to right, #04817d, $primary);
+@media screen and (max-width: 1200px) {
+   .newsletter {
+      .wrap {
+         left: 5%;
+      }
+   }
 }
 
-canvas.particles-js-canvas-el {
-   position: absolute;
-}
-
+// ANIMAZIONI
 @keyframes arrow-animated {
    0% {
       opacity: .4;
@@ -1487,20 +1445,17 @@ canvas.particles-js-canvas-el {
    }
 }
 
+
+
+
+
+
+//Universal
 .wrap {
    max-width: 1200px;
    margin: auto;
 }
 
-@media screen and (max-width: 1200px) {
-   .newsletter {
-      .wrap {
-         left: 5%;
-      }
-   }
-}
-
-//Universal
 h3.title-section {
    font-weight: 700;
    color: $dark-primary;
@@ -1512,4 +1467,30 @@ h3.title-section {
 a {
    color: $color-white;
    text-decoration: none;
+}
+.nav-start {
+   transform: translateX(0%) !important;
+   transition-duration: .5s;
+}
+
+.nav-end {
+   transform: translate(100%) !important;
+   transition-duration: .5s;
+}
+
+.visibile {
+   opacity: 1 !important;
+   height: auto !important;
+   transition-duration: .5s;
+}
+.block {
+   opacity: 1 !important;
+   transition-duration: .5s;
+}
+#particles-js {
+   background: linear-gradient(to right, #04817d, $primary);
+}
+
+canvas.particles-js-canvas-el {
+   position: absolute;
 }
