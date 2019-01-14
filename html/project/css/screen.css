@@ -646,6 +646,18 @@ html {
     margin-bottom: 0px;
   }
 
+  .partner .box-logo {
+    justify-content: flex-start !important;
+  }
+  .partner .box-logo img {
+    width: 18% !important;
+    margin-right: 10px;
+    margin-bottom: 10px !important;
+  }
+  .partner h3 {
+    margin-top: 20px !important;
+  }
+
   .contacts .wrap {
     display: flex;
     flex-direction: row;
@@ -1160,6 +1172,9 @@ html {
     color: #232349;
     font-size: 1.6em;
     text-transform: uppercase;
+  }
+  .partner .box-logo {
+    justify-content: flex-start !important;
   }
   .partner .box-logo img {
     width: 18.5% !important;

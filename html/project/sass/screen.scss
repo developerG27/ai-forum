@@ -709,6 +709,22 @@ html {
 
    }
 
+   //Partner
+   .partner{
+      .box-logo{
+         justify-content: flex-start !important;
+
+         img{
+            width: 18% !important;
+            margin-right: 10px;
+            margin-bottom :10px !important;
+         }
+      }
+      h3{
+         margin-top: 20px !important;
+      }
+   }
+
    //contacts
    .contacts {
 
@@ -792,10 +808,10 @@ html {
 @media screen and (min-width: 960px) {
 
    //Header
+   
    .header {
       .wrap {
          position: static !important;
-
          .burgher-menu {
             display: none;
          }
@@ -1266,9 +1282,12 @@ html {
          width: 90%;
          padding: 0px 0px 60px 0px;
 
+         
+
          .partner-title {
             @include flexbox(row, flex-start, center);
             height: 100px;
+            
 
             h3 {
                font-weight: 700;
@@ -1279,9 +1298,12 @@ html {
             }
          }
 
+         
+
       }
 
       .box-logo {
+         justify-content: flex-start !important;
          img {
             width: 18.5% !important;
             margin-right: 10px;
