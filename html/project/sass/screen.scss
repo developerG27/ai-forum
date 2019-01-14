@@ -732,7 +732,7 @@ html {
    .contacts {
 
       .wrap {
-         @include flexbox(row, space-between, flex-start);
+         @include flexbox(row, flex-start, flex-start);
          margin-bottom: 30px;
 
          h3 {
@@ -743,6 +743,7 @@ html {
             width: 48% !important;
             margin: 5px 0px;
             font-size: .9em;
+            margin-right: 1.33%;
          }
       }
    }

@@ -664,7 +664,7 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 30px;
   }
@@ -675,6 +675,7 @@ html {
     width: 48% !important;
     margin: 5px 0px;
     font-size: 0.9em;
+    margin-right: 1.33%;
   }
 
   .footer {
