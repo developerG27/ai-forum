@@ -654,8 +654,8 @@ html {
     margin-right: 10px;
     margin-bottom: 10px !important;
   }
-  .partner h3 {
-    margin-top: 20px !important;
+  .partner .partner-title {
+    margin-top: 15px;
   }
 
   .contacts .wrap {
