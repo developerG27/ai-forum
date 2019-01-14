@@ -121,16 +121,6 @@ html {
 .header .menu-laptop .primary .secondary .link-secondary:nth-child(2) {
   color: #42dcd4;
 }
-.header .visibile {
-  opacity: 1 !important;
-  height: auto !important;
-  transition-duration: 0.5s;
-  padding: 10px 0px;
-}
-.header .show {
-  right: 0% !important;
-  transition-duration: 1s;
-}
 .header .burgher-menu {
   width: 30px;
   height: 30px;
@@ -233,10 +223,10 @@ html {
 }
 .first-section .wrap img {
   max-width: 100%;
-  width: 90% !important;
+  width: 90%;
   object-fit: cover;
   margin: 40px 0px -2px 0px;
-  margin-top: 50px !important;
+  margin-top: 50px;
 }
 
 .second-section {
@@ -1339,6 +1329,11 @@ a {
   opacity: 1 !important;
   height: auto !important;
   transition-duration: 0.5s;
+}
+
+.show {
+  right: 0% !important;
+  transition-duration: 1s;
 }
 
 .block {

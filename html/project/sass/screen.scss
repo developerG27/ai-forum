@@ -82,19 +82,6 @@ html {
       }
    }
 
-   .visibile {
-      opacity: 1 !important;
-      height: auto !important;
-      transition-duration: .5s;
-      padding: 10px 0px;
-   }
-
-   .show {
-      right: 0% !important;
-      transition-duration: 1s;
-   }
-
-
    .burgher-menu {
       width: 30px;
       height: 30px;
@@ -208,10 +195,10 @@ html {
 
       img {
          max-width: 100%;
-         width: 90% !important;
+         width: 90% ;
          object-fit: cover;
          margin: 40px 0px -2px 0px;
-         margin-top: 50px !important;
+         margin-top: 50px;
       }
    }
 
@@ -1482,6 +1469,11 @@ a {
    opacity: 1 !important;
    height: auto !important;
    transition-duration: .5s;
+}
+
+.show {
+   right: 0% !important;
+   transition-duration: 1s;
 }
 .block {
    opacity: 1 !important;
