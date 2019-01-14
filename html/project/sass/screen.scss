@@ -1216,7 +1216,7 @@ html {
             @include flexbox(row, space-between, baseline);
 
             img {
-               width: 33.3%;
+               width: 100%;
                object-fit: contain;
             }
          }

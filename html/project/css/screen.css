@@ -1103,7 +1103,7 @@ html {
     align-items: baseline;
   }
   .location .wrap .box-img img {
-    width: 33.3%;
+    width: 100%;
     object-fit: contain;
   }
 }
