@@ -98,13 +98,13 @@ document.addEventListener("DOMContentLoaded", function () {
    // OWl Slider
    $('.owl-carousel').owlCarousel({
       loop: true,
-      autoplay: true,
-      autoWidth:true,
       center: true,
       items:3,
       margin:0,
+      autoplay:true,
       autoplayTimeout:1000,
       autoplayHoverPause:true,
+      autoplaySpeed:5000,
       responsive: {
          0: {
             items: 1
@@ -117,4 +117,6 @@ document.addEventListener("DOMContentLoaded", function () {
          }
       }
    });
+
+   $('.owl-carousel').trigger('owl.play',5000)
 })
