@@ -99,7 +99,12 @@ document.addEventListener("DOMContentLoaded", function () {
    $('.owl-carousel').owlCarousel({
       loop: true,
       autoplay: true,
-      autoplayTimeout: 2000,
+      autoWidth:true,
+      center: true,
+      items:3,
+      margin:0,
+      autoplayTimeout:1000,
+      autoplayHoverPause:true,
       responsive: {
          0: {
             items: 1
