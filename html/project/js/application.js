@@ -95,9 +95,3 @@ $(document).ready(function () {
    });
 });
 
-
-
-// BX Slider
-$(document).ready(function(){
-   $('.slider').bxSlider();
- });
