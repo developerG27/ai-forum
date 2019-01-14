@@ -1095,7 +1095,7 @@ html {
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 175px;
+    top: 205px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1105,6 +1105,7 @@ html {
   .location .wrap .box-img img {
     width: 100%;
     object-fit: contain;
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 960px) {
