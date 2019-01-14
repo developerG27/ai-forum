@@ -60,7 +60,8 @@ table {
   position: fixed;
 }
 
-body, html {
+body,
+html {
   position: relative;
   max-width: 100vw !important;
   overflow-x: hidden !important;
@@ -328,6 +329,48 @@ body, html {
 }
 .partner .wrap .box-logo img:last-child {
   margin-right: 0%;
+}
+.partner .wrap .partner-title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.partner .wrap .partner-title h3 {
+  color: #232349;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+.partner .wrap .partner-title .arrow {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.partner .wrap .partner-title .arrow .line {
+  transform: scale(0.5);
+  margin-right: -11px;
+}
+.partner .wrap .partner-title .arrow .line:last-child {
+  margin-right: 0px;
+}
+.partner .wrap .partner-title .arrow .line .first,
+.partner .wrap .partner-title .arrow .line .second {
+  width: 20px;
+  height: 4px;
+  background: #42dcd4;
+}
+.partner .wrap .partner-title .arrow .line .first {
+  transform: rotate(47deg);
+  border-radius: 3px 0px 0px 3px;
+}
+.partner .wrap .partner-title .arrow .line .second {
+  transform: rotate(-45deg);
+  margin-top: 7.5px;
+  border-radius: 3px 0px 0px 3px;
 }
 
 .newsletter {
