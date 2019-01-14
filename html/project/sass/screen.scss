@@ -803,6 +803,8 @@ html {
    .header {
       .wrap {
          position: static !important;
+         
+         
          .burgher-menu {
             display: none;
          }
@@ -1286,12 +1288,12 @@ html {
       .wrap {
          width: 90%;
          padding: 0px 0px 60px 0px;
+         margin-top: 500px;
 
          
 
          .partner-title {
             @include flexbox(row, flex-start, center);
-            height: 100px;
             
 
             h3 {

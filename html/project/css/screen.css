@@ -1162,6 +1162,7 @@ html {
   .partner .wrap {
     width: 90%;
     padding: 0px 0px 60px 0px;
+    margin-top: 500px;
   }
   .partner .wrap .partner-title {
     display: flex;
@@ -1169,7 +1170,6 @@ html {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    height: 100px;
   }
   .partner .wrap .partner-title h3 {
     font-weight: 700;
