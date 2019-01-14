@@ -414,7 +414,7 @@ html {
   background: transparent;
 }
 .newsletter .wrap .form .input:focus {
-  outline: none !important;
+  outline: none;
   border-color: #42dcd4;
   box-shadow: 0 0 2px #42dcd4;
 }
@@ -436,7 +436,7 @@ html {
   transition-duration: 0.5s;
 }
 .newsletter .wrap .form .append .up {
-  top: 8px !important;
+  top: 8px;
   font-size: 0.7em;
   color: #232349;
   font-weight: 700;

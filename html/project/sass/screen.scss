@@ -410,7 +410,7 @@ html {
             background: transparent;
 
             &:focus {
-               outline: none !important;
+               outline: none;
                border-color: $primary;
                box-shadow: 0 0 2px $primary;
             }
@@ -437,7 +437,7 @@ html {
             }
 
             .up {
-               top: 8px !important;
+               top: 8px;
                font-size: .7em;
                color: $dark-primary;
                font-weight: 700;
