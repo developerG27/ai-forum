@@ -87,3 +87,11 @@ document.addEventListener("DOMContentLoaded", function () {
       changeText.textContent = "Contattaci";
    }
 })
+
+$(document).ready(function () {
+   $('input').iCheck({
+       checkboxClass: 'icheckbox_square-red',
+       radioClass: 'iradio_square-red',
+       increaseArea: '0%' // optional
+   });
+});
