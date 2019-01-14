@@ -97,14 +97,13 @@ document.addEventListener("DOMContentLoaded", function () {
    
    // OWl Slider
    $('.owl-carousel').owlCarousel({
-      loop: true,
+      loop:true,
+      items: 3,
       center: true,
-      items:3,
       margin:0,
       autoplay:true,
-      autoplayTimeout:1000,
+      autoplayTimeout:1500,
       autoplayHoverPause:true,
-      autoplaySpeed:5000,
       responsive: {
          0: {
             items: 1
