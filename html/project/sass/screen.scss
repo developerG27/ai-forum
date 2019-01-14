@@ -27,7 +27,7 @@
          transition-duration: 1s;
          z-index: 3;
          top: 80px;
-         font-family: $font-primary;
+         font-family: $font-secondary;
          position: absolute;
          background: $dark-primary;
          color: $color-white;
@@ -903,6 +903,16 @@
                width: 230px;
                color: $primary;
                transition-duration: .5s;
+
+               &:hover .first{
+                     background: $color-white !important;
+                     z-index: 3;
+               }
+
+               &:hover .second{
+                  background: $color-white !important;
+                  z-index:3;
+               }
 
                &:hover {
                   color: white;

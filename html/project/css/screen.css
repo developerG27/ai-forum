@@ -90,7 +90,7 @@ body, html {
   transition-duration: 1s;
   z-index: 3;
   top: 80px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   position: absolute;
   background: #232349;
   color: #fff;
@@ -814,6 +814,14 @@ body, html {
     width: 230px;
     color: #42dcd4;
     transition-duration: 0.5s;
+  }
+  .first-section .wrap .box .box-scopri:hover .first {
+    background: #fff !important;
+    z-index: 3;
+  }
+  .first-section .wrap .box .box-scopri:hover .second {
+    background: #fff !important;
+    z-index: 3;
   }
   .first-section .wrap .box .box-scopri:hover {
     color: white;
