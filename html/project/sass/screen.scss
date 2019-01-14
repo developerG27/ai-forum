@@ -2,6 +2,11 @@
 @import 'variable';
 @import 'mixins/flexbox'; //$direction, $justify,$align
 
+
+//Universal
+.body{
+   font-family: $font-secondary;
+}
 //Header
 .header {
    position: relative;
@@ -62,7 +67,6 @@
                   &:after {
                      content: ">";
                      display: inline-block;
-                     font-family: $font-secondary;
                      font-weight: 500;
                      transform: rotate(90deg);
                   }
@@ -190,7 +194,6 @@
 
             &::after {
                margin-left: 5px;
-               font-family: $font-secondary;
                content: ">>";
                font-weight: lighter;
                font-size: 1em
@@ -271,7 +274,6 @@
       width: 90%;
 
       .number {
-         font-family: $font-secondary;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -325,7 +327,6 @@
             font-size: 2em;
             text-transform: uppercase;
             padding: 30px;
-            font-family: $font-secondary;
             font-weight: 700;
             text-align: left;
          }
@@ -466,7 +467,6 @@
 //Contacts
 
 .contacts {
-   font-family: $font-secondary;
    padding: 50px 0px;
 
    .wrap {
@@ -520,8 +520,8 @@
 .footer {
    background: $primary;
    padding: 50px 0px;
-   font-family: $font-secondary;
    text-align: left;
+   font-family: $font-secondary;
 
    .wrap {
       width: 90%;
@@ -610,7 +610,6 @@
             &::after {
                margin-left: 5px;
                font-weight: light;
-               font-family: $font-secondary;
                content: ">>>>>" !important;
                font-weight: 500 !important;
                padding-left: 20px;
@@ -872,7 +871,6 @@
             &::after {
                margin-left: 5px;
                font-weight: light;
-               font-family: $font-secondary;
                content: ">>>>>" !important;
                font-weight: 500 !important;
                padding-left: 20px;
@@ -922,7 +920,7 @@
 
                .arrow {
                   height: auto;
-                  @include flexbox (row, flex-start, center);
+                  @include flexbox (row, flex-start, center);                  
 
                   .line {
                      transform: scale(.5);
@@ -1091,7 +1089,6 @@
       display: block !important;
       width: 100%;
       background: $light-primary;
-      font-family: $font-secondary;
       margin-bottom: 400px;
       padding: 50px 0px;
 
@@ -1213,7 +1210,6 @@
 
       .wrap {
          width: 90%;
-         font-family: $font-secondary;
          padding: 0px 0px 60px 0px;
 
          .partner-title {

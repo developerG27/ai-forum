@@ -66,6 +66,10 @@ body, html {
   position: fixed;
 }
 
+.body {
+  font-family: "Poppins", sans-serif;
+}
+
 .header {
   position: relative;
 }
@@ -113,7 +117,6 @@ body, html {
 .header .menu-laptop .primary .link-item:nth-child(1) .item:after {
   content: ">";
   display: inline-block;
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   transform: rotate(90deg);
 }
@@ -226,7 +229,6 @@ body, html {
 }
 .jumbotron .wrap .sponsor span::after {
   margin-left: 5px;
-  font-family: "Poppins", sans-serif;
   content: ">>";
   font-weight: lighter;
   font-size: 1em;
@@ -287,7 +289,6 @@ body, html {
   width: 90%;
 }
 .third-section .wrap .number {
-  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,7 +336,6 @@ body, html {
   font-size: 2em;
   text-transform: uppercase;
   padding: 30px;
-  font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-align: left;
 }
@@ -452,7 +452,6 @@ body, html {
 }
 
 .contacts {
-  font-family: "Poppins", sans-serif;
   padding: 50px 0px;
 }
 .contacts .wrap {
@@ -502,8 +501,8 @@ body, html {
 .footer {
   background: #42dcd4;
   padding: 50px 0px;
-  font-family: "Poppins", sans-serif;
   text-align: left;
+  font-family: "Poppins", sans-serif;
 }
 .footer .wrap {
   width: 90%;
@@ -566,7 +565,6 @@ body, html {
   .jumbotron .sponsor span::after {
     margin-left: 5px;
     font-weight: light;
-    font-family: "Poppins", sans-serif;
     content: ">>>>>" !important;
     font-weight: 500 !important;
     padding-left: 20px;
@@ -781,7 +779,6 @@ body, html {
   .jumbotron .sponsor span::after {
     margin-left: 5px;
     font-weight: light;
-    font-family: "Poppins", sans-serif;
     content: ">>>>>" !important;
     font-weight: 500 !important;
     padding-left: 20px;
@@ -983,7 +980,6 @@ body, html {
     display: block !important;
     width: 100%;
     background: #e9f2f2;
-    font-family: "Poppins", sans-serif;
     margin-bottom: 400px;
     padding: 50px 0px;
   }
@@ -1102,7 +1098,6 @@ body, html {
   }
   .partner .wrap {
     width: 90%;
-    font-family: "Poppins", sans-serif;
     padding: 0px 0px 60px 0px;
   }
   .partner .wrap .partner-title {
